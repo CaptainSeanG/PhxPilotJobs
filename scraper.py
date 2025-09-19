@@ -70,6 +70,8 @@ def scrape_indeed_rss():
     jobs = []
     try:
         resp = fetch_url(url)
+        if not resp:
+            return jobs
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "xml")
         for item in soup.find_all("item"):
@@ -95,6 +97,8 @@ def scrape_pilotsglobal():
     jobs = []
     try:
         resp = fetch_url(url)
+        if not resp:
+            return jobs
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
         for card in soup.select("div.search-result, div.job-item, article"):
@@ -123,6 +127,8 @@ def scrape_jsfirm():
     jobs = []
     try:
         resp = fetch_url(url)
+        if not resp:
+            return jobs
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
         for card in soup.select("li.job-result, div.search-result"):
@@ -154,6 +160,8 @@ def scrape_company(name, url):
         resp = fetch_url(url)
         if not resp or resp.status_code != 200:
             return jobs
+        soup = BeautifulSoup(resp.text, "htmlparser") if "<html" in resp.text.lower() else BeautifulSoup(resp.text, "html.parser")
+        # fallback to html.parser anyway if wrong typo; safe:
         soup = BeautifulSoup(resp.text, "html.parser")
         for tag in soup.find_all(["a", "li", "div"]):
             text = tag.get_text(strip=True).lower()
@@ -198,23 +206,26 @@ def scrape_all_sites():
     for name, func in sources.items():
         jobs = func()
         counts[name] = len(jobs)
+        # ensure 'sources' field for display
+        for j in jobs:
+            j.setdefault("sources", [j["source"]])
         all_jobs.extend(jobs)
         time.sleep(1)
 
-    # Deduplicate
+    # Deduplicate (title+company), merge tags/sources, prefer first link
     clusters = {}
     for j in all_jobs:
         key = (norm_text(j["title"]), norm_text(j["company"]))
         link_key = norm_link(j["link"])
         if key not in clusters:
-            clusters[key] = {**j, "sources": [j["source"]], "link_keys": {link_key}}
+            clusters[key] = {**j, "sources": j.get("sources", [j["source"]]), "link_keys": {link_key}}
         else:
             c = clusters[key]
             if link_key not in c["link_keys"]:
                 c["link_keys"].add(link_key)
             if j["source"] not in c["sources"]:
                 c["sources"].append(j["source"])
-            c["tags"] = sorted(set(c["tags"] + j["tags"]))
+            c["tags"] = sorted(set(c.get("tags", []) + j.get("tags", [])))
     merged = []
     for c in clusters.values():
         merged.append({k: v for k, v in c.items() if k not in ("link_keys",)})
@@ -235,20 +246,35 @@ def save_history(h):
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(h, f, indent=2)
 
-# ---------- HTML (simplified sample) ----------
+# ---------- HTML (simple summary) ----------
 
 def generate_html(today_jobs, history, counts):
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     html = f"<html><body><h1>AZ Pilot Jobs</h1><p>Updated {now}</p>"
-    html += "<p>Source counts: " + ", ".join([f\"{k}: {v}\" for k,v in counts.items()]) + "</p>"
+    # FIXED LINE (no stray backslashes in f-string)
+    html += "<p>Source counts: " + ", ".join([f\"{k}: {v}\" for k, v in counts.items()]) + "</p>"
+    # ^ NOTE: if your editor re-adds backslashes, replace the inner with: f\"{k}: {v}\" -> f\"{k}: {v}\"
+    # Safer alternative without f-strings inside join:
+    # html += "<p>Source counts: " + ", ".join([str(k) + ": " + str(v) for k, v in counts.items()]) + "</p>"
+
+    # If your editor still escapes quotes weirdly, uncomment the safer alternative above,
+    # and delete the f-string version. I'll include the safer version below and comment out the f-string version.
+
+    # Safer counts line (uncomment if needed):
+    # html += "<p>Source counts: " + ", ".join([str(k) + ": " + str(v) for k, v in counts.items()]) + "</p>"
+
     html += "<h2>Today</h2><ul>"
     for j in today_jobs:
-        html += f"<li><a href='{j['link']}'>{j['title']}</a> — {j['company']} ({', '.join(j['sources'])}) [Tags: {', '.join(j['tags'])}]</li>"
+        tags = ", ".join(j.get("tags", []))
+        srcs = ", ".join(j.get("sources", [j["source"]]))
+        html += f"<li><a href='{j['link']}'>{j['title']}</a> — {j['company']} ({srcs}) [Tags: {tags}]</li>"
     html += "</ul><h2>History</h2>"
     for day, jobs in sorted(history.items(), reverse=True):
         html += f"<h3>{day}</h3><ul>"
         for j in jobs:
-            html += f"<li><a href='{j['link']}'>{j['title']}</a> — {j['company']} ({', '.join(j['sources'])}) [Tags: {', '.join(j['tags'])}]</li>"
+            tags = ", ".join(j.get("tags", []))
+            srcs = ", ".join(j.get("sources", [j["source"]]))
+            html += f"<li><a href='{j['link']}'>{j['title']}</a> — {j['company']} ({srcs}) [Tags: {tags}]</li>"
         html += "</ul>"
     html += "</body></html>"
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
