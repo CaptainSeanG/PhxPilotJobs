@@ -1,15 +1,20 @@
 import os, re, json, requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
+from urllib.parse import urljoin
 
 HISTORY_FILE = "jobs_history.json"
 OUTPUT_FILE = "jobs.json"
 
-AZ_TERMS = ["Arizona", "AZ", "Phoenix", "Scottsdale"]
+AZ_TERMS = ["Arizona", "AZ", "Phoenix", "Scottsdale", "PHX"]
 
 def fetch_url(url):
     try:
-        resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+        resp = requests.get(
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"},
+            timeout=20,
+        )
         resp.raise_for_status()
         return resp
     except Exception as e:
@@ -25,13 +30,13 @@ def save_debug_html(name, content):
         f.write(content)
     print(f"[DEBUG] Saved raw HTML -> {path}")
 
-# ✅ Indeed RSS feed (reliable)
+# ✅ Indeed RSS feed
 def scrape_indeed():
     jobs = []
     url = "https://rss.indeed.com/rss?q=pilot&l=Arizona"
     resp = fetch_url(url)
-    if not resp: return jobs
-    save_debug_html("Indeed", resp.text)
+    if not resp:
+        return jobs
     soup = BeautifulSoup(resp.text, "xml")
     for item in soup.find_all("item"):
         title = item.title.get_text()
@@ -41,17 +46,74 @@ def scrape_indeed():
             "company": "Unknown",
             "link": link,
             "source": "Indeed",
-            "tags": detect_tags(title)
+            "tags": detect_tags(title),
         })
+    print(f"Indeed: {len(jobs)} jobs found")
     return jobs
 
-# Example JSFirm scraper (expand later)
+# 🔹 Ameriflight Careers
+def scrape_ameriflight_careers():
+    jobs = []
+    url = "https://w3.ameriflight.com/pilots/careers/"
+    resp = fetch_url(url)
+    if not resp:
+        return jobs
+    soup = BeautifulSoup(resp.text, "html.parser")
+    for link in soup.select("a"):
+        title = link.get_text(strip=True)
+        href = link.get("href")
+        if not title or not href:
+            continue
+        if not href.startswith("http"):
+            href = urljoin(url, href)
+        text_blob = title + " " + href
+        if not any(term.lower() in text_blob.lower() for term in AZ_TERMS):
+            continue
+        jobs.append({
+            "title": title,
+            "company": "Ameriflight",
+            "link": href,
+            "source": "Ameriflight",
+            "tags": detect_tags(title),
+        })
+    print(f"Ameriflight: {len(jobs)} AZ jobs found")
+    return jobs
+
+# 🔹 Pilot Career Center (AZ jobs)
+def scrape_pilotcareercenter_az():
+    jobs = []
+    url = "https://pilotcareercenter.com/AZ-Pilot-Jobs/Arizona"
+    resp = fetch_url(url)
+    if not resp:
+        return jobs
+    soup = BeautifulSoup(resp.text, "html.parser")
+    for card in soup.select("a"):
+        title = card.get_text(strip=True)
+        href = card.get("href")
+        if not title or not href:
+            continue
+        if not href.startswith("http"):
+            href = urljoin(url, href)
+        text_blob = title + " " + href
+        if not any(term.lower() in text_blob.lower() for term in AZ_TERMS):
+            continue
+        jobs.append({
+            "title": title,
+            "company": "PilotCareerCenter",
+            "link": href,
+            "source": "PilotCareerCenter",
+            "tags": detect_tags(title),
+        })
+    print(f"PCC: {len(jobs)} AZ jobs found")
+    return jobs
+
+# 🔹 JSFirm (still may block, but we try)
 def scrape_jsfirm():
     jobs = []
     url = "https://www.jsfirm.com/pilot-jobs-in-Arizona/US/State-2"
     resp = fetch_url(url)
-    if not resp: return jobs
-    save_debug_html("JSFirm", resp.text)
+    if not resp:
+        return jobs
     soup = BeautifulSoup(resp.text, "html.parser")
     for card in soup.select(".job-title"):
         title = card.get_text(strip=True)
@@ -63,11 +125,12 @@ def scrape_jsfirm():
             "company": "JSFirm",
             "link": link,
             "source": "JSFirm",
-            "tags": detect_tags(title)
+            "tags": detect_tags(title),
         })
+    print(f"JSFirm: {len(jobs)} jobs found")
     return jobs
 
-# Detect aircraft types & Part 91
+# Detect tags
 def detect_tags(text):
     text = text.lower()
     tags = []
@@ -79,16 +142,10 @@ def detect_tags(text):
     if "part 91" in text: tags.append("Part 91")
     return tags
 
-# Only keep Arizona jobs
+# Filters
 def filter_arizona(jobs):
-    results = []
-    for j in jobs:
-        text = (j.get("title","") + " " + j.get("company","") + " " + j.get("source",""))
-        if any(term.lower() in text.lower() for term in AZ_TERMS):
-            results.append(j)
-    return results
+    return [j for j in jobs if any(term.lower() in (j.get("title","") + j.get("company","")).lower() for term in AZ_TERMS)]
 
-# Deduplicate jobs
 def deduplicate(jobs):
     seen, results = set(), []
     for j in jobs:
@@ -98,7 +155,7 @@ def deduplicate(jobs):
             results.append(j)
     return results
 
-# Load & save history
+# History
 def load_history():
     if not os.path.exists(HISTORY_FILE):
         return {}
@@ -116,12 +173,13 @@ def save_output(today_jobs, history):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
-# Main orchestrator
+# Main
 def scrape_all_sites():
     all_jobs = []
     all_jobs.extend(scrape_indeed())
     all_jobs.extend(scrape_jsfirm())
-    # add more scrapers here
+    all_jobs.extend(scrape_ameriflight_careers())
+    all_jobs.extend(scrape_pilotcareercenter_az())
     return all_jobs
 
 def main():
@@ -131,8 +189,7 @@ def main():
     print(f"[INFO] Scraped {len(jobs)} raw jobs")
     jobs = filter_arizona(jobs)
     jobs = deduplicate(jobs)
-    print(f"[INFO] {len(jobs)} after Arizona filter & dedupe")
-
+    print(f"[INFO] {len(jobs)} after AZ filter & dedupe")
     history[today] = jobs
     save_history(history)
     save_output(jobs, history)
