@@ -30,7 +30,7 @@ def save_debug_html(name, content):
         f.write(content)
     print(f"[DEBUG] Saved raw HTML -> {path}")
 
-# ✅ Indeed RSS feed
+# ✅ Indeed via RSS
 def scrape_indeed():
     jobs = []
     url = "https://rss.indeed.com/rss?q=pilot&l=Arizona"
@@ -107,7 +107,7 @@ def scrape_pilotcareercenter_az():
     print(f"PCC: {len(jobs)} AZ jobs found")
     return jobs
 
-# 🔹 JSFirm (still may block, but we try)
+# 🔹 JSFirm (may block)
 def scrape_jsfirm():
     jobs = []
     url = "https://www.jsfirm.com/pilot-jobs-in-Arizona/US/State-2"
@@ -130,7 +130,7 @@ def scrape_jsfirm():
     print(f"JSFirm: {len(jobs)} jobs found")
     return jobs
 
-# Detect tags
+# 🔹 Tagging function
 def detect_tags(text):
     text = text.lower()
     tags = []
@@ -139,12 +139,17 @@ def detect_tags(text):
     if "sky courier" in text or "skycourier" in text: tags.append("SkyCourier")
     if "baron" in text: tags.append("Baron")
     if "navajo" in text: tags.append("Navajo")
+    if "king air" in text or "b200" in text or "be200" in text: tags.append("King Air")
     if "part 91" in text: tags.append("Part 91")
     return tags
 
-# Filters
+# 🔹 Filters
 def filter_arizona(jobs):
-    return [j for j in jobs if any(term.lower() in (j.get("title","") + j.get("company","")).lower() for term in AZ_TERMS)]
+    return [
+        j for j in jobs
+        if any(term.lower() in (j.get("title","") + j.get("company","")).lower()
+               for term in AZ_TERMS)
+    ]
 
 def deduplicate(jobs):
     seen, results = set(), []
@@ -155,7 +160,7 @@ def deduplicate(jobs):
             results.append(j)
     return results
 
-# History
+# 🔹 History management
 def load_history():
     if not os.path.exists(HISTORY_FILE):
         return {}
@@ -173,7 +178,7 @@ def save_output(today_jobs, history):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
-# Main
+# 🔹 Main orchestration
 def scrape_all_sites():
     all_jobs = []
     all_jobs.extend(scrape_indeed())
