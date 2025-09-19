@@ -9,7 +9,7 @@ jobs:
   update-jobs:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # ✅ allow push back to repo
+      contents: write   # ✅ allow push to repo
 
     steps:
     - name: Checkout repo
@@ -27,6 +27,12 @@ jobs:
 
     - name: Run scraper
       run: python scraper.py
+
+    - name: Upload debug HTML
+      uses: actions/upload-artifact@v3
+      with:
+        name: raw-html
+        path: debug_html/
 
     - name: Commit jobs.json
       env:
