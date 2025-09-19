@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arizona Pilot Jobs</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+    header { background: #2c3e50; color: #fff; padding: 1rem; text-align: center; }
+    h1 { margin: 0; font-size: 1.8rem; }
+    .controls { padding: 1rem; text-align: center; background: #ecf0f1; }
+    input, button { padding: 0.5rem 1rem; margin: 0.3rem; border-radius: 6px; border: 1px solid #ccc; }
+    .jobs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; padding: 1rem; }
+    .job-card { background: #fff; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .job-card h3 { margin-top: 0; }
+    .job-card a { color: #2980b9; text-decoration: none; font-weight: bold; }
+    .job-card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arizona Pilot Jobs</h1>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search jobs..." oninput="renderJobs()">
+    <button onclick="filterTag('All')">All</button>
+    <button onclick="filterTag('Caravan')">Caravan</button>
+    <button onclick="filterTag('PC-12')">PC-12</button>
+    <button onclick="filterTag('Part 91')">Part 91</button>
+    <button onclick="filterTag('SkyCourier')">SkyCourier</button>
+    <button onclick="filterTag('Baron')">Baron</button>
+    <button onclick="filterTag('Navajo')">Navajo</button>
+  </div>
+
+  <div class="jobs" id="jobs-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
