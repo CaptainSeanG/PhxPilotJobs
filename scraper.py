@@ -9,12 +9,13 @@ from urllib.parse import urlencode, quote_plus, urlsplit, urlunsplit
 # ---------- Config ----------
 HISTORY_FILE = "jobs_history.json"
 OUTPUT_HTML  = "index.html"
-OUTPUT_JSON  = "jobs_today.json"
+OUTPUT_JSON  = "jobs_today.json"      # today's deduped jobs
+OUTPUT_DIAG  = "scrape_report.json"   # detailed scrape report
 DAYS_TO_KEEP = 30
 
 # Broadened keywords: include general "pilot" sweep (AZ-limited via URL or post-filter)
 KEYWORDS = [
-    "pilot",  # NEW: broad sweep to catch titles like "Commercial Pilot"
+    "pilot",  # broad sweep to catch titles like "Commercial Pilot"
     "caravan", "pc-12", "pc12", "pilatus",
     "cessna 208", "sky courier", "skycourier",
     "baron", "navajo"
@@ -62,7 +63,7 @@ def fetch_url(url, **kwargs):
         "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
     )
     headers.setdefault("Accept-Language", "en-US,en;q=0.9")
-    timeout = kwargs.pop("timeout", 25)
+    timeout = kwargs.pop("timeout", 30)
 
     if SCRAPER_API_KEY:
         proxy_url = "http://api.scraperapi.com/"
@@ -195,15 +196,21 @@ def tag_job(title, company):
             tags.append(kt["label"])
     return tags
 
-# ---------- Scraping ----------
+# ---------- Scraping (with diagnostics) ----------
 def scrape_site_for_query(site, q):
     jobs = []
     url = site["url_fn"](q)
+    diag = {"query": q, "url": url, "status": None, "items": 0, "error": None, "blocked_hint": False}
     try:
         resp = fetch_url(url)
+        diag["status"] = getattr(resp, "status_code", None)
         resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, site["parser"])
+        html_lower = resp.text.lower()
+        # crude “blocked”/captcha heuristic
+        if "captcha" in html_lower or "are you a human" in html_lower or "enable javascript" in html_lower:
+            diag["blocked_hint"] = True
 
+        soup = BeautifulSoup(resp.text, site["parser"])
         for card in soup.select(site["selectors"]["job"]):
             title_tag   = card.select_one(site["selectors"]["title"])
             company_tag = card.select_one(site["selectors"]["company"])
@@ -245,20 +252,30 @@ def scrape_site_for_query(site, q):
                 "tags": tags,
                 "_loc": loc_text
             })
+        diag["items"] = len(jobs)
     except Exception as e:
+        diag["error"] = str(e)
         print(f"Error scraping {site['name']} ({q}): {e}")
-    return jobs
+    return jobs, diag
 
 def scrape_all_sites():
     all_jobs = []
-    counts = {}  # per-site totals (after AZ filter)
+    counts = {}    # per-site totals (after AZ filter)
+    diag_all = {}  # per-site detailed diagnostics
+
     for site in SITES:
         site_total = 0
+        site_diags = []
         for q in KEYWORDS:
-            items = scrape_site_for_query(site, q)
+            items, diag = scrape_site_for_query(site, q)
             site_total += len(items)
             all_jobs.extend(items)
+            site_diags.append(diag)
         counts[site["name"]] = site_total
+        diag_all[site["name"]] = {
+            "total": site_total,
+            "queries": site_diags
+        }
         print(f"Scraped {site_total} AZ-filtered jobs from {site['name']} across {len(KEYWORDS)} queries")
 
     # --- Strong de-duplication & clustering across sources ---
@@ -308,7 +325,7 @@ def scrape_all_sites():
         })
 
     merged_jobs.sort(key=lambda x: (x["company"].lower(), x["title"].lower()))
-    return merged_jobs, counts
+    return merged_jobs, counts, diag_all
 
 # ---------- History ----------
 def load_history():
@@ -389,11 +406,12 @@ def generate_html(today_jobs, history, counts):
               <button onclick="toggleTag('SkyCourier')" id="tagSkyCourier">SkyCourier</button>
               <button onclick="toggleTag('Baron')" id="tagBaron">Baron</button>
               <button onclick="toggleTag('Navajo')" id="tagNavajo">Navajo</button>
-              <button onclick="toggleTag('General')" id="tagGeneral">General</button> <!-- NEW -->
+              <button onclick="toggleTag('General')" id="tagGeneral">General</button>
             </div>
             <div class="links">
               <a href="jobs_today.json" target="_blank">Download jobs_today.json</a>
               <a href="jobs_history.json" target="_blank">View jobs_history.json</a>
+              <a href="scrape_report.json" target="_blank">View scrape_report.json</a>
             </div>
           </div>
           <p class="sub">AZ-only: using site location parameters plus a secondary Arizona text filter. Duplicates across sites are merged.</p>
@@ -402,6 +420,16 @@ def generate_html(today_jobs, history, counts):
     html += "<div class='debug'><strong>Per-source counts this run:</strong> "
     html += " • ".join([f"{name}: {count}" for name, count in counts.items()])
     html += "</div></div>"
+
+    # Diagnostics hint card
+    html += """
+      <div class="card">
+        <details open>
+          <summary><strong>Diagnostics</strong></summary>
+          <p class="sub">If some sources show 0, open <em>scrape_report.json</em> to see per-query URLs, status codes, errors, and captcha hints.</p>
+        </details>
+      </div>
+    """
 
     # Today's jobs
     html += """
@@ -475,7 +503,7 @@ def generate_html(today_jobs, history, counts):
           const idMap = {
             "Caravan":"tagCaravan", "PC-12":"tagPC12", "Part 91":"tagPart91",
             "SkyCourier":"tagSkyCourier", "Baron":"tagBaron", "Navajo":"tagNavajo",
-            "General":"tagGeneral" // NEW
+            "General":"tagGeneral"
           };
           const btn = document.getElementById(idMap[tag]);
           if(activeTags.has(tag)){ activeTags.delete(tag); btn.classList.remove('active'); }
@@ -508,7 +536,7 @@ def main():
     today_key = datetime.date.today().isoformat()
     history = load_history()
 
-    today_jobs, counts = scrape_all_sites()
+    today_jobs, counts, diag_all = scrape_all_sites()
 
     # Replace today's jobs, keep prior days
     history[today_key] = today_jobs
@@ -527,9 +555,17 @@ def main():
     save_history(history)
     generate_html(today_jobs, history, counts)
 
-    # Save today's jobs as JSON for direct consumption
+    # Save today's jobs (flat JSON)
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(today_jobs, f, indent=2)
+
+    # Save a detailed scrape report for debugging
+    with open(OUTPUT_DIAG, "w", encoding="utf-8") as f:
+        json.dump({
+            "timestamp": datetime.datetime.now().isoformat(),
+            "counts": counts,
+            "sites": diag_all
+        }, f, indent=2)
 
 if __name__ == "__main__":
     main()
