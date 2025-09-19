@@ -1,7 +1,6 @@
 {
-  "today": [
-    { "title": "Test Pilot - Cessna Caravan", "company": "TestAir", "link": "#", "source": "Manual", "tags": ["Caravan"] },
-    { "title": "PC-12 First Officer", "company": "Sample Aviation", "link": "#", "source": "Manual", "tags": ["PC-12"] }
-  ],
-  "history": {}
+  "today": [],
+  "history": {
+    "2025-09-19": []
+  }
 }
