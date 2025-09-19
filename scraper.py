@@ -6,12 +6,6 @@ HISTORY_FILE = "jobs_history.json"
 OUTPUT_JSON  = "jobs.json"
 DAYS_TO_KEEP = 30
 
-KEYWORDS = [
-    "pilot", "caravan", "pc-12", "pc12", "pilatus",
-    "cessna 208", "sky courier", "skycourier",
-    "baron", "navajo"
-]
-
 KEYWORD_TAGS = [
     {"label": "Caravan",    "pattern": re.compile(r"\bcaravan\b|\bcessna\s*208\b", re.I)},
     {"label": "PC-12",      "pattern": re.compile(r"\bpc[-\s]?12\b|\bpilatus\b", re.I)},
@@ -22,28 +16,28 @@ KEYWORD_TAGS = [
 ]
 
 AZ_TERMS = {
-    "az", "arizona",
-    "phoenix", "scottsdale", "mesa", "chandler", "tempe", "glendale",
-    "tucson", "flagstaff", "prescott", "yuma", "sedona",
-    # airport codes
-    "phx", "tus", "sdl", "iwa", "gcn", "prc"
+    "az", "arizona", "phoenix", "scottsdale", "mesa", "chandler",
+    "tempe", "glendale", "tucson", "flagstaff", "prescott", "yuma",
+    "sedona", "phx", "tus", "sdl", "iwa", "gcn", "prc"
 }
 
 # ---------- Helpers ----------
 
 def is_arizona(text: str) -> bool:
-    t = " " + re.sub(r"\s+", " ", (text or "").lower()) + " "
-    if " arizona " in t or re.search(r"\baz\b", t):
-        return True
+    """Looser AZ detection"""
+    t = (text or "").lower()
     for term in AZ_TERMS:
-        if f" {term} " in t:
+        if term in t:
             return True
     return False
 
 def fetch_url(url):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     try:
-        return requests.get(url, headers=headers, timeout=20)
+        resp = requests.get(url, headers=headers, timeout=20)
+        print(f"[DEBUG] Fetch {url} -> {resp.status_code}, len={len(resp.text)}")
+        print(f"[DEBUG] Snippet: {resp.text[:200].replace(chr(10), ' ')}...")
+        return resp
     except Exception as e:
         print(f"Fetch failed for {url}: {e}")
         return None
@@ -93,35 +87,6 @@ def scrape_indeed_rss():
         print("Error scraping Indeed:", e)
     return jobs
 
-def scrape_pilotsglobal():
-    url = "https://pilotsglobal.com/jobs?keyword=pilot&location=arizona"
-    jobs = []
-    try:
-        resp = fetch_url(url)
-        if not resp: return jobs
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
-        cards = soup.select("div.job-list a.job-card")
-        print(f"PilotsGlobal: {len(cards)} raw items")
-        for card in cards:
-            title = card.get_text(strip=True)
-            link  = card.get("href")
-            company = "Unknown"
-            text = card.get_text(" ", strip=True)
-            if not is_arizona(text):
-                continue
-            jobs.append({
-                "title": title,
-                "company": company,
-                "link": link,
-                "source": "PilotsGlobal",
-                "tags": tag_job(title, company)
-            })
-        print(f" -> {len(jobs)} after AZ filter")
-    except Exception as e:
-        print("Error scraping PilotsGlobal:", e)
-    return jobs
-
 def scrape_jsfirm():
     url = "https://www.jsfirm.com/jobs/search?keywords=pilot+arizona"
     jobs = []
@@ -132,6 +97,8 @@ def scrape_jsfirm():
         soup = BeautifulSoup(resp.text, "html.parser")
         cards = soup.select("div.job-card")
         print(f"JSFirm: {len(cards)} raw items")
+        if not cards:
+            print(" -> No job-card elements found")
         for card in cards:
             a = card.select_one("a")
             if not a: continue
@@ -154,6 +121,37 @@ def scrape_jsfirm():
         print("Error scraping JSFirm:", e)
     return jobs
 
+def scrape_pilotsglobal():
+    url = "https://pilotsglobal.com/jobs?keyword=pilot&location=arizona"
+    jobs = []
+    try:
+        resp = fetch_url(url)
+        if not resp: return jobs
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        cards = soup.select("div.job-list a.job-card")
+        print(f"PilotsGlobal: {len(cards)} raw items")
+        if not cards:
+            print(" -> No job-card elements found")
+        for card in cards:
+            title = card.get_text(strip=True)
+            link  = card.get("href")
+            company = "Unknown"
+            text = card.get_text(" ", strip=True)
+            if not is_arizona(text):
+                continue
+            jobs.append({
+                "title": title,
+                "company": company,
+                "link": link,
+                "source": "PilotsGlobal",
+                "tags": tag_job(title, company)
+            })
+        print(f" -> {len(jobs)} after AZ filter")
+    except Exception as e:
+        print("Error scraping PilotsGlobal:", e)
+    return jobs
+
 def scrape_company(name, url):
     jobs = []
     try:
@@ -163,9 +161,11 @@ def scrape_company(name, url):
         soup = BeautifulSoup(resp.text, "html.parser")
         tags = soup.find_all(["a", "li", "div"])
         print(f"{name}: {len(tags)} raw tags")
+        found = 0
         for tag in tags:
             text = tag.get_text(strip=True).lower()
             if "pilot" in text:
+                found += 1
                 title = tag.get_text(strip=True)
                 href = tag.get("href") or url
                 link = href if href.startswith("http") else url
@@ -178,7 +178,7 @@ def scrape_company(name, url):
                     "source": name,
                     "tags": tag_job(title, name)
                 })
-        print(f" -> {len(jobs)} after AZ filter")
+        print(f" -> Found {found} pilot mentions, kept {len(jobs)} after AZ filter")
     except Exception as e:
         print(f"Error scraping {name}:", e)
     return jobs
@@ -207,8 +207,6 @@ def scrape_all_sites():
     for name, func in sources.items():
         jobs = func()
         counts[name] = len(jobs)
-        for j in jobs:
-            j.setdefault("sources", [j["source"]])
         all_jobs.extend(jobs)
         time.sleep(1)
 
@@ -218,7 +216,7 @@ def scrape_all_sites():
         key = (norm_text(j["title"]), norm_text(j["company"]))
         link_key = norm_link(j["link"])
         if key not in clusters:
-            clusters[key] = {**j, "sources": j.get("sources", [j["source"]]), "link_keys": {link_key}}
+            clusters[key] = {**j, "sources": [j["source"]], "link_keys": {link_key}}
         else:
             c = clusters[key]
             if link_key not in c["link_keys"]:
@@ -226,9 +224,7 @@ def scrape_all_sites():
             if j["source"] not in c["sources"]:
                 c["sources"].append(j["source"])
             c["tags"] = sorted(set(c.get("tags", []) + j.get("tags", [])))
-    merged = []
-    for c in clusters.values():
-        merged.append({k: v for k, v in c.items() if k not in ("link_keys",)})
+    merged = [{k: v for k, v in c.items() if k not in ("link_keys",)} for c in clusters.values()]
     return merged, counts
 
 # ---------- History + Main ----------
@@ -252,13 +248,11 @@ def main():
     jobs, counts = scrape_all_sites()
     history[today] = jobs
 
-    # keep only last 30 days
     cutoff = datetime.date.today() - datetime.timedelta(days=DAYS_TO_KEEP)
     history = {d: j for d, j in history.items() if datetime.date.fromisoformat(d) >= cutoff}
 
     save_history(history)
 
-    # Save combined JSON
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump({"today": jobs, "history": history}, f, indent=2)
 
