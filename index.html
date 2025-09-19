@@ -7,7 +7,7 @@
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header { background: #333; color: #fff; padding: 1rem; text-align: center; }
     .controls { padding: 1rem; text-align: center; }
-    button, input { margin: 0.3rem; padding: 0.5rem 1rem; }
+    button, input, select { margin: 0.3rem; padding: 0.5rem 1rem; }
     .jobs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; padding: 1rem; }
     .card { background: #f9f9f9; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
     .dark { background: #121212; color: #eee; }
@@ -19,6 +19,7 @@
     <h1>Arizona Pilot Jobs</h1>
     <button onclick="toggleTheme()">Toggle Dark/Light</button>
   </header>
+
   <div class="controls">
     <input type="text" id="search" placeholder="Search jobs..." oninput="renderJobs()">
     <button onclick="filterTag('All')">All</button>
@@ -28,8 +29,16 @@
     <button onclick="filterTag('SkyCourier')">SkyCourier</button>
     <button onclick="filterTag('Baron')">Baron</button>
     <button onclick="filterTag('Navajo')">Navajo</button>
+    <br>
+    <label for="historySelect">View history:</label>
+    <select id="historySelect" onchange="selectHistoryDate()">
+      <option value="">-- Today --</option>
+    </select>
+    <button onclick="resetToToday()">Back to Today</button>
   </div>
+
   <div class="jobs" id="jobs"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
