@@ -1,5 +1,5 @@
 let jobs = [];
-let currentTag = "All";
+let activeFilters = new Set();
 
 async function loadJobs() {
   try {
@@ -21,7 +21,7 @@ async function loadJobs() {
       }
     }
 
-    // Show current Arizona time if today’s jobs exist
+    // Show Arizona local time if today’s jobs exist
     if (!lastUpdated) {
       const now = new Date();
       const options = { timeZone: "America/Phoenix", hour12: false };
@@ -51,13 +51,19 @@ function renderJobs() {
   container.innerHTML = "";
 
   const filtered = jobs.filter(j => {
-    const matchesTag =
-      currentTag === "All" ||
-      (j.tags && j.tags.includes(currentTag)) ||
-      (currentTag === "Ameriflight" && j.company === "Ameriflight");
+    // Tag + company filtering
+    const matchesFilters =
+      activeFilters.size === 0 ||
+      [...activeFilters].some(tag =>
+        (j.tags && j.tags.includes(tag)) ||
+        (tag === "Ameriflight" && j.company === "Ameriflight")
+      );
+
+    // Free-text search
     const matchesSearch =
       j.title.toLowerCase().includes(search) || j.company.toLowerCase().includes(search);
-    return matchesTag && matchesSearch;
+
+    return matchesFilters && matchesSearch;
   });
 
   if (filtered.length === 0) {
@@ -78,17 +84,24 @@ function renderJobs() {
   });
 }
 
-function filterTag(tag) {
-  currentTag = tag;
+function toggleFilter(tag) {
+  const button = [...document.querySelectorAll(".controls button")]
+    .find(btn => btn.textContent === tag);
 
-  // Highlight the active button
-  document.querySelectorAll(".controls button").forEach(btn => {
-    btn.classList.remove("active");
-    if (btn.textContent === tag) {
-      btn.classList.add("active");
-    }
-  });
+  if (activeFilters.has(tag)) {
+    activeFilters.delete(tag);
+    if (button) button.classList.remove("active");
+  } else {
+    activeFilters.add(tag);
+    if (button) button.classList.add("active");
+  }
 
+  renderJobs();
+}
+
+function clearFilters() {
+  activeFilters.clear();
+  document.querySelectorAll(".controls button").forEach(btn => btn.classList.remove("active"));
   renderJobs();
 }
 
