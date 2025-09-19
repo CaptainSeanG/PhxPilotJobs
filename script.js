@@ -37,31 +37,41 @@ async function loadJobs() {
       lastUpdated = azTime + " (Arizona Time)";
     }
 
-    document.getElementById("last-updated").innerText = "Last updated: " + lastUpdated;
+    document.getElementById("last-updated").innerText =
+      "Last updated: " + lastUpdated;
     renderJobs();
   } catch (err) {
     console.error("Error loading jobs:", err);
-    document.getElementById("jobs-container").innerHTML = "<p>Could not load jobs.</p>";
+    document.getElementById("jobs-container").innerHTML =
+      "<p>Could not load jobs.</p>";
   }
 }
 
 function renderJobs() {
   const container = document.getElementById("jobs-container");
+  const summary = document.getElementById("filter-summary");
   const search = document.getElementById("search").value.toLowerCase();
   container.innerHTML = "";
 
-  const filtered = jobs.filter(j => {
-    // Tag + company filtering
+  // Update filter summary
+  if (activeFilters.size > 0) {
+    summary.innerText = "Active filters: " + [...activeFilters].join(", ");
+  } else {
+    summary.innerText = "No filters active";
+  }
+
+  const filtered = jobs.filter((j) => {
     const matchesFilters =
       activeFilters.size === 0 ||
-      [...activeFilters].some(tag =>
-        (j.tags && j.tags.includes(tag)) ||
-        (tag === "Ameriflight" && j.company === "Ameriflight")
+      [...activeFilters].some(
+        (tag) =>
+          (j.tags && j.tags.includes(tag)) ||
+          (tag === "Ameriflight" && j.company === "Ameriflight")
       );
 
-    // Free-text search
     const matchesSearch =
-      j.title.toLowerCase().includes(search) || j.company.toLowerCase().includes(search);
+      j.title.toLowerCase().includes(search) ||
+      j.company.toLowerCase().includes(search);
 
     return matchesFilters && matchesSearch;
   });
@@ -71,7 +81,7 @@ function renderJobs() {
     return;
   }
 
-  filtered.forEach(j => {
+  filtered.forEach((j) => {
     const div = document.createElement("div");
     div.className = "job-card";
     div.innerHTML = `
@@ -85,8 +95,9 @@ function renderJobs() {
 }
 
 function toggleFilter(tag) {
-  const button = [...document.querySelectorAll(".controls button")]
-    .find(btn => btn.textContent === tag);
+  const button = [...document.querySelectorAll(".controls button")].find(
+    (btn) => btn.textContent === tag
+  );
 
   if (activeFilters.has(tag)) {
     activeFilters.delete(tag);
@@ -104,7 +115,9 @@ function toggleFilter(tag) {
 
 function clearFilters() {
   activeFilters.clear();
-  document.querySelectorAll(".controls button").forEach(btn => btn.classList.remove("active"));
+  document
+    .querySelectorAll(".controls button")
+    .forEach((btn) => btn.classList.remove("active"));
   renderJobs();
 }
 
