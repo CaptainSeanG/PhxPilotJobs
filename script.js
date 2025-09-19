@@ -6,7 +6,7 @@ async function loadJobs() {
     const res = await fetch("jobs.json");
     if (!res.ok) throw new Error("Failed to fetch jobs.json");
     const data = await res.json();
-    console.log("Loaded jobs:", data); // Debug log
+    console.log("Loaded jobs:", data);
     jobs = data.today || [];
     renderJobs();
   } catch (err) {
@@ -50,5 +50,4 @@ function filterTag(tag) {
   renderJobs();
 }
 
-// Load jobs on page load
 loadJobs();
