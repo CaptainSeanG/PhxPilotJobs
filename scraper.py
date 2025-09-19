@@ -4,6 +4,8 @@ import datetime
 import json
 import os
 import re
+import time
+from random import random
 from urllib.parse import urlencode, quote_plus, urlsplit, urlunsplit
 
 # ---------- Config ----------
@@ -51,33 +53,60 @@ def is_arizona(text: str) -> bool:
             return True
     return False
 
-# ---------- ScraperAPI routing ----------
+# ---------- ScraperAPI routing with retries/backoff ----------
 SCRAPER_API_KEY = os.getenv("SCRAPER_API_KEY")
 
 def fetch_url(url, **kwargs):
-    """requests.get wrapper that uses ScraperAPI (if key present) to avoid 403/JS walls."""
+    """
+    requests.get wrapper that uses ScraperAPI (if key present) and retries with
+    different render/premium knobs to reduce 403/429 blocks.
+    """
     headers = kwargs.pop("headers", {})
     headers.setdefault(
         "User-Agent",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
     )
     headers.setdefault("Accept-Language", "en-US,en;q=0.9")
     timeout = kwargs.pop("timeout", 30)
 
-    if SCRAPER_API_KEY:
-        proxy_url = "http://api.scraperapi.com/"
-        params = {
-            "api_key": SCRAPER_API_KEY,
-            "url": url,
-            "render": "true",
-            "country_code": "us",
-            "keep_headers": "true",
-        }
-        proxied = proxy_url + "?" + urlencode(params)
-        return requests.get(proxied, headers=headers, timeout=timeout, **kwargs)
-    else:
-        return requests.get(url, headers=headers, timeout=timeout, **kwargs)
+    def _do_request(use_render=True, premium=False):
+        if SCRAPER_API_KEY:
+            proxy_url = "http://api.scraperapi.com/"
+            params = {
+                "api_key": SCRAPER_API_KEY,
+                "url": url,
+                "country_code": "us",
+                "keep_headers": "true",
+                "device_type": "desktop",
+                "render": "true" if use_render else "false",
+            }
+            if premium:
+                params["premium"] = "true"
+            proxied = proxy_url + "?" + urlencode(params)
+            return requests.get(proxied, headers=headers, timeout=timeout, **kwargs)
+        else:
+            return requests.get(url, headers=headers, timeout=timeout, **kwargs)
+
+    attempts = [
+        {"use_render": True,  "premium": False},
+        {"use_render": True,  "premium": True},
+        {"use_render": False, "premium": True},
+        {"use_render": False, "premium": False},
+    ]
+    last_exc = None
+    for i, opt in enumerate(attempts, 1):
+        try:
+            resp = _do_request(**opt)
+            if resp.status_code in (403, 429):
+                time.sleep(1.5 * i + random())
+                continue
+            return resp
+        except Exception as e:
+            last_exc = e
+            time.sleep(1.2 * i + random())
+    if last_exc:
+        raise last_exc
+    return _do_request()
 
 # ---------- Site URL builders (Arizona-scoped) ----------
 def indeed_url(q):       return f"https://www.indeed.com/jobs?q={quote_plus(q)}&l=Arizona"
@@ -85,7 +114,15 @@ def zip_url(q):          return f"https://www.ziprecruiter.com/candidate/search?
 def glassdoor_url(q):    return f"https://www.glassdoor.com/Job/jobs.htm?sc.keyword={quote_plus(q + ' Arizona')}"
 def pilotsglobal_url(q): return f"https://pilotsglobal.com/jobs?keyword={quote_plus(q)}&location=arizona"
 def jsfirm_url(q):       return f"https://www.jsfirm.com/jobs/search?keywords={quote_plus(q + ' Arizona')}"
-def climbto350_url(q):   return f"https://www.climbto350.com/jobs?keyword={quote_plus(q)}&location=Arizona"
+
+# Climbto350 has finicky routes: try multiple until we find a live one (non-404)
+def climbto350_candidates(q):
+    base = "https://www.climbto350.com/jobs"
+    return [
+        f"{base}?keyword={quote_plus(q)}&location=Arizona",
+        f"{base}?search={quote_plus(q)}&location=Arizona",
+        f"{base}?search={quote_plus(q)}&where=Arizona",
+    ]
 
 SITES = [
     {
@@ -93,9 +130,10 @@ SITES = [
         "url_fn": zip_url,
         "parser": "html.parser",
         "selectors": {
-            "job":     "article.job_result, article.job_content",
-            "title":   "a[aria-label], a.job_link, a[href*='/jobs/']",
-            "company": "a.t_org_link, div.job_name a, div.job_name span",
+            # broadened containers & titles to catch more layouts
+            "job":     "article.job_result, article.job_content, div.job_result, div.job_content, div.job_list_item",
+            "title":   "a[aria-label], a.job_link, a.job_link.t_job_link, a[href*='/jobs/']",
+            "company": "a.t_org_link, div.job_name a, div.job_name span, div.job_name, span.t_org_link",
             "location":"div.location, span.location, div.job_location, span.job_location"
         }
     },
@@ -134,12 +172,12 @@ SITES = [
     },
     {
         "name": "Climbto350",
-        "url_fn": climbto350_url,
+        "url_fn": None,  # special handling; we use climbto350_candidates(q)
         "parser": "html.parser",
         "selectors": {
-            "job":     "li.job, div.job",
+            "job":     "li.job, div.job, div.job-item, article.job",
             "title":   "a",
-            "company": "span.company, div.company",
+            "company": "span.company, div.company, a.company",
             "location":"span.location, div.location"
         }
     },
@@ -199,63 +237,88 @@ def tag_job(title, company):
 # ---------- Scraping (with diagnostics) ----------
 def scrape_site_for_query(site, q):
     jobs = []
-    url = site["url_fn"](q)
-    diag = {"query": q, "url": url, "status": None, "items": 0, "error": None, "blocked_hint": False}
-    try:
-        resp = fetch_url(url)
-        diag["status"] = getattr(resp, "status_code", None)
-        resp.raise_for_status()
-        html_lower = resp.text.lower()
-        # crude “blocked”/captcha heuristic
-        if "captcha" in html_lower or "are you a human" in html_lower or "enable javascript" in html_lower:
-            diag["blocked_hint"] = True
 
-        soup = BeautifulSoup(resp.text, site["parser"])
-        for card in soup.select(site["selectors"]["job"]):
-            title_tag   = card.select_one(site["selectors"]["title"])
-            company_tag = card.select_one(site["selectors"]["company"])
-            if not title_tag:
+    # Build URLs to try
+    if site["name"] == "Climbto350":
+        urls_to_try = climbto350_candidates(q)
+    else:
+        url = site["url_fn"](q) if site.get("url_fn") else None
+        urls_to_try = [url] if url else []
+
+    diag = {"query": q, "url": None, "status": None, "items": 0, "error": None, "blocked_hint": False}
+
+    last_resp = None
+    for attempt_url in urls_to_try:
+        try:
+            diag["url"] = attempt_url
+            resp = fetch_url(attempt_url)
+            diag["status"] = getattr(resp, "status_code", None)
+            last_resp = resp
+
+            # If this candidate 404s (Climbto350), try next one
+            if resp.status_code == 404:
                 continue
 
-            title = title_tag.get_text(strip=True)
-            href  = title_tag.get("href")
-            link  = make_absolute(url, href)
-            company = company_tag.get_text(strip=True) if company_tag else "Unknown"
+            resp.raise_for_status()
+            html_lower = resp.text.lower()
+            # crude “blocked”/captcha heuristic
+            if "captcha" in html_lower or "are you a human" in html_lower or "enable javascript" in html_lower:
+                diag["blocked_hint"] = True
 
-            # Try location fields; fall back to entire card text
-            loc_text = ""
-            for loc_sel in site["selectors"].get("location", "").split(","):
-                sel = loc_sel.strip()
-                if not sel:
+            soup = BeautifulSoup(resp.text, site["parser"])
+            for card in soup.select(site["selectors"]["job"]):
+                title_tag   = card.select_one(site["selectors"]["title"])
+                company_tag = card.select_one(site["selectors"]["company"])
+                if not title_tag:
                     continue
-                loc_tag = card.select_one(sel)
-                if loc_tag:
-                    loc_text = loc_tag.get_text(" ", strip=True)
-                    break
-            card_text = card.get_text(" ", strip=True)
 
-            # AZ filter: require location or card text to indicate Arizona
-            if not (is_arizona(loc_text) or is_arizona(card_text)):
-                continue
+                title = title_tag.get_text(strip=True)
+                href  = title_tag.get("href")
+                link  = make_absolute(attempt_url, href)
+                company = company_tag.get_text(strip=True) if company_tag else "Unknown"
 
-            # Tags from title/company
-            tags = tag_job(title, company)
-            # If this is the broad "pilot" query and no aircraft tags matched, mark as General
-            if q.strip().lower() == "pilot" and not tags:
-                tags = ["General"]
+                # Try location fields; fall back to entire card text
+                loc_text = ""
+                for loc_sel in site["selectors"].get("location", "").split(","):
+                    sel = loc_sel.strip()
+                    if not sel:
+                        continue
+                    loc_tag = card.select_one(sel)
+                    if loc_tag:
+                        loc_text = loc_tag.get_text(" ", strip=True)
+                        break
+                card_text = card.get_text(" ", strip=True)
 
-            jobs.append({
-                "title": title,
-                "company": company,
-                "link": link,
-                "source": site["name"],
-                "tags": tags,
-                "_loc": loc_text
-            })
-        diag["items"] = len(jobs)
-    except Exception as e:
-        diag["error"] = str(e)
-        print(f"Error scraping {site['name']} ({q}): {e}")
+                # AZ filter: require location or card text to indicate Arizona
+                if not (is_arizona(loc_text) or is_arizona(card_text)):
+                    continue
+
+                # Tags from title/company
+                tags = tag_job(title, company)
+                # If this is the broad "pilot" query and no aircraft tags matched, mark as General
+                if q.strip().lower() == "pilot" and not tags:
+                    tags = ["General"]
+
+                jobs.append({
+                    "title": title,
+                    "company": company,
+                    "link": link,
+                    "source": site["name"],
+                    "tags": tags,
+                    "_loc": loc_text
+                })
+
+            diag["items"] = len(jobs)
+            break  # success; stop trying alternates
+        except Exception as e:
+            diag["error"] = str(e)
+            # try next alternate if available
+            continue
+
+    if not jobs and last_resp is not None and last_resp.status_code == 404:
+        # leave diag with last 404
+        pass
+
     return jobs, diag
 
 def scrape_all_sites():
