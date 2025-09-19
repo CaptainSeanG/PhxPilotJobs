@@ -11,9 +11,9 @@ HISTORY_FILE = "jobs_history.json"
 OUTPUT_HTML  = "index.html"
 DAYS_TO_KEEP = 30
 
-# Broad keyword set for aircraft/ops
+# Aircraft/ops keywords we care about
 KEYWORDS = [
-    "caravan", "pc-12", "pc12", "pilatus", "cessna 208", "skycourier", "sky courier",
+    "caravan", "pc-12", "pc12", "pilatus", "cessna 208", "sky courier", "skycourier",
     "baron", "navajo"
 ]
 
@@ -26,6 +26,27 @@ KEYWORD_TAGS = [
     {"label": "Baron",       "pattern": re.compile(r"\bbaron\b", re.I)},
     {"label": "Navajo",      "pattern": re.compile(r"\bnavajo\b", re.I)},
 ]
+
+# Arizona check: state terms + a set of city names (expandable)
+AZ_TERMS = {
+    "az", "arizona",
+    "phoenix", "scottsdale", "mesa", "chandler", "tempe", "glendale", "peoria",
+    "gilbert", "surprise", "goodyear", "buckeye", "avondale",
+    "tucson", "flagstaff", "prescott", "yuma", "sedona",
+    "sierra vista", "queen creek", "casa grande", "maricopa",
+    "lake havasu", "kingman", "payson", "show low"
+}
+
+def is_arizona(text: str) -> bool:
+    """Return True if text indicates the job is in Arizona."""
+    t = " " + re.sub(r"\s+", " ", text.lower()) + " "
+    # Match ' AZ ' as a token, 'Arizona', or any AZ city name
+    if " arizona " in t or re.search(r"\baz\b", t):
+        return True
+    for city in AZ_TERMS:
+        if f" {city} " in t:
+            return True
+    return False
 
 # ---------- ScraperAPI routing ----------
 SCRAPER_API_KEY = os.getenv("SCRAPER_API_KEY")
@@ -58,14 +79,21 @@ def fetch_url(url, **kwargs):
     else:
         return requests.get(url, headers=headers, timeout=timeout, **kwargs)
 
-# ---------- Sites & query builders ----------
-def indeed_url(q):         return f"https://www.indeed.com/jobs?q={quote_plus(q)}"
-def zip_url(q):            return f"https://www.ziprecruiter.com/candidate/search?search={quote_plus(q)}"
-def glassdoor_url(q):      return f"https://www.glassdoor.com/Job/jobs.htm?sc.keyword={quote_plus(q)}"
-def pilotsglobal_url(q):   return f"https://pilotsglobal.com/jobs?keyword={quote_plus(q)}"
-def jsfirm_url(q):         return f"https://www.jsfirm.com/jobs/search?keywords={quote_plus(q)}"
-def climbto350_url(q):     return f"https://www.climbto350.com/jobs?keyword={quote_plus(q)}"
+# ---------- Site URL builders (Arizona-scoped) ----------
+def indeed_url(q):         # l=Arizona limits to AZ
+    return f"https://www.indeed.com/jobs?q={quote_plus(q)}&l=Arizona"
+def zip_url(q):            # location=Arizona
+    return f"https://www.ziprecruiter.com/candidate/search?search={quote_plus(q)}&location=Arizona"
+def glassdoor_url(q):      # keyword + ' Arizona' as a hint
+    return f"https://www.glassdoor.com/Job/jobs.htm?sc.keyword={quote_plus(q + ' Arizona')}"
+def pilotsglobal_url(q):   # keyword + location=arizona
+    return f"https://pilotsglobal.com/jobs?keyword={quote_plus(q)}&location=arizona"
+def jsfirm_url(q):         # add 'Arizona' to query string
+    return f"https://www.jsfirm.com/jobs/search?keywords={quote_plus(q + ' Arizona')}"
+def climbto350_url(q):     # keyword + &location=Arizona
+    return f"https://www.climbto350.com/jobs?keyword={quote_plus(q)}&location=Arizona"
 
+# Optional location selector per site to improve filtering
 SITES = [
     {
         "name": "ZipRecruiter",
@@ -74,7 +102,8 @@ SITES = [
         "selectors": {
             "job":     "article.job_result, article.job_content",
             "title":   "a[aria-label], a.job_link, a[href*='/jobs/']",
-            "company": "a.t_org_link, div.job_name a, div.job_name span"
+            "company": "a.t_org_link, div.job_name a, div.job_name span",
+            "location":"div.location, span.location, div.job_location, span.job_location"
         }
     },
     {
@@ -84,7 +113,8 @@ SITES = [
         "selectors": {
             "job":     "div.search-result, div.job-item, article",
             "title":   "a[href*='/job/']",
-            "company": "div.company, span.company, a[href*='/company/']"
+            "company": "div.company, span.company, a[href*='/company/']",
+            "location":"div.location, span.location, div.job-location"
         }
     },
     {
@@ -94,7 +124,8 @@ SITES = [
         "selectors": {
             "job":     "div.job_seen_beacon, div.cardOutline, div.slider_container",
             "title":   "h2 a, a.jcs-JobTitle",
-            "company": "span.companyName, span[data-testid='company-name']"
+            "company": "span.companyName, span[data-testid='company-name']",
+            "location":"div.companyLocation, span.companyLocation"
         }
     },
     {
@@ -104,7 +135,8 @@ SITES = [
         "selectors": {
             "job":     "li.job-result, div.search-result",
             "title":   "a",
-            "company": "span.company, div.company"
+            "company": "span.company, div.company",
+            "location":"span.location, div.location"
         }
     },
     {
@@ -114,7 +146,8 @@ SITES = [
         "selectors": {
             "job":     "li.job, div.job",
             "title":   "a",
-            "company": "span.company, div.company"
+            "company": "span.company, div.company",
+            "location":"span.location, div.location"
         }
     },
     {
@@ -124,7 +157,8 @@ SITES = [
         "selectors": {
             "job":     "li.react-job-listing, li#MainCol div.jobCard",
             "title":   "a.jobLink, a.jobTitle",
-            "company": "div.jobHeader a, div.jobInfoItem.jobEmpolyerName"
+            "company": "div.jobHeader a, div.jobInfoItem.jobEmpolyerName",
+            "location":"span.pr-xxsm, span.css-56kyx5, div.location"
         }
     },
 ]
@@ -166,6 +200,23 @@ def scrape_site_for_query(site, q):
             href  = title_tag.get("href")
             link  = make_absolute(url, href)
             company = company_tag.get_text(strip=True) if company_tag else "Unknown"
+
+            # Try location fields; fall back to entire card text
+            loc_text = ""
+            for loc_sel in site["selectors"].get("location", "").split(","):
+                loc_sel = loc_sel.strip()
+                if not loc_sel:
+                    continue
+                loc_tag = card.select_one(loc_sel)
+                if loc_tag:
+                    loc_text = loc_tag.get_text(" ", strip=True)
+                    break
+            card_text = card.get_text(" ", strip=True)
+
+            # AZ filter: require location or card text to indicate Arizona
+            if not (is_arizona(loc_text) or is_arizona(card_text)):
+                continue
+
             if title:
                 jobs.append({
                     "title": title,
@@ -173,8 +224,9 @@ def scrape_site_for_query(site, q):
                     "link": link,
                     "source": site["name"],
                     "tags": tag_job(title, company),
-                    "_q": q,      # which keyword matched the search URL
-                    "_url": url,  # which URL we used
+                    "_q": q,
+                    "_url": url,
+                    "_loc": loc_text
                 })
     except Exception as e:
         print(f"Error scraping {site['name']} ({q}): {e}")
@@ -190,15 +242,15 @@ def scrape_all_sites():
             site_total += len(items)
             all_jobs.extend(items)
         counts[site["name"]] = site_total
-        print(f"Scraped {site_total} jobs from {site['name']} across {len(KEYWORDS)} queries")
-    # Deduplicate by (title, company, link) in case multiple queries hit same job
+        print(f"Scraped {site_total} AZ-filtered jobs from {site['name']} across {len(KEYWORDS)} queries")
+
+    # Deduplicate by (title, company, link)
     dedup = {}
     for j in all_jobs:
         key = (j["title"].lower(), j["company"].lower(), j["link"])
         if key not in dedup:
             dedup[key] = j
         else:
-            # merge tags
             prev = dedup[key]
             prev["tags"] = sorted(set(prev.get("tags", []) + j.get("tags", [])))
     return list(dedup.values()), counts
@@ -225,7 +277,7 @@ def generate_html(today_jobs, history, counts):
     <head>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <title>Pilot Jobs – Aircraft Keywords</title>
+      <title>AZ Pilot Jobs — Aircraft Keywords</title>
       <style>
         :root { --bg:#0b1320; --card:#121a2b; --text:#e6eefc; --muted:#9ab0d1; --accent:#4da3ff; --accent2:#2ecc71; --link:#a9cbff; }
         [data-theme='light'] { --bg:#f5f7fb; --card:#ffffff; --text:#0b1320; --muted:#445974; --accent:#0b65d4; --accent2:#1a9e4d; --link:#0b65d4; }
@@ -250,24 +302,22 @@ def generate_html(today_jobs, history, counts):
         .tag { font-size: 12px; padding:2px 6px; border-radius:8px; margin-left:6px; background: color-mix(in srgb, var(--accent) 30%, transparent); color:#fff; }
         .toolbar { display:flex; gap:8px; flex-wrap:wrap; }
         .debug { font-size: 13px; color: var(--muted); }
-        .kw { font-size: 12px; color: var(--muted); margin-left: 8px; }
       </style>
     </head>
     <body>
       <div class="wrap" id="app" data-theme="dark">
         <div class="card">
-          <h1>Low-Time Pilot Jobs — Keyword Focus</h1>
+          <h1>Arizona Pilot Jobs — Keyword Focus</h1>
     """
     html += f"<p class='sub'>Updated {now_str}</p>"
 
     # Controls
     html += """
           <div class="controls">
-            <input type="text" id="jobSearch" onkeyup="filterAll()" placeholder="Search (e.g., company, title, location)">
+            <input type="text" id="jobSearch" onkeyup="filterAll()" placeholder="Search (e.g., company, title)">
             <div class="toolbar">
               <button onclick="filterSource('all')" class="active" id="btnAll">All</button>
     """
-    # dynamically add source buttons based on counts
     for name in counts.keys():
         html += f"<button onclick=\"filterSource('{name}')\">{name}</button>"
     html += """
@@ -282,9 +332,8 @@ def generate_html(today_jobs, history, counts):
               <button onclick="toggleTag('Navajo')" id="tagNavajo">Navajo</button>
             </div>
           </div>
-          <p class="sub">Now searching *any location* for jobs mentioning: Caravan, PC-12/PC12, Pilatus, Cessna 208, SkyCourier, Baron, Navajo.</p>
+          <p class="sub">Results are limited to Arizona (AZ) using site location params and a secondary Arizona filter.</p>
     """
-
     # Debug counts
     html += "<div class='debug'><strong>Per-source counts this run:</strong> "
     html += " • ".join([f"{name}: {count}" for name, count in counts.items()])
