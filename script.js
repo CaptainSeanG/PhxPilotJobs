@@ -1,34 +1,23 @@
 let jobs = [];
-let history = {};
 let currentTag = "All";
-let darkMode = false;
-let viewingHistory = false;
 
 async function loadJobs() {
   try {
     const res = await fetch("jobs.json");
+    if (!res.ok) throw new Error("Failed to fetch jobs.json");
     const data = await res.json();
-    jobs = data.today;
-    history = data.history;
-
-    // Populate history dropdown
-    const select = document.getElementById("historySelect");
-    Object.keys(history).sort().reverse().forEach(date => {
-      const option = document.createElement("option");
-      option.value = date;
-      option.textContent = date;
-      select.appendChild(option);
-    });
-
+    console.log("Loaded jobs:", data); // Debug log
+    jobs = data.today || [];
     renderJobs();
-  } catch (e) {
-    document.getElementById("jobs").innerHTML = "<p>Could not load jobs.</p>";
+  } catch (err) {
+    console.error("Error loading jobs:", err);
+    document.getElementById("jobs-container").innerHTML = "<p>Could not load jobs.</p>";
   }
 }
 
 function renderJobs() {
+  const container = document.getElementById("jobs-container");
   const search = document.getElementById("search").value.toLowerCase();
-  const container = document.getElementById("jobs");
   container.innerHTML = "";
 
   const filtered = jobs.filter(j => {
@@ -43,15 +32,15 @@ function renderJobs() {
   }
 
   filtered.forEach(j => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
+    const div = document.createElement("div");
+    div.className = "job-card";
+    div.innerHTML = `
       <h3><a href="${j.link}" target="_blank">${j.title}</a></h3>
       <p><strong>Company:</strong> ${j.company}</p>
       <p><strong>Source:</strong> ${j.source}</p>
       <p><strong>Tags:</strong> ${j.tags ? j.tags.join(", ") : "None"}</p>
     `;
-    container.appendChild(card);
+    container.appendChild(div);
   });
 }
 
@@ -60,28 +49,5 @@ function filterTag(tag) {
   renderJobs();
 }
 
-function toggleTheme() {
-  darkMode = !darkMode;
-  document.body.classList.toggle("dark", darkMode);
-}
-
-function selectHistoryDate() {
-  const date = document.getElementById("historySelect").value;
-  if (date && history[date]) {
-    jobs = history[date];
-    viewingHistory = true;
-  } else {
-    jobs = history.today || jobs;
-    viewingHistory = false;
-  }
-  renderJobs();
-}
-
-function resetToToday() {
-  document.getElementById("historySelect").value = "";
-  jobs = history.today || jobs;
-  viewingHistory = false;
-  renderJobs();
-}
-
+// Load jobs on page load
 loadJobs();
