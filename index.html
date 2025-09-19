@@ -79,12 +79,21 @@
     .controls button.active[data-tag="Ameriflight"] {
       background-color: #1e40af; /* dark blue */
     }
+
+    /* Jobs grid */
+    .jobs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
     .job-card {
       background: white;
       border-radius: 12px;
       padding: 1rem;
-      margin: 1rem auto;
-      max-width: 700px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .job-card h3 {
@@ -96,6 +105,12 @@
     }
     .job-card a:hover {
       text-decoration: underline;
+    }
+
+    #filter-summary {
+      text-align: center;
+      margin: 1rem;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -119,6 +134,7 @@
     <button onclick="clearFilters()">Clear Filters</button>
   </div>
 
+  <div id="filter-summary">No filters active</div>
   <div id="jobs-container" class="jobs"></div>
 
   <script src="script.js"></script>
