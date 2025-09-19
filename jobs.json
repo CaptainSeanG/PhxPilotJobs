@@ -61,7 +61,9 @@
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/20975/USA/First-Officer/King-Air-350---Phoenix/Advanced-Air",
       "source": "PilotCareerCenter",
-      "tags": []
+      "tags": [
+        "King Air"
+      ]
     },
     {
       "title": "Second In Command\u2014Challenger 300/350 - ScottsdaleSIC-CL300/350 - ScottsdaleJet Linx",
@@ -75,7 +77,9 @@
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22343/USA/Captain/King-Air-C90---Kayenta-AZ/Guardian-Flight",
       "source": "PilotCareerCenter",
-      "tags": []
+      "tags": [
+        "King Air"
+      ]
     },
     {
       "title": "Skydive ArizonaSkydive Arizona",
@@ -181,6 +185,13 @@
       "link": "https://pilotcareercenter.com/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL",
       "source": "PilotCareerCenter",
       "tags": []
+    },
+    {
+      "title": "AZ",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/AZ",
+      "source": "PilotCareerCenter",
+      "tags": []
     }
   ],
   "history": {
@@ -246,7 +257,9 @@
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/20975/USA/First-Officer/King-Air-350---Phoenix/Advanced-Air",
         "source": "PilotCareerCenter",
-        "tags": []
+        "tags": [
+          "King Air"
+        ]
       },
       {
         "title": "Second In Command\u2014Challenger 300/350 - ScottsdaleSIC-CL300/350 - ScottsdaleJet Linx",
@@ -260,7 +273,9 @@
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22343/USA/Captain/King-Air-C90---Kayenta-AZ/Guardian-Flight",
         "source": "PilotCareerCenter",
-        "tags": []
+        "tags": [
+          "King Air"
+        ]
       },
       {
         "title": "Skydive ArizonaSkydive Arizona",
@@ -364,6 +379,13 @@
         "title": "PHOENIX",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL",
+        "source": "PilotCareerCenter",
+        "tags": []
+      },
+      {
+        "title": "AZ",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/AZ",
         "source": "PilotCareerCenter",
         "tags": []
       }
