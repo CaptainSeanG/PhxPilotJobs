@@ -93,7 +93,10 @@ function toggleFilter(tag) {
     if (button) button.classList.remove("active");
   } else {
     activeFilters.add(tag);
-    if (button) button.classList.add("active");
+    if (button) {
+      button.classList.add("active");
+      button.setAttribute("data-tag", tag);
+    }
   }
 
   renderJobs();
