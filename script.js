@@ -18,7 +18,6 @@ async function loadJobs() {
         const latest = dates[0];
         jobs = data.history[latest] || [];
         lastUpdated = latest + " (history)";
-        console.log("Using fallback jobs from history date:", latest);
       }
     }
 
@@ -81,6 +80,15 @@ function renderJobs() {
 
 function filterTag(tag) {
   currentTag = tag;
+
+  // Highlight the active button
+  document.querySelectorAll(".controls button").forEach(btn => {
+    btn.classList.remove("active");
+    if (btn.textContent === tag) {
+      btn.classList.add("active");
+    }
+  });
+
   renderJobs();
 }
 
