@@ -6,7 +6,19 @@ async function loadJobs() {
     const res = await fetch("jobs.json");
     if (!res.ok) throw new Error("Failed to fetch jobs.json");
     const data = await res.json();
+    console.log("Loaded jobs:", data);
+
+    // Prefer today's jobs, fallback to most recent history
     jobs = data.today || [];
+    if (jobs.length === 0 && data.history) {
+      const dates = Object.keys(data.history).sort().reverse();
+      if (dates.length > 0) {
+        const latest = dates[0];
+        jobs = data.history[latest] || [];
+        console.log("Using fallback jobs from history date:", latest);
+      }
+    }
+
     renderJobs();
   } catch (err) {
     console.error("Error loading jobs:", err);
