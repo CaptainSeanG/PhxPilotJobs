@@ -4,7 +4,7 @@ import datetime
 import json
 import os
 import re
-from urllib.parse import urlencode, quote_plus
+from urllib.parse import urlencode, quote_plus, urlsplit, urlunsplit
 
 # ---------- Config ----------
 HISTORY_FILE = "jobs_history.json"
@@ -38,9 +38,7 @@ AZ_TERMS = {
 }
 
 def is_arizona(text: str) -> bool:
-    """Return True if text indicates the job is in Arizona."""
-    t = " " + re.sub(r"\s+", " ", text.lower()) + " "
-    # Match ' AZ ' as a token, 'Arizona', or any AZ city name
+    t = " " + re.sub(r"\s+", " ", (text or "").lower()) + " "
     if " arizona " in t or re.search(r"\baz\b", t):
         return True
     for city in AZ_TERMS:
@@ -52,10 +50,6 @@ def is_arizona(text: str) -> bool:
 SCRAPER_API_KEY = os.getenv("SCRAPER_API_KEY")
 
 def fetch_url(url, **kwargs):
-    """
-    Wrapper around requests.get that routes through ScraperAPI (if key present)
-    to avoid 403 / JS walls on CI runners.
-    """
     headers = kwargs.pop("headers", {})
     headers.setdefault(
         "User-Agent",
@@ -80,20 +74,13 @@ def fetch_url(url, **kwargs):
         return requests.get(url, headers=headers, timeout=timeout, **kwargs)
 
 # ---------- Site URL builders (Arizona-scoped) ----------
-def indeed_url(q):         # l=Arizona limits to AZ
-    return f"https://www.indeed.com/jobs?q={quote_plus(q)}&l=Arizona"
-def zip_url(q):            # location=Arizona
-    return f"https://www.ziprecruiter.com/candidate/search?search={quote_plus(q)}&location=Arizona"
-def glassdoor_url(q):      # keyword + ' Arizona' as a hint
-    return f"https://www.glassdoor.com/Job/jobs.htm?sc.keyword={quote_plus(q + ' Arizona')}"
-def pilotsglobal_url(q):   # keyword + location=arizona
-    return f"https://pilotsglobal.com/jobs?keyword={quote_plus(q)}&location=arizona"
-def jsfirm_url(q):         # add 'Arizona' to query string
-    return f"https://www.jsfirm.com/jobs/search?keywords={quote_plus(q + ' Arizona')}"
-def climbto350_url(q):     # keyword + &location=Arizona
-    return f"https://www.climbto350.com/jobs?keyword={quote_plus(q)}&location=Arizona"
+def indeed_url(q):       return f"https://www.indeed.com/jobs?q={quote_plus(q)}&l=Arizona"
+def zip_url(q):          return f"https://www.ziprecruiter.com/candidate/search?search={quote_plus(q)}&location=Arizona"
+def glassdoor_url(q):    return f"https://www.glassdoor.com/Job/jobs.htm?sc.keyword={quote_plus(q + ' Arizona')}"
+def pilotsglobal_url(q): return f"https://pilotsglobal.com/jobs?keyword={quote_plus(q)}&location=arizona"
+def jsfirm_url(q):       return f"https://www.jsfirm.com/jobs/search?keywords={quote_plus(q + ' Arizona')}"
+def climbto350_url(q):   return f"https://www.climbto350.com/jobs?keyword={quote_plus(q)}&location=Arizona"
 
-# Optional location selector per site to improve filtering
 SITES = [
     {
         "name": "ZipRecruiter",
@@ -175,6 +162,24 @@ def make_absolute(base_url, href):
         return origin + href
     return base_url.rstrip("/") + "/" + href
 
+def norm_text(s):
+    s = (s or "").lower()
+    s = re.sub(r"&amp;", "&", s)
+    s = re.sub(r"[^\w\s&]", " ", s)        # keep word chars/space/&
+    s = re.sub(r"\b(inc|llc|l\.l\.c|co|corp|corporation|company)\b", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+def norm_link(url):
+    try:
+        parts = urlsplit(url)
+        # normalize to scheme-less origin + path, drop query/fragment
+        path = parts.path or "/"
+        cleaned = urlunsplit(("", parts.netloc.lower(), path, "", ""))
+        return cleaned
+    except Exception:
+        return url
+
 def tag_job(title, company):
     tags = []
     blob = f"{title} {company}"
@@ -204,10 +209,10 @@ def scrape_site_for_query(site, q):
             # Try location fields; fall back to entire card text
             loc_text = ""
             for loc_sel in site["selectors"].get("location", "").split(","):
-                loc_sel = loc_sel.strip()
-                if not loc_sel:
+                sel = loc_sel.strip()
+                if not sel:
                     continue
-                loc_tag = card.select_one(loc_sel)
+                loc_tag = card.select_one(sel)
                 if loc_tag:
                     loc_text = loc_tag.get_text(" ", strip=True)
                     break
@@ -234,7 +239,7 @@ def scrape_site_for_query(site, q):
 
 def scrape_all_sites():
     all_jobs = []
-    counts = {}  # per-site totals
+    counts = {}
     for site in SITES:
         site_total = 0
         for q in KEYWORDS:
@@ -244,16 +249,59 @@ def scrape_all_sites():
         counts[site["name"]] = site_total
         print(f"Scraped {site_total} AZ-filtered jobs from {site['name']} across {len(KEYWORDS)} queries")
 
-    # Deduplicate by (title, company, link)
-    dedup = {}
+    # --- Strong de-duplication & clustering across sources ---
+    clusters = {}  # key: (norm_title, norm_company) -> job dict (merged)
     for j in all_jobs:
-        key = (j["title"].lower(), j["company"].lower(), j["link"])
-        if key not in dedup:
-            dedup[key] = j
+        nt = norm_text(j["title"])
+        nc = norm_text(j["company"])
+        key = (nt, nc)
+
+        # Also compute a normalized link key (host+path only)
+        link_key = norm_link(j["link"])
+
+        if key not in clusters:
+            clusters[key] = {
+                "title": j["title"],
+                "company": j["company"],
+                "link": j["link"],
+                "link_keys": {link_key},
+                "source": j["source"],  # keep first source for display link
+                "sources": [j["source"]],
+                "tags": sorted(set(j.get("tags", []))),
+                "_loc": j.get("_loc", "")
+            }
         else:
-            prev = dedup[key]
-            prev["tags"] = sorted(set(prev.get("tags", []) + j.get("tags", [])))
-    return list(dedup.values()), counts
+            c = clusters[key]
+            # Prefer a more "direct" link if current link path differs but is same job
+            if link_key not in c["link_keys"]:
+                c["link_keys"].add(link_key)
+                # If current link looks more canonical (shorter path), use it
+                if len(j["link"]) < len(c["link"]):
+                    c["link"] = j["link"]
+                    c["source"] = j["source"]
+            # Merge sources/tags
+            if j["source"] not in c["sources"]:
+                c["sources"].append(j["source"])
+            c["tags"] = sorted(set(c["tags"] + j.get("tags", [])))
+            # Merge location if cluster has none
+            if not c.get("_loc") and j.get("_loc"):
+                c["_loc"] = j["_loc"]
+
+    merged_jobs = []
+    for (_, _), c in clusters.items():
+        merged_jobs.append({
+            "title": c["title"],
+            "company": c["company"],
+            "link": c["link"],
+            "source": c["source"],
+            "sources": c["sources"],
+            "tags": c["tags"],
+            "_loc": c.get("_loc", "")
+        })
+
+    # Sort today’s jobs by title for stable display
+    merged_jobs.sort(key=lambda x: (x["company"].lower(), x["title"].lower()))
+    return merged_jobs, counts
 
 # ---------- History ----------
 def load_history():
@@ -302,6 +350,8 @@ def generate_html(today_jobs, history, counts):
         .tag { font-size: 12px; padding:2px 6px; border-radius:8px; margin-left:6px; background: color-mix(in srgb, var(--accent) 30%, transparent); color:#fff; }
         .toolbar { display:flex; gap:8px; flex-wrap:wrap; }
         .debug { font-size: 13px; color: var(--muted); }
+        .sources { font-size: 12px; color: var(--muted); margin-left: 8px; }
+        .loc { font-size: 12px; color: var(--muted); margin-left: 8px; }
       </style>
     </head>
     <body>
@@ -332,7 +382,7 @@ def generate_html(today_jobs, history, counts):
               <button onclick="toggleTag('Navajo')" id="tagNavajo">Navajo</button>
             </div>
           </div>
-          <p class="sub">Results are limited to Arizona (AZ) using site location params and a secondary Arizona filter.</p>
+          <p class="sub">AZ-only: using site location parameters plus a secondary Arizona text filter. Duplicates across sites are merged.</p>
     """
     # Debug counts
     html += "<div class='debug'><strong>Per-source counts this run:</strong> "
@@ -349,11 +399,16 @@ def generate_html(today_jobs, history, counts):
         for job in today_jobs:
             tags = job.get("tags") or []
             tag_html = "".join([f"<span class='tag'>{t}</span>" for t in tags])
+            sources = job.get("sources", [job.get("source")])
+            sources_text = ", ".join(sources)
+            loc_text = job.get("_loc", "")
+            loc_html = f"<span class='loc'>• {loc_text}</span>" if loc_text else ""
             html += (
                 f"<li class='job-item' data-source='{job['source']}' data-tags='{'|'.join(tags)}'>"
                 f"<a href='{job['link']}' target='_blank'>{job['title']}</a> — {job['company']} "
-                f"<span class='sourceTag'>({job['source']})</span>{tag_html}"
-                f"</li>"
+                f"<span class='sourceTag'>({job['source']})</span>"
+                f"<span class='sources'>Found on: {sources_text}</span>{loc_html}"
+                f"{tag_html}</li>"
             )
     else:
         html += "<li>No new jobs found today.</li>"
@@ -367,11 +422,16 @@ def generate_html(today_jobs, history, counts):
         for job in jobs:
             tags = job.get("tags") or []
             tag_html = "".join([f"<span class='tag'>{t}</span>" for t in tags])
+            sources = job.get("sources", [job.get("source")])
+            sources_text = ", ".join(sources)
+            loc_text = job.get("_loc", "")
+            loc_html = f"<span class='loc'>• {loc_text}</span>" if loc_text else ""
             html += (
                 f"<li class='job-item' data-source='{job['source']}' data-tags='{'|'.join(tags)}'>"
                 f"<a href='{job['link']}' target='_blank'>{job['title']}</a> — {job['company']} "
-                f"<span class='sourceTag'>({job['source']})</span>{tag_html}"
-                f"</li>"
+                f"<span class='sourceTag'>({job['source']})</span>"
+                f"<span class='sources'>Found on: {sources_text}</span>{loc_html}"
+                f"{tag_html}</li>"
             )
         html += "</ul>"
     html += "</div>"
@@ -430,10 +490,10 @@ def main():
     today_key = datetime.date.today().isoformat()
     history = load_history()
 
-    jobs, counts = scrape_all_sites()
+    today_jobs, counts = scrape_all_sites()
 
     # Replace today's jobs, keep prior days
-    history[today_key] = jobs
+    history[today_key] = today_jobs
 
     # Keep last 30 days only
     cutoff = datetime.date.today() - datetime.timedelta(days=DAYS_TO_KEEP)
@@ -447,7 +507,7 @@ def main():
     history = trimmed
 
     save_history(history)
-    generate_html(jobs, history, counts)
+    generate_html(today_jobs, history, counts)
 
 if __name__ == "__main__":
     main()
