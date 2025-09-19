@@ -152,7 +152,7 @@ def scrape_jsfirm():
         print("Error scraping JSFirm:", e)
     return jobs
 
-# ---------- Company Sites (basic placeholders) ----------
+# ---------- Company Sites (placeholders) ----------
 
 def scrape_company(name, url):
     jobs = []
@@ -160,8 +160,6 @@ def scrape_company(name, url):
         resp = fetch_url(url)
         if not resp or resp.status_code != 200:
             return jobs
-        soup = BeautifulSoup(resp.text, "htmlparser") if "<html" in resp.text.lower() else BeautifulSoup(resp.text, "html.parser")
-        # fallback to html.parser anyway if wrong typo; safe:
         soup = BeautifulSoup(resp.text, "html.parser")
         for tag in soup.find_all(["a", "li", "div"]):
             text = tag.get_text(strip=True).lower()
@@ -206,13 +204,12 @@ def scrape_all_sites():
     for name, func in sources.items():
         jobs = func()
         counts[name] = len(jobs)
-        # ensure 'sources' field for display
         for j in jobs:
             j.setdefault("sources", [j["source"]])
         all_jobs.extend(jobs)
         time.sleep(1)
 
-    # Deduplicate (title+company), merge tags/sources, prefer first link
+    # Deduplicate
     clusters = {}
     for j in all_jobs:
         key = (norm_text(j["title"]), norm_text(j["company"]))
@@ -246,22 +243,14 @@ def save_history(h):
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(h, f, indent=2)
 
-# ---------- HTML (simple summary) ----------
+# ---------- HTML ----------
 
 def generate_html(today_jobs, history, counts):
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     html = f"<html><body><h1>AZ Pilot Jobs</h1><p>Updated {now}</p>"
-    # FIXED LINE (no stray backslashes in f-string)
-    html += "<p>Source counts: " + ", ".join([f\"{k}: {v}\" for k, v in counts.items()]) + "</p>"
-    # ^ NOTE: if your editor re-adds backslashes, replace the inner with: f\"{k}: {v}\" -> f\"{k}: {v}\"
-    # Safer alternative without f-strings inside join:
-    # html += "<p>Source counts: " + ", ".join([str(k) + ": " + str(v) for k, v in counts.items()]) + "</p>"
 
-    # If your editor still escapes quotes weirdly, uncomment the safer alternative above,
-    # and delete the f-string version. I'll include the safer version below and comment out the f-string version.
-
-    # Safer counts line (uncomment if needed):
-    # html += "<p>Source counts: " + ", ".join([str(k) + ": " + str(v) for k, v in counts.items()]) + "</p>"
+    # ✅ Safe string building (no f-string nesting)
+    html += "<p>Source counts: " + ", ".join([str(k) + ": " + str(v) for k, v in counts.items()]) + "</p>"
 
     html += "<h2>Today</h2><ul>"
     for j in today_jobs:
