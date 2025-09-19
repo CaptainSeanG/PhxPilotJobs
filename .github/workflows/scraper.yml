@@ -3,20 +3,20 @@ name: Update Pilot Jobs
 on:
   schedule:
     - cron: "0 */6 * * *"   # every 6 hours
-  workflow_dispatch:
+  workflow_dispatch:        # allow manual run from Actions tab
 
 jobs:
   update-jobs:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write       # ✅ allow pushes to the repo
 
     steps:
     - name: Checkout repo
       uses: actions/checkout@v4
       with:
         persist-credentials: true
-        fetch-depth: 0
+        fetch-depth: 0       # full history so commits land on main
 
     - name: Set up Python
       uses: actions/setup-python@v5
