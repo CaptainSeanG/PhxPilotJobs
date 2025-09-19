@@ -22,7 +22,8 @@ function renderJobs() {
 
   const filtered = jobs.filter(j => {
     const matchesTag = currentTag === "All" || (j.tags && j.tags.includes(currentTag));
-    const matchesSearch = j.title.toLowerCase().includes(search) || j.company.toLowerCase().includes(search);
+    const matchesSearch =
+      j.title.toLowerCase().includes(search) || j.company.toLowerCase().includes(search);
     return matchesTag && matchesSearch;
   });
 
