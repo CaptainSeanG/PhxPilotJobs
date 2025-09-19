@@ -42,6 +42,16 @@ def fetch_url(url):
         print(f"Fetch failed for {url}: {e}")
         return None
 
+def save_debug_html(name, content):
+    """Save raw HTML for debugging, uploaded later by workflow"""
+    folder = "debug_html"
+    os.makedirs(folder, exist_ok=True)
+    safe_name = re.sub(r"[^a-zA-Z0-9_-]", "_", name)
+    path = os.path.join(folder, f"{safe_name}.html")
+    with open(path, "w", encoding="utf-8", errors="ignore") as f:
+        f.write(content)
+    print(f"[DEBUG] Saved raw HTML -> {path}")
+
 def norm_text(s):
     return re.sub(r"\s+", " ", (s or "").lower().strip())
 
@@ -65,6 +75,7 @@ def scrape_indeed_rss():
         resp = fetch_url(url)
         if not resp: return jobs
         resp.raise_for_status()
+        save_debug_html("Indeed", resp.text)
         soup = BeautifulSoup(resp.text, "xml")
         items = soup.find_all("item")
         print(f"Indeed: {len(items)} raw items")
@@ -94,6 +105,7 @@ def scrape_jsfirm():
         resp = fetch_url(url)
         if not resp: return jobs
         resp.raise_for_status()
+        save_debug_html("JSFirm", resp.text)
         soup = BeautifulSoup(resp.text, "html.parser")
         cards = soup.select("div.job-card")
         print(f"JSFirm: {len(cards)} raw items")
@@ -128,6 +140,7 @@ def scrape_pilotsglobal():
         resp = fetch_url(url)
         if not resp: return jobs
         resp.raise_for_status()
+        save_debug_html("PilotsGlobal", resp.text)
         soup = BeautifulSoup(resp.text, "html.parser")
         cards = soup.select("div.job-list a.job-card")
         print(f"PilotsGlobal: {len(cards)} raw items")
@@ -158,6 +171,7 @@ def scrape_company(name, url):
         resp = fetch_url(url)
         if not resp or resp.status_code != 200:
             return jobs
+        save_debug_html(name, resp.text)
         soup = BeautifulSoup(resp.text, "html.parser")
         tags = soup.find_all(["a", "li", "div"])
         print(f"{name}: {len(tags)} raw tags")
