@@ -9,11 +9,12 @@ from urllib.parse import urlencode, quote_plus, urlsplit, urlunsplit
 # ---------- Config ----------
 HISTORY_FILE = "jobs_history.json"
 OUTPUT_HTML  = "index.html"
-OUTPUT_JSON  = "jobs_today.json"   # flat JSON export of today's jobs
+OUTPUT_JSON  = "jobs_today.json"
 DAYS_TO_KEEP = 30
 
-# Aircraft/ops keywords to query on each site (AZ-limited via URL or post-filter)
+# Broadened keywords: include general "pilot" sweep (AZ-limited via URL or post-filter)
 KEYWORDS = [
+    "pilot",  # NEW: broad sweep to catch titles like "Commercial Pilot"
     "caravan", "pc-12", "pc12", "pilatus",
     "cessna 208", "sky courier", "skycourier",
     "baron", "navajo"
@@ -29,7 +30,7 @@ KEYWORD_TAGS = [
     {"label": "Navajo",      "pattern": re.compile(r"\bnavajo\b", re.I)},
 ]
 
-# Arizona terms
+# Arizona terms (used for secondary location filter)
 AZ_TERMS = {
     "az", "arizona",
     "phoenix", "scottsdale", "mesa", "chandler", "tempe", "glendale", "peoria",
@@ -142,14 +143,15 @@ SITES = [
         }
     },
     {
+        # Loosened selectors for Glassdoor list variants
         "name": "Glassdoor",
         "url_fn": glassdoor_url,
         "parser": "html.parser",
         "selectors": {
-            "job":     "li.react-job-listing, li#MainCol div.jobCard",
-            "title":   "a.jobLink, a.jobTitle",
-            "company": "div.jobHeader a, div.jobInfoItem.jobEmpolyerName",
-            "location":"span.pr-xxsm, span.css-56kyx5, div.location"
+            "job":     "li.react-job-listing, li#MainCol div.jobCard, div.JobCard_jobCardContainer__*, article.job-card",
+            "title":   "a.jobLink, a.jobTitle, a[data-test='job-link']",
+            "company": "div.jobHeader a, div.jobInfoItem.jobEmpolyerName, span[data-test='employerName'], a.EmployerProfile",
+            "location":"span.pr-xxsm, span.css-56kyx5, div.location, span[data-test='emp-location']"
         }
     },
 ]
@@ -201,11 +203,13 @@ def scrape_site_for_query(site, q):
         resp = fetch_url(url)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, site["parser"])
+
         for card in soup.select(site["selectors"]["job"]):
             title_tag   = card.select_one(site["selectors"]["title"])
             company_tag = card.select_one(site["selectors"]["company"])
             if not title_tag:
                 continue
+
             title = title_tag.get_text(strip=True)
             href  = title_tag.get("href")
             link  = make_absolute(url, href)
@@ -227,12 +231,18 @@ def scrape_site_for_query(site, q):
             if not (is_arizona(loc_text) or is_arizona(card_text)):
                 continue
 
+            # Tags from title/company
+            tags = tag_job(title, company)
+            # If this is the broad "pilot" query and no aircraft tags matched, mark as General
+            if q.strip().lower() == "pilot" and not tags:
+                tags = ["General"]
+
             jobs.append({
                 "title": title,
                 "company": company,
                 "link": link,
                 "source": site["name"],
-                "tags": tag_job(title, company),
+                "tags": tags,
                 "_loc": loc_text
             })
     except Exception as e:
@@ -379,6 +389,7 @@ def generate_html(today_jobs, history, counts):
               <button onclick="toggleTag('SkyCourier')" id="tagSkyCourier">SkyCourier</button>
               <button onclick="toggleTag('Baron')" id="tagBaron">Baron</button>
               <button onclick="toggleTag('Navajo')" id="tagNavajo">Navajo</button>
+              <button onclick="toggleTag('General')" id="tagGeneral">General</button> <!-- NEW -->
             </div>
             <div class="links">
               <a href="jobs_today.json" target="_blank">Download jobs_today.json</a>
@@ -461,7 +472,11 @@ def generate_html(today_jobs, history, counts):
           filterAll();
         }
         function toggleTag(tag){
-          const idMap = { "Caravan":"tagCaravan", "PC-12":"tagPC12", "Part 91":"tagPart91", "SkyCourier":"tagSkyCourier", "Baron":"tagBaron", "Navajo":"tagNavajo" };
+          const idMap = {
+            "Caravan":"tagCaravan", "PC-12":"tagPC12", "Part 91":"tagPart91",
+            "SkyCourier":"tagSkyCourier", "Baron":"tagBaron", "Navajo":"tagNavajo",
+            "General":"tagGeneral" // NEW
+          };
           const btn = document.getElementById(idMap[tag]);
           if(activeTags.has(tag)){ activeTags.delete(tag); btn.classList.remove('active'); }
           else { activeTags.add(tag); btn.classList.add('active'); }
@@ -469,7 +484,7 @@ def generate_html(today_jobs, history, counts):
         }
         function filterAll() {
           const q = (document.getElementById('jobSearch').value || '').toLowerCase();
-          const activeSrcBtn = document.querySelector('.toolbar button.active#btnAll, .toolbar button.active:not(#tagCaravan):not(#tagPC12):not(#tagPart91):not(#tagSkyCourier):not(#tagBaron):not(#tagNavajo)');
+          const activeSrcBtn = document.querySelector('.toolbar button.active#btnAll, .toolbar button.active:not(#tagCaravan):not(#tagPC12):not(#tagPart91):not(#tagSkyCourier):not(#tagBaron):not(#tagNavajo):not(#tagGeneral)');
           const src = activeSrcBtn ? (activeSrcBtn.textContent === 'All' ? 'all' : activeSrcBtn.textContent) : 'all';
           document.querySelectorAll('li.job-item').forEach(li => {
             const text = li.textContent.toLowerCase();
