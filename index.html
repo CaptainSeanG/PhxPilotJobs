@@ -2,45 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Arizona Pilot Jobs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoenix Pilot Jobs</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
-    header { background: #2c3e50; color: #fff; padding: 1rem; text-align: center; }
-    h1 { margin: 0; font-size: 1.8rem; }
-    #last-updated { font-size: 0.9rem; color: #ecf0f1; margin-top: 0.5rem; }
-    .controls { padding: 1rem; text-align: center; background: #ecf0f1; }
-    input, button { padding: 0.5rem 1rem; margin: 0.3rem; border-radius: 6px; border: 1px solid #ccc; }
-    .jobs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; padding: 1rem; }
-    .job-card { background: #fff; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .job-card h3 { margin-top: 0; }
-    .job-card a { color: #2980b9; text-decoration: none; font-weight: bold; }
-    .job-card a:hover { text-decoration: underline; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
+    }
+    #last-updated {
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+      color: #d1d5db;
+    }
+    .controls {
+      padding: 1rem;
+      text-align: center;
+      background: #e5e7eb;
+    }
+    .controls input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      width: 250px;
+    }
+    .controls button {
+      margin: 0.25rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #9ca3af;
+      color: white;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .controls button:hover {
+      background: #6b7280;
+    }
+    .controls button.active {
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+    }
+    .job-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 700px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .job-card h3 {
+      margin-top: 0;
+    }
+    .job-card a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+    .job-card a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Arizona Pilot Jobs</h1>
-    <div id="last-updated">Last updated: Loading...</div>
+    <h1>Pilot Jobs in Phoenix, AZ</h1>
+    <div id="last-updated">Last updated: ...</div>
   </header>
 
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search jobs..." oninput="renderJobs()">
+    <br>
+    <button onclick="toggleFilter('Caravan')">Caravan</button>
+    <button onclick="toggleFilter('PC-12')">PC-12</button>
+    <button onclick="toggleFilter('King Air')">King Air</button>
+    <button onclick="toggleFilter('Part 91')">Part 91</button>
+    <button onclick="toggleFilter('SkyCourier')">SkyCourier</button>
+    <button onclick="toggleFilter('Baron')">Baron</button>
+    <button onclick="toggleFilter('Navajo')">Navajo</button>
+    <button onclick="toggleFilter('Ameriflight')">Ameriflight</button>
+    <button onclick="clearFilters()">Clear Filters</button>
+  </div>
 
-<div class="controls">
-  <input type="text" id="search" placeholder="Search jobs..." oninput="renderJobs()">
-  <button onclick="filterTag('All')">All</button>
-  <button onclick="filterTag('Caravan')">Caravan</button>
-  <button onclick="filterTag('PC-12')">PC-12</button>
-  <button onclick="filterTag('King Air')">King Air</button>
-  <button onclick="filterTag('Part 91')">Part 91</button>
-  <button onclick="filterTag('SkyCourier')">SkyCourier</button>
-  <button onclick="filterTag('Baron')">Baron</button>
-  <button onclick="filterTag('Navajo')">Navajo</button>
-  <button onclick="filterTag('Ameriflight')">Ameriflight</button>
-</div>
-
-
-
-
-  <div class="jobs" id="jobs-container"></div>
+  <div id="jobs-container" class="jobs"></div>
 
   <script src="script.js"></script>
 </body>
