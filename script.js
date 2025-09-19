@@ -11,6 +11,7 @@ async function loadJobs() {
     jobs = data.today || [];
     let lastUpdated = null;
 
+    // Fallback to history if today is empty
     if (jobs.length === 0 && data.history) {
       const dates = Object.keys(data.history).sort().reverse();
       if (dates.length > 0) {
@@ -21,9 +22,20 @@ async function loadJobs() {
       }
     }
 
+    // Show current Arizona time if today’s jobs exist
     if (!lastUpdated) {
       const now = new Date();
-      lastUpdated = now.toISOString().replace("T", " ").substring(0, 16) + " UTC";
+      const options = { timeZone: "America/Phoenix", hour12: false };
+      const azTime = new Intl.DateTimeFormat("en-US", {
+        ...options,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(now);
+
+      lastUpdated = azTime + " (Arizona Time)";
     }
 
     document.getElementById("last-updated").innerText = "Last updated: " + lastUpdated;
