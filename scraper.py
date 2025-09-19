@@ -27,15 +27,17 @@ KEYWORD_TAGS = [
 AZ_TERMS = {
     "az", "arizona",
     "phoenix", "scottsdale", "mesa", "chandler", "tempe", "glendale",
-    "tucson", "flagstaff", "prescott", "yuma", "sedona"
+    "tucson", "flagstaff", "prescott", "yuma", "sedona",
+    # Airport codes often used in postings
+    "phx", "tus", "sdl", "iwa", "gcn", "prc"
 }
 
 def is_arizona(text: str) -> bool:
     t = " " + re.sub(r"\s+", " ", (text or "").lower()) + " "
     if " arizona " in t or re.search(r"\baz\b", t):
         return True
-    for city in AZ_TERMS:
-        if f" {city} " in t:
+    for term in AZ_TERMS:
+        if f" {term} " in t:
             return True
     return False
 
@@ -74,7 +76,9 @@ def scrape_indeed_rss():
             return jobs
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "xml")
-        for item in soup.find_all("item"):
+        items = soup.find_all("item")
+        print(f"Scraped {len(items)} raw items from Indeed RSS")
+        for item in items:
             title = item.title.text.strip()
             link  = item.link.text.strip()
             company = item.find("source").text.strip() if item.find("source") else "Unknown"
@@ -88,6 +92,7 @@ def scrape_indeed_rss():
                 "source": "Indeed",
                 "tags": tag_job(title, company)
             })
+        print(f" -> {len(jobs)} after AZ filter")
     except Exception as e:
         print("Error scraping Indeed RSS:", e)
     return jobs
@@ -101,13 +106,12 @@ def scrape_pilotsglobal():
             return jobs
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-        for card in soup.select("div.search-result, div.job-item, article"):
-            a = card.select_one("a[href*='/job/']")
-            if not a: continue
-            title = a.get_text(strip=True)
-            link  = a["href"]
-            company_tag = card.select_one("div.company, span.company")
-            company = company_tag.get_text(strip=True) if company_tag else "Unknown"
+        cards = soup.select("div.job-list a.job-card")
+        print(f"Scraped {len(cards)} raw items from PilotsGlobal")
+        for card in cards:
+            title = card.get_text(strip=True)
+            link  = card.get("href")
+            company = "Unknown"
             text = card.get_text(" ", strip=True)
             if not is_arizona(text):
                 continue
@@ -118,6 +122,7 @@ def scrape_pilotsglobal():
                 "source": "PilotsGlobal",
                 "tags": tag_job(title, company)
             })
+        print(f" -> {len(jobs)} after AZ filter")
     except Exception as e:
         print("Error scraping PilotsGlobal:", e)
     return jobs
@@ -131,12 +136,14 @@ def scrape_jsfirm():
             return jobs
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-        for card in soup.select("li.job-result, div.search-result"):
+        cards = soup.select("div.job-card")
+        print(f"Scraped {len(cards)} raw items from JSFirm")
+        for card in cards:
             a = card.select_one("a")
             if not a: continue
             title = a.get_text(strip=True)
-            link  = a["href"]
-            company_tag = card.select_one("span.company, div.company")
+            link  = a.get("href")
+            company_tag = card.select_one(".company")
             company = company_tag.get_text(strip=True) if company_tag else "Unknown"
             text = card.get_text(" ", strip=True)
             if not is_arizona(text):
@@ -148,6 +155,7 @@ def scrape_jsfirm():
                 "source": "JSFirm",
                 "tags": tag_job(title, company)
             })
+        print(f" -> {len(jobs)} after AZ filter")
     except Exception as e:
         print("Error scraping JSFirm:", e)
     return jobs
@@ -161,7 +169,9 @@ def scrape_company(name, url):
         if not resp or resp.status_code != 200:
             return jobs
         soup = BeautifulSoup(resp.text, "html.parser")
-        for tag in soup.find_all(["a", "li", "div"]):
+        tags = soup.find_all(["a", "li", "div"])
+        print(f"Scraped {len(tags)} raw tags from {name}")
+        for tag in tags:
             text = tag.get_text(strip=True).lower()
             if "pilot" in text:
                 title = tag.get_text(strip=True)
@@ -176,6 +186,7 @@ def scrape_company(name, url):
                     "source": name,
                     "tags": tag_job(title, name)
                 })
+        print(f" -> {len(jobs)} after AZ filter from {name}")
     except Exception as e:
         print(f"Error scraping {name}:", e)
     return jobs
@@ -249,7 +260,6 @@ def generate_html(today_jobs, history, counts):
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     html = f"<html><body><h1>AZ Pilot Jobs</h1><p>Updated {now}</p>"
 
-    # ✅ Safe string building (no f-string nesting)
     html += "<p>Source counts: " + ", ".join([str(k) + ": " + str(v) for k, v in counts.items()]) + "</p>"
 
     html += "<h2>Today</h2><ul>"
