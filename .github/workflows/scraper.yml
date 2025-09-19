@@ -2,27 +2,40 @@ name: Update Pilot Jobs
 
 on:
   schedule:
-    - cron: "0 7 * * *"   # daily at 07:00 UTC (~12:00 AM Phoenix)
+    - cron: "0 */6 * * *"   # run every 6 hours
   workflow_dispatch:
 
 permissions:
   contents: write
   pages: write
   id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
       SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - run: |
+
+      - name: Install dependencies
+        run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - run: python scraper.py
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
