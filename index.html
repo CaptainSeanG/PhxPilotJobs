@@ -51,9 +51,33 @@
       background: #6b7280;
     }
     .controls button.active {
-      background: #2563eb;
-      color: white;
       font-weight: bold;
+      color: white;
+    }
+    /* Individual colors for active filters */
+    .controls button.active[data-tag="Caravan"] {
+      background-color: #16a34a; /* green */
+    }
+    .controls button.active[data-tag="PC-12"] {
+      background-color: #9333ea; /* purple */
+    }
+    .controls button.active[data-tag="King Air"] {
+      background-color: #f97316; /* orange */
+    }
+    .controls button.active[data-tag="Part 91"] {
+      background-color: #2563eb; /* blue */
+    }
+    .controls button.active[data-tag="SkyCourier"] {
+      background-color: #0891b2; /* teal */
+    }
+    .controls button.active[data-tag="Baron"] {
+      background-color: #dc2626; /* red */
+    }
+    .controls button.active[data-tag="Navajo"] {
+      background-color: #ca8a04; /* gold */
+    }
+    .controls button.active[data-tag="Ameriflight"] {
+      background-color: #1e40af; /* dark blue */
     }
     .job-card {
       background: white;
@@ -84,14 +108,14 @@
   <div class="controls">
     <input type="text" id="search" placeholder="Search jobs..." oninput="renderJobs()">
     <br>
-    <button onclick="toggleFilter('Caravan')">Caravan</button>
-    <button onclick="toggleFilter('PC-12')">PC-12</button>
-    <button onclick="toggleFilter('King Air')">King Air</button>
-    <button onclick="toggleFilter('Part 91')">Part 91</button>
-    <button onclick="toggleFilter('SkyCourier')">SkyCourier</button>
-    <button onclick="toggleFilter('Baron')">Baron</button>
-    <button onclick="toggleFilter('Navajo')">Navajo</button>
-    <button onclick="toggleFilter('Ameriflight')">Ameriflight</button>
+    <button onclick="toggleFilter('Caravan')" data-tag="Caravan">Caravan</button>
+    <button onclick="toggleFilter('PC-12')" data-tag="PC-12">PC-12</button>
+    <button onclick="toggleFilter('King Air')" data-tag="King Air">King Air</button>
+    <button onclick="toggleFilter('Part 91')" data-tag="Part 91">Part 91</button>
+    <button onclick="toggleFilter('SkyCourier')" data-tag="SkyCourier">SkyCourier</button>
+    <button onclick="toggleFilter('Baron')" data-tag="Baron">Baron</button>
+    <button onclick="toggleFilter('Navajo')" data-tag="Navajo">Navajo</button>
+    <button onclick="toggleFilter('Ameriflight')" data-tag="Ameriflight">Ameriflight</button>
     <button onclick="clearFilters()">Clear Filters</button>
   </div>
 
