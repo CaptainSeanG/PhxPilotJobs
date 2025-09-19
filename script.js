@@ -2,6 +2,7 @@ let jobs = [];
 let history = {};
 let currentTag = "All";
 let darkMode = false;
+let viewingHistory = false;
 
 async function loadJobs() {
   try {
@@ -9,6 +10,16 @@ async function loadJobs() {
     const data = await res.json();
     jobs = data.today;
     history = data.history;
+
+    // Populate history dropdown
+    const select = document.getElementById("historySelect");
+    Object.keys(history).sort().reverse().forEach(date => {
+      const option = document.createElement("option");
+      option.value = date;
+      option.textContent = date;
+      select.appendChild(option);
+    });
+
     renderJobs();
   } catch (e) {
     document.getElementById("jobs").innerHTML = "<p>Could not load jobs.</p>";
@@ -52,6 +63,25 @@ function filterTag(tag) {
 function toggleTheme() {
   darkMode = !darkMode;
   document.body.classList.toggle("dark", darkMode);
+}
+
+function selectHistoryDate() {
+  const date = document.getElementById("historySelect").value;
+  if (date && history[date]) {
+    jobs = history[date];
+    viewingHistory = true;
+  } else {
+    jobs = history.today || jobs;
+    viewingHistory = false;
+  }
+  renderJobs();
+}
+
+function resetToToday() {
+  document.getElementById("historySelect").value = "";
+  jobs = history.today || jobs;
+  viewingHistory = false;
+  renderJobs();
 }
 
 loadJobs();
