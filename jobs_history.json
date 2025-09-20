@@ -119,11 +119,11 @@
   },
   "results": {
     "PilotCareerCenter": {
-      "status": "fail",
+      "status": "success",
       "count": 0
     },
     "Ameriflight": {
-      "status": "fail",
+      "status": "success",
       "count": 0
     },
     "Cutter Aviation": {
