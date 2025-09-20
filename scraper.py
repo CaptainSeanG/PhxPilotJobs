@@ -30,9 +30,13 @@ def is_relevant(job):
     title = (job.get("title") or "").lower()
     return any(k in title for k in ["caravan", "cessna 208", "pc-12", "pc12", "pilatus", "king air", "navajo"])
 
-# --------------------------
-# PilotCareerCenter scraper
-# --------------------------
+def success_result(count):
+    return {"status": "success", "count": count}
+
+def fail_result(err):
+    return {"status": "fail", "count": 0, "error": str(err)}
+
+# --- PilotCareerCenter scraper ---
 def scrape_pilotcareercenter():
     base = "https://pilotcareercenter.com"
     urls = [
@@ -50,9 +54,7 @@ def scrape_pilotcareercenter():
                 href = a.get("href")
                 if not title:
                     continue
-                link = href if (href and href.startswith("http")) else (
-                    base + href if href else url
-                )
+                link = href if (href and href.startswith("http")) else (base + href if href else url)
                 job = {
                     "title": title,
                     "company": "PilotCareerCenter",
@@ -63,34 +65,31 @@ def scrape_pilotcareercenter():
                 }
                 if is_relevant(job):
                     jobs.append(add_tags(job))
-        return jobs
+        return jobs, success_result(len(jobs))
     except Exception as e:
-        print("Error scraping PilotCareerCenter:", e)
-        return []
+        return [], fail_result(e)
 
-# --------------------------
-# Aggregator
-# --------------------------
+# --- Aggregator ---
 def scrape_all_sites():
     all_jobs = []
     results = {}
 
-    sites = {
+    scrapers = {
         "PilotCareerCenter": scrape_pilotcareercenter
     }
 
-    for name, func in sites.items():
-        jobs = func()
-        print(f"{name}: {len(jobs)} jobs scraped")
-        all_jobs.extend(jobs)
-        results[name] = {"status": "success", "count": len(jobs)}
+    for name, func in scrapers.items():
+        jobs, result = func()
+        print(f"{name}: {result}")
+        dedup = {(j["title"], j["link"]): j for j in jobs}
+        all_jobs.extend(dedup.values())
+        results[name] = result
 
-    all_jobs = list({(j["title"], j["link"]): j for j in all_jobs}.values())
     return all_jobs, results
 
+# --- Save ---
 def save_history(today_jobs, results):
     today = today_str()
-
     if os.path.exists(OUTPUT_FILE):
         with open(OUTPUT_FILE, "r") as f:
             history = json.load(f)
