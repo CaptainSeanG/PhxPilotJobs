@@ -8,32 +8,65 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9fafb;
-      color: #111;
+      background: var(--bg);
+      color: var(--fg);
+      transition: background 0.3s, color 0.3s;
     }
+
+    :root {
+      --bg: #f9fafb;
+      --fg: #111;
+      --card-bg: #fff;
+      --card-border: #ddd;
+      --header-bg: #2563eb;
+      --header-fg: #fff;
+      --control-bg: #e5e7eb;
+    }
+
+    body.dark {
+      --bg: #111827;
+      --fg: #f9fafb;
+      --card-bg: #1f2937;
+      --card-border: #374151;
+      --header-bg: #1f2937;
+      --header-fg: #f9fafb;
+      --control-bg: #374151;
+    }
+
     header {
-      background: #2563eb;
-      color: white;
+      background: var(--header-bg);
+      color: var(--header-fg);
       padding: 1rem;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 1.8rem;
     }
+
     #last-updated {
       font-size: 0.9rem;
       margin-top: 0.25rem;
     }
+
+    #debug-banner {
+      text-align: center;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+
     .controls {
       text-align: center;
       padding: 1rem;
-      background: #e5e7eb;
+      background: var(--control-bg);
     }
+
     .controls input {
       padding: 0.5rem;
       margin-right: 0.5rem;
     }
+
     .controls button {
       padding: 0.5rem 1rem;
       margin: 0.2rem;
@@ -42,62 +75,86 @@
       cursor: pointer;
       background: #d1d5db;
     }
+
     .controls button.active {
       background: #2563eb;
       color: white;
     }
+
     #filter-summary {
       text-align: center;
       font-size: 0.9rem;
       margin: 0.5rem 0;
       color: #374151;
     }
+
     #jobs-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1rem;
       padding: 1rem;
     }
+
     .job-card {
-      border: 1px solid #ddd;
+      border: 1px solid var(--card-border);
       padding: 1rem;
       border-radius: 8px;
-      background: white;
+      background: var(--card-bg);
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
     .job-card h3 {
       margin-top: 0;
       font-size: 1.2rem;
     }
+
     .job-card a {
       text-decoration: none;
       color: #2563eb;
     }
+
     .job-card a:hover {
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background: #f3f4f6;
+      background: var(--control-bg);
       font-size: 0.9rem;
       margin-top: 2rem;
     }
+
     table {
       margin: 1rem auto;
       border-collapse: collapse;
     }
+
     th, td {
       padding: 8px;
       border: 1px solid #ddd;
+    }
+
+    #theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: none;
+      background: #d1d5db;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Pilot Jobs in Phoenix, AZ</h1>
+    <button id="theme-toggle" onclick="toggleTheme()">Toggle Dark/Light</button>
     <div id="last-updated">Last updated: ...</div>
   </header>
+
+  <div id="debug-banner">Loading...</div>
 
   <div class="controls">
     <input type="text" id="search" placeholder="Search jobs..." oninput="renderJobs()">
@@ -113,16 +170,12 @@
   </div>
 
   <div id="filter-summary">No filters active</div>
-
   <div id="jobs-container"></div>
 
   <h2 style="text-align:center;">Scraper Status</h2>
   <table id="status-table">
     <thead>
-      <tr>
-        <th>Source</th>
-        <th>Status</th>
-      </tr>
+      <tr><th>Source</th><th>Status</th></tr>
     </thead>
     <tbody></tbody>
   </table>
