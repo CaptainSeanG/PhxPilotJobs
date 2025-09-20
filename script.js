@@ -6,18 +6,21 @@ async function loadJobs() {
   const response = await fetch("jobs.json");
   const data = await response.json();
 
-  // Set jobs: today first, fallback to latest history
+  // Use today if populated, else merge all jobs from history
   if (data.today && data.today.length > 0) {
     jobs = data.today;
   } else if (data.history) {
-    const dates = Object.keys(data.history).sort().reverse();
-    if (dates.length > 0) {
-      jobs = data.history[dates[0]];
-    }
+    jobs = Object.values(data.history).flat();
+  } else {
+    jobs = [];
   }
 
   // Always grab results if present
   scraperResults = data.results || {};
+
+  // Debug log
+  console.log("Jobs loaded:", jobs.length, jobs.slice(0, 3));
+  console.log("Scraper results:", scraperResults);
 
   // Show last updated (Arizona time)
   const lastUpdated = document.getElementById("last-updated");
@@ -44,7 +47,7 @@ function renderJobs() {
       job.company.toLowerCase().includes(searchValue);
     const matchesFilter =
       activeFilters.size === 0 ||
-      job.tags.some(tag => activeFilters.has(tag));
+      (job.tags && job.tags.some(tag => activeFilters.has(tag)));
     return matchesSearch && matchesFilter;
   });
 
@@ -55,7 +58,7 @@ function renderJobs() {
       <h3><a href="${job.link}" target="_blank">${job.title}</a></h3>
       <p><strong>${job.company}</strong></p>
       <p><em>${job.source}</em></p>
-      <p>${job.tags.join(", ")}</p>
+      <p>${(job.tags || []).join(", ")}</p>
     `;
     container.appendChild(div);
   });
