@@ -21,13 +21,13 @@ def scrape_pilotcareercenter():
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
             page.goto(url, timeout=60000)
-            page.wait_for_timeout(5000)  # allow JS to load
+            page.wait_for_timeout(5000)
 
             links = page.locator("a").all()
             for l in links:
                 text = l.inner_text().strip()
                 href = l.get_attribute("href") or ""
-                if any(word in text for word in ["Pilot", "Captain", "First Officer"]):
+                if text and href:
                     jobs.append({
                         "title": text,
                         "company": "PilotCareerCenter",
@@ -35,13 +35,12 @@ def scrape_pilotcareercenter():
                         "source": "PilotCareerCenter",
                         "tags": []
                     })
-
             browser.close()
 
         results = {"status": "success", "count": len(jobs)}
 
     except Exception as e:
-        print("Error scraping PilotCareerCenter with Playwright:", e)
+        print("Error scraping PilotCareerCenter:", e)
 
     return jobs, results
 
@@ -53,15 +52,18 @@ def scrape_ameriflight():
         resp = requests.get(url, headers=HEADERS, timeout=20)
         if resp.status_code == 200:
             soup = BeautifulSoup(resp.text, "html.parser")
-            listings = soup.find_all("a", class_="job-title")
+            listings = soup.find_all("a")
             for l in listings:
-                jobs.append({
-                    "title": l.get_text(strip=True),
-                    "company": "Ameriflight",
-                    "link": l["href"],
-                    "source": "Ameriflight",
-                    "tags": ["Cargo"]
-                })
+                text = l.get_text(strip=True)
+                href = l.get("href", "")
+                if text and ("Pilot" in text or "Captain" in text or "First Officer" in text):
+                    jobs.append({
+                        "title": text,
+                        "company": "Ameriflight",
+                        "link": href,
+                        "source": "Ameriflight",
+                        "tags": ["Cargo"]
+                    })
             results = {"status": "success", "count": len(jobs)}
     except Exception as e:
         print("Error scraping Ameriflight:", e)
@@ -77,11 +79,13 @@ def scrape_cutter():
             soup = BeautifulSoup(resp.text, "html.parser")
             listings = soup.find_all("a")
             for l in listings:
-                if "Pilot" in l.get_text() or "Captain" in l.get_text():
+                text = l.get_text(strip=True)
+                href = l.get("href", "")
+                if text and ("Pilot" in text or "Captain" in text):
                     jobs.append({
-                        "title": l.get_text(strip=True),
+                        "title": text,
                         "company": "Cutter Aviation",
-                        "link": l.get("href", ""),
+                        "link": href,
                         "source": "Cutter Aviation",
                         "tags": []
                     })
@@ -100,11 +104,13 @@ def scrape_contour():
             soup = BeautifulSoup(resp.text, "html.parser")
             listings = soup.find_all("a")
             for l in listings:
-                if "Pilot" in l.get_text() or "Captain" in l.get_text():
+                text = l.get_text(strip=True)
+                href = l.get("href", "")
+                if text and ("Pilot" in text or "Captain" in text):
                     jobs.append({
-                        "title": l.get_text(strip=True),
+                        "title": text,
                         "company": "Contour Aviation",
-                        "link": l.get("href", ""),
+                        "link": href,
                         "source": "Contour Aviation",
                         "tags": []
                     })
@@ -125,7 +131,7 @@ def scrape_skywest():
             for l in listings:
                 text = l.get_text(strip=True)
                 href = l.get("href", "")
-                if "Pilot" in text or "Captain" in text:
+                if text and ("Pilot" in text or "Captain" in text):
                     jobs.append({
                         "title": text,
                         "company": "SkyWest",
@@ -148,11 +154,13 @@ def scrape_boutique():
             soup = BeautifulSoup(resp.text, "html.parser")
             listings = soup.find_all("a")
             for l in listings:
-                if "Pilot" in l.get_text() or "Captain" in l.get_text():
+                text = l.get_text(strip=True)
+                href = l.get("href", "")
+                if text and ("Pilot" in text or "Captain" in text):
                     jobs.append({
-                        "title": l.get_text(strip=True),
+                        "title": text,
                         "company": "Boutique Air",
-                        "link": l.get("href", ""),
+                        "link": href,
                         "source": "Boutique Air",
                         "tags": []
                     })
