@@ -17,7 +17,7 @@ async function loadJobs() {
 
   scraperResults = data.results || {};
 
-  // Debug logging
+  // Debug logging (console)
   console.log("Jobs loaded:", jobs.length, jobs.slice(0, 3));
   console.log("Scraper results:", scraperResults);
 
@@ -29,6 +29,16 @@ async function loadJobs() {
     timeStyle: "short",
   });
   lastUpdated.textContent = "Last updated: " + arizonaTime;
+
+  // NEW: Debug banner at top
+  const banner = document.createElement("div");
+  banner.style.background = "#fde68a";
+  banner.style.color = "#111";
+  banner.style.padding = "0.5rem";
+  banner.style.textAlign = "center";
+  banner.style.fontWeight = "bold";
+  banner.textContent = `Jobs loaded: ${jobs.length}`;
+  document.body.insertBefore(banner, document.body.firstChild);
 
   renderJobs();
   renderStatus(scraperResults);
@@ -49,6 +59,13 @@ function renderJobs() {
       (job.tags && job.tags.some(tag => activeFilters.has(tag)));
     return matchesSearch && matchesFilter;
   });
+
+  if (filteredJobs.length === 0) {
+    container.innerHTML = `<p style="color:red; font-weight:bold; text-align:center;">
+      ⚠️ No jobs matched your filters/search. Total jobs loaded: ${jobs.length}
+    </p>`;
+    return;
+  }
 
   filteredJobs.forEach(job => {
     const div = document.createElement("div");
@@ -108,8 +125,8 @@ function renderStatus(results) {
 
   if (!results || Object.keys(results).length === 0) {
     const tr = document.createElement("tr");
-    tr.innerHTML = `<td colspan="2" style="text-align:center; padding:8px;">
-      No scraper status available
+    tr.innerHTML = `<td colspan="2" style="text-align:center; padding:8px; color:red;">
+      ❌ No scraper status available
     </td>`;
     tbody.appendChild(tr);
     return;
