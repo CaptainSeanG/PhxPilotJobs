@@ -21,7 +21,7 @@ def scrape_pilotcareercenter():
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
             page.goto(url, timeout=60000)
-            page.wait_for_timeout(5000)  # give JS time to load
+            page.wait_for_timeout(5000)  # allow JS to load
 
             links = page.locator("a").all()
             for l in links:
@@ -81,7 +81,7 @@ def scrape_cutter():
                     jobs.append({
                         "title": l.get_text(strip=True),
                         "company": "Cutter Aviation",
-                        "link": l["href"],
+                        "link": l.get("href", ""),
                         "source": "Cutter Aviation",
                         "tags": []
                     })
@@ -104,7 +104,7 @@ def scrape_contour():
                     jobs.append({
                         "title": l.get_text(strip=True),
                         "company": "Contour Aviation",
-                        "link": l["href"],
+                        "link": l.get("href", ""),
                         "source": "Contour Aviation",
                         "tags": []
                     })
@@ -123,11 +123,13 @@ def scrape_skywest():
             soup = BeautifulSoup(resp.text, "html.parser")
             listings = soup.find_all("a")
             for l in listings:
-                if "Pilot" in l.get_text() or "Captain" in l.get_text():
+                text = l.get_text(strip=True)
+                href = l.get("href", "")
+                if "Pilot" in text or "Captain" in text:
                     jobs.append({
-                        "title": l.get_text(strip=True),
+                        "title": text,
                         "company": "SkyWest",
-                        "link": l["href"],
+                        "link": href if href.startswith("http") else "https://skywest.com" + href,
                         "source": "SkyWest",
                         "tags": []
                     })
@@ -150,7 +152,7 @@ def scrape_boutique():
                     jobs.append({
                         "title": l.get_text(strip=True),
                         "company": "Boutique Air",
-                        "link": l["href"],
+                        "link": l.get("href", ""),
                         "source": "Boutique Air",
                         "tags": []
                     })
