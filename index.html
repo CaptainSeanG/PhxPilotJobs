@@ -1,21 +1,136 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pilot Jobs Phoenix</title>
-  <script src="script.js" defer></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <title>Pilot Jobs in Phoenix, AZ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      color: #111;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    #last-updated {
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+    }
+    .controls {
+      text-align: center;
+      padding: 1rem;
+      background: #e5e7eb;
+    }
+    .controls input {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    .controls button {
+      padding: 0.5rem 1rem;
+      margin: 0.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #d1d5db;
+    }
+    .controls button.active {
+      background: #2563eb;
+      color: white;
+    }
+    #filter-summary {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+      color: #374151;
+    }
+    #jobs-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .job-card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .job-card h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+    .job-card a {
+      text-decoration: none;
+      color: #2563eb;
+    }
+    .job-card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f3f4f6;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    table {
+      margin: 1rem auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
-  <div class="container mx-auto p-4">
-    <h1 class="text-3xl font-bold mb-2 text-center">Pilot Jobs – Phoenix Area</h1>
-    <p id="last-updated" class="text-center text-sm text-gray-500 dark:text-gray-400 mb-4"></p>
+<body>
+  <header>
+    <h1>Pilot Jobs in Phoenix, AZ</h1>
+    <div id="last-updated">Last updated: ...</div>
+  </header>
 
-    <div id="jobs" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-
-    <!-- Scraper status -->
-    <div id="scraper-status" class="mt-8"></div>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search jobs..." oninput="renderJobs()">
+    <button onclick="clearFilters()">Clear Filters</button>
+    <button data-tag="Caravan" onclick="toggleFilter('Caravan')">Caravan</button>
+    <button data-tag="PC-12" onclick="toggleFilter('PC-12')">PC-12</button>
+    <button data-tag="King Air" onclick="toggleFilter('King Air')">King Air</button>
+    <button data-tag="SkyCourier" onclick="toggleFilter('SkyCourier')">SkyCourier</button>
+    <button data-tag="Baron" onclick="toggleFilter('Baron')">Baron</button>
+    <button data-tag="Navajo" onclick="toggleFilter('Navajo')">Navajo</button>
+    <button data-tag="Part 91" onclick="toggleFilter('Part 91')">Part 91</button>
+    <button data-tag="Ameriflight" onclick="toggleFilter('Ameriflight')">Ameriflight</button>
   </div>
+
+  <div id="filter-summary">No filters active</div>
+
+  <div id="jobs-container"></div>
+
+  <h2 style="text-align:center;">Scraper Status</h2>
+  <table id="status-table">
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <footer>
+    <p>Built with ❤️ for Phoenix-area pilots</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
