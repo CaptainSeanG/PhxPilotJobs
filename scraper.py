@@ -8,6 +8,28 @@ OUTPUT_FILE = "jobs.json"
 HISTORY_FILE = "jobs_history.json"
 
 # -------------------------------
+# Tagging Helper
+# -------------------------------
+
+def add_tags(job):
+    title = job["title"].lower()
+    tags = []
+
+    if "caravan" in title or "cessna 208" in title:
+        tags.extend(["Caravan", "Cessna 208"])
+    if "pc-12" in title or "pc12" in title or "pilatus" in title:
+        tags.extend(["PC-12", "Pilatus"])
+    if "king air" in title or "be90" in title or "be200" in title or "be350" in title or "c90" in title:
+        tags.append("King Air")
+    if "navajo" in title or "pa-31" in title:
+        tags.append("Navajo")
+    if "baron" in title or "be58" in title:
+        tags.append("Baron")
+
+    job["tags"] = list(set(tags))
+    return job
+
+# -------------------------------
 # Scrapers
 # -------------------------------
 
@@ -21,19 +43,28 @@ def scrape_indeed_rss():
         for item in soup.find_all("item"):
             title = item.title.get_text()
             link = item.link.get_text()
-            if any(tag in title.lower() for tag in ["caravan", "pc-12", "pc12", "pilatus", "cessna", "baron", "navajo", "king air"]):
-                jobs.append({
-                    "title": title,
-                    "company": "Indeed",
-                    "link": link,
-                    "source": "Indeed RSS",
-                    "tags": []
-                })
+            pub_date = item.pubDate.get_text() if item.pubDate else None
+            date_posted = datetime.now().strftime("%Y-%m-%d")
+            if pub_date:
+                try:
+                    date_posted = datetime.strptime(pub_date[:16], "%a, %d %b %Y").strftime("%Y-%m-%d")
+                except:
+                    pass
+            job = add_tags({
+                "title": title,
+                "company": "Indeed",
+                "link": link,
+                "source": "Indeed RSS",
+                "tags": [],
+                "date_posted": date_posted
+            })
+            jobs.append(job)
         status = "success"
+        message = "OK" if jobs else "No jobs found"
     except Exception as e:
         print("Error scraping Indeed RSS:", e)
-        status, jobs = "fail", []
-    return jobs, {"status": status, "count": len(jobs)}
+        status, jobs, message = "fail", [], str(e)
+    return jobs, {"status": status, "count": len(jobs), "message": message}
 
 def scrape_cutter():
     url = "https://cutteraviation.com/careers"
@@ -46,18 +77,21 @@ def scrape_cutter():
             title = job.get_text(strip=True)
             link = job.get("href")
             if title and "pilot" in title.lower():
-                jobs.append({
+                job = add_tags({
                     "title": title,
                     "company": "Cutter Aviation",
                     "link": link if link and link.startswith("http") else url,
                     "source": "Cutter Aviation",
-                    "tags": []
+                    "tags": [],
+                    "date_posted": datetime.now().strftime("%Y-%m-%d")
                 })
+                jobs.append(job)
         status = "success"
+        message = "OK" if jobs else "No jobs found"
     except Exception as e:
         print("Error scraping Cutter:", e)
-        status, jobs = "fail", []
-    return jobs, {"status": status, "count": len(jobs)}
+        status, jobs, message = "fail", [], str(e)
+    return jobs, {"status": status, "count": len(jobs), "message": message}
 
 def scrape_boutique_air():
     url = "https://www.boutiqueair.com/careers"
@@ -70,18 +104,21 @@ def scrape_boutique_air():
             title = job.get_text(strip=True)
             link = job.get("href") if job.has_attr("href") else url
             if "pilot" in title.lower():
-                jobs.append({
+                job = add_tags({
                     "title": title,
                     "company": "Boutique Air",
-                    "link": link if link.startswith("http") else url,
+                    "link": link if link and link.startswith("http") else url,
                     "source": "Boutique Air",
-                    "tags": []
+                    "tags": [],
+                    "date_posted": datetime.now().strftime("%Y-%m-%d")
                 })
+                jobs.append(job)
         status = "success"
+        message = "OK" if jobs else "No jobs found"
     except Exception as e:
         print("Error scraping Boutique Air:", e)
-        status, jobs = "fail", []
-    return jobs, {"status": status, "count": len(jobs)}
+        status, jobs, message = "fail", [], str(e)
+    return jobs, {"status": status, "count": len(jobs), "message": message}
 
 def scrape_contour_aviation():
     url = "https://www.contouraviation.com/careers"
@@ -94,18 +131,21 @@ def scrape_contour_aviation():
             title = job.get_text(strip=True)
             link = job.get("href") if job.has_attr("href") else url
             if "pilot" in title.lower():
-                jobs.append({
+                job = add_tags({
                     "title": title,
                     "company": "Contour Aviation",
-                    "link": link if link.startswith("http") else url,
+                    "link": link if link and link.startswith("http") else url,
                     "source": "Contour Aviation",
-                    "tags": []
+                    "tags": [],
+                    "date_posted": datetime.now().strftime("%Y-%m-%d")
                 })
+                jobs.append(job)
         status = "success"
+        message = "OK" if jobs else "No jobs found"
     except Exception as e:
         print("Error scraping Contour Aviation:", e)
-        status, jobs = "fail", []
-    return jobs, {"status": status, "count": len(jobs)}
+        status, jobs, message = "fail", [], str(e)
+    return jobs, {"status": status, "count": len(jobs), "message": message}
 
 def scrape_ameriflight():
     url = "https://www.ameriflight.com/careers"
@@ -118,18 +158,21 @@ def scrape_ameriflight():
             title = job.get_text(strip=True)
             link = job.get("href")
             if title and "pilot" in title.lower():
-                jobs.append({
+                job = add_tags({
                     "title": title,
                     "company": "Ameriflight",
                     "link": link if link and link.startswith("http") else url,
                     "source": "Ameriflight",
-                    "tags": []
+                    "tags": [],
+                    "date_posted": datetime.now().strftime("%Y-%m-%d")
                 })
+                jobs.append(job)
         status = "success"
+        message = "OK" if jobs else "No jobs found"
     except Exception as e:
         print("Error scraping Ameriflight:", e)
-        status, jobs = "fail", []
-    return jobs, {"status": status, "count": len(jobs)}
+        status, jobs, message = "fail", [], str(e)
+    return jobs, {"status": status, "count": len(jobs), "message": message}
 
 def scrape_skywest():
     url = "https://www.skywest.com/skywest-airline-jobs/career-guides/pilots/"
@@ -142,18 +185,21 @@ def scrape_skywest():
             title = job.get_text(strip=True)
             link = job.get("href")
             if title and "pilot" in title.lower():
-                jobs.append({
+                job = add_tags({
                     "title": title,
                     "company": "SkyWest",
                     "link": link if link and link.startswith("http") else url,
                     "source": "SkyWest",
-                    "tags": []
+                    "tags": [],
+                    "date_posted": datetime.now().strftime("%Y-%m-%d")
                 })
+                jobs.append(job)
         status = "success"
+        message = "OK" if jobs else "No jobs found"
     except Exception as e:
         print("Error scraping SkyWest:", e)
-        status, jobs = "fail", []
-    return jobs, {"status": status, "count": len(jobs)}
+        status, jobs, message = "fail", [], str(e)
+    return jobs, {"status": status, "count": len(jobs), "message": message}
 
 # -------------------------------
 # Main Aggregator
@@ -174,7 +220,7 @@ def scrape_all_sites():
 
     for name, func in scrapers.items():
         jobs, result = func()
-        print(f"{name}: {result['count']} jobs scraped")
+        print(f"{name}: {result['count']} jobs scraped ({result['message']})")
         all_jobs.extend(jobs)
         results[name] = result
 
@@ -200,7 +246,6 @@ def save_history(today_jobs, results):
     with open(OUTPUT_FILE, "w") as f:
         json.dump(history, f, indent=2)
 
-    # Also save to jobs_history.json for redundancy
     with open(HISTORY_FILE, "w") as f:
         json.dump(history, f, indent=2)
 
