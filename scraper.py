@@ -2,7 +2,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
-from requests_html import HTMLSession
+from playwright.sync_api import sync_playwright
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
@@ -11,50 +11,54 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 # -------------------------------
 
 def scrape_pilotcareercenter():
-    """Scrape PilotCareerCenter jobs for Arizona using headless rendering"""
+    """Scrape PilotCareerCenter jobs for Arizona using Playwright"""
     url = "https://pilotcareercenter.com/Pilot-Job-Search?c=USA&s=Arizona"
     jobs = []
     results = {"status": "fail", "count": 0}
-    try:
-        session = HTMLSession()
-        resp = session.get(url, headers=HEADERS, timeout=30)
-        resp.html.render(timeout=30, sleep=2)  # run JS and wait a bit
-        listings = resp.html.find("a")
 
-        for l in listings:
-            text = l.text.strip()
-            href = l.attrs.get("href", "")
-            if any(word in text for word in ["Pilot", "Captain", "First Officer"]):
-                jobs.append({
-                    "title": text,
-                    "company": "PilotCareerCenter",
-                    "link": "https://pilotcareercenter.com" + href if href.startswith("/") else href,
-                    "source": "PilotCareerCenter",
-                    "tags": []
-                })
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            page.goto(url, timeout=60000)
+            page.wait_for_timeout(5000)  # give JS time to load
+
+            links = page.locator("a").all()
+            for l in links:
+                text = l.inner_text().strip()
+                href = l.get_attribute("href") or ""
+                if any(word in text for word in ["Pilot", "Captain", "First Officer"]):
+                    jobs.append({
+                        "title": text,
+                        "company": "PilotCareerCenter",
+                        "link": "https://pilotcareercenter.com" + href if href.startswith("/") else href,
+                        "source": "PilotCareerCenter",
+                        "tags": []
+                    })
+
+            browser.close()
 
         results = {"status": "success", "count": len(jobs)}
+
     except Exception as e:
-        print("Error scraping PilotCareerCenter:", e)
+        print("Error scraping PilotCareerCenter with Playwright:", e)
+
     return jobs, results
 
 
 def scrape_ameriflight():
     url = "https://w3.ameriflight.com/careers/pilots/"
-    jobs = []
-    results = {"status": "fail", "count": 0}
+    jobs, results = [], {"status": "fail", "count": 0}
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20)
         if resp.status_code == 200:
             soup = BeautifulSoup(resp.text, "html.parser")
             listings = soup.find_all("a", class_="job-title")
             for l in listings:
-                title = l.get_text(strip=True)
-                link = l["href"]
                 jobs.append({
-                    "title": title,
+                    "title": l.get_text(strip=True),
                     "company": "Ameriflight",
-                    "link": link,
+                    "link": l["href"],
                     "source": "Ameriflight",
                     "tags": ["Cargo"]
                 })
@@ -66,8 +70,7 @@ def scrape_ameriflight():
 
 def scrape_cutter():
     url = "https://cutteraviation.com/careers/"
-    jobs = []
-    results = {"status": "fail", "count": 0}
+    jobs, results = [], {"status": "fail", "count": 0}
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20)
         if resp.status_code == 200:
@@ -90,8 +93,7 @@ def scrape_cutter():
 
 def scrape_contour():
     url = "https://www.contouraviation.com/careers"
-    jobs = []
-    results = {"status": "fail", "count": 0}
+    jobs, results = [], {"status": "fail", "count": 0}
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20)
         if resp.status_code == 200:
@@ -114,8 +116,7 @@ def scrape_contour():
 
 def scrape_skywest():
     url = "https://skywest.com/skywest-airline-jobs/"
-    jobs = []
-    results = {"status": "fail", "count": 0}
+    jobs, results = [], {"status": "fail", "count": 0}
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20)
         if resp.status_code == 200:
@@ -138,8 +139,7 @@ def scrape_skywest():
 
 def scrape_boutique():
     url = "https://www.boutiqueair.com/pages/careers"
-    jobs = []
-    results = {"status": "fail", "count": 0}
+    jobs, results = [], {"status": "fail", "count": 0}
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20)
         if resp.status_code == 200:
