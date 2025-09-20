@@ -5,6 +5,10 @@ from datetime import datetime
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
+# -------------------------------
+# Scrapers
+# -------------------------------
+
 def scrape_pilotcareercenter():
     url = "https://pilotcareercenter.com/Pilot-Job-Search?c=USA&s=Arizona"
     jobs = []
@@ -13,15 +17,13 @@ def scrape_pilotcareercenter():
         resp = requests.get(url, headers=HEADERS, timeout=20)
         if resp.status_code == 200:
             soup = BeautifulSoup(resp.text, "html.parser")
-            listings = soup.select("div.jobListing")
+            listings = soup.select("tr")
             for l in listings:
-                title = l.find("h3")
-                company = l.find("h4")
                 link = l.find("a", href=True)
-                if title and company and link:
+                if link and ("Pilot" in link.text or "Captain" in link.text or "First Officer" in link.text):
                     jobs.append({
-                        "title": title.get_text(strip=True),
-                        "company": company.get_text(strip=True),
+                        "title": link.get_text(strip=True),
+                        "company": "PilotCareerCenter",
                         "link": "https://pilotcareercenter.com" + link["href"],
                         "source": "PilotCareerCenter",
                         "tags": []
@@ -30,6 +32,7 @@ def scrape_pilotcareercenter():
     except Exception as e:
         print("Error scraping PilotCareerCenter:", e)
     return jobs, results
+
 
 def scrape_ameriflight():
     url = "https://w3.ameriflight.com/careers/pilots/"
@@ -55,6 +58,7 @@ def scrape_ameriflight():
         print("Error scraping Ameriflight:", e)
     return jobs, results
 
+
 def scrape_cutter():
     url = "https://cutteraviation.com/careers/"
     jobs = []
@@ -77,6 +81,7 @@ def scrape_cutter():
     except Exception as e:
         print("Error scraping Cutter Aviation:", e)
     return jobs, results
+
 
 def scrape_contour():
     url = "https://www.contouraviation.com/careers"
@@ -101,6 +106,7 @@ def scrape_contour():
         print("Error scraping Contour Aviation:", e)
     return jobs, results
 
+
 def scrape_skywest():
     url = "https://skywest.com/skywest-airline-jobs/"
     jobs = []
@@ -123,6 +129,7 @@ def scrape_skywest():
     except Exception as e:
         print("Error scraping SkyWest:", e)
     return jobs, results
+
 
 def scrape_boutique():
     url = "https://www.boutiqueair.com/pages/careers"
@@ -147,11 +154,17 @@ def scrape_boutique():
         print("Error scraping Boutique Air:", e)
     return jobs, results
 
+
+# -------------------------------
+# Helpers
+# -------------------------------
+
 def save_history(history):
     with open("jobs.json", "w") as f:
         json.dump(history, f, indent=2)
     with open("jobs_history.json", "w") as f:
         json.dump(history, f, indent=2)
+
 
 def load_history():
     try:
@@ -159,6 +172,11 @@ def load_history():
             return json.load(f)
     except FileNotFoundError:
         return {"today": [], "history": {}, "results": {}}
+
+
+# -------------------------------
+# Main
+# -------------------------------
 
 def main():
     history = load_history()
@@ -189,6 +207,7 @@ def main():
 
     print("Scraped", len(all_jobs), "jobs")
     save_history(history)
+
 
 if __name__ == "__main__":
     main()
