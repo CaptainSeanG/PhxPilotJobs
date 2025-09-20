@@ -8,33 +8,22 @@ from urllib.parse import quote_plus
 OUTPUT_FILE = "jobs.json"
 HISTORY_FILE = "jobs_history.json"
 
-# Southwest coverage (focus on SoCal + AZ + NM + NV + UT + CO + W TX)
+# Southwest coverage cities
 SW_CITIES = [
-    # Arizona
     "Phoenix, AZ", "Scottsdale, AZ", "Mesa, AZ", "Chandler, AZ", "Glendale, AZ",
     "Tempe, AZ", "Prescott, AZ", "Flagstaff, AZ", "Tucson, AZ", "Yuma, AZ",
-    # New Mexico
     "Albuquerque, NM", "Santa Fe, NM", "Las Cruces, NM",
-    # Nevada
     "Las Vegas, NV", "Henderson, NV", "North Las Vegas, NV",
-    # Utah (south)
     "St George, UT", "Cedar City, UT",
-    # Colorado (western/southern gateways)
     "Grand Junction, CO", "Durango, CO", "Montrose, CO", "Colorado Springs, CO",
-    # West Texas / El Paso region
     "El Paso, TX", "Midland, TX", "Odessa, TX",
-    # SoCal
     "San Diego, CA", "Carlsbad, CA", "Oceanside, CA", "Riverside, CA",
     "San Bernardino, CA", "Ontario, CA", "Palm Springs, CA", "Imperial, CA",
     "Burbank, CA", "Long Beach, CA", "Orange County, CA"
 ]
 
-# Keywords we care about (title-based)
-KEYWORDS = ["caravan", "cessna 208", "pc-12", "pc12", "pilatus"]
-
-# -------------------------------
-# Helpers
-# -------------------------------
+# Keywords for filtering
+KEYWORDS = ["caravan", "cessna 208", "pc-12", "pc12", "pilatus", "king air", "navajo", "pa-31"]
 
 def today_str():
     return datetime.now().strftime("%Y-%m-%d")
@@ -47,12 +36,15 @@ def add_tags(job):
         tags.update(["Caravan", "Cessna 208"])
     if "pc-12" in title or "pc12" in title or "pilatus" in title:
         tags.update(["PC-12", "Pilatus"])
+    if "king air" in title or "be200" in title or "be350" in title or "c90" in title:
+        tags.add("King Air")
+    if "navajo" in title or "pa-31" in title:
+        tags.add("Navajo")
 
     job["tags"] = sorted(tags)
     return job
 
 def is_relevant(job):
-    """Only keep jobs that are Caravan / PC-12 family, per your request."""
     title = (job.get("title") or "").lower()
     return any(k in title for k in KEYWORDS)
 
@@ -63,14 +55,9 @@ def fail_result(err):
     return {"status": "fail", "count": 0, "message": str(err)}
 
 # -------------------------------
-# Indeed RSS (multi-city sweep)
+# Indeed RSS scraper
 # -------------------------------
-
 def scrape_indeed_rss_southwest():
-    """
-    Query Indeed RSS across a list of Southwest cities for pilot jobs,
-    then filter to only Caravan / PC-12 family.
-    """
     all_jobs = []
     errors = []
     for city in SW_CITIES:
@@ -87,7 +74,6 @@ def scrape_indeed_rss_southwest():
                 pub_date = item.pubDate.get_text(strip=True) if item.pubDate else None
                 date_posted = today_str()
                 if pub_date:
-                    # Try to parse RFC822 date (truncate to day granularity)
                     try:
                         date_posted = datetime.strptime(pub_date[:16], "%a, %d %b %Y").strftime("%Y-%m-%d")
                     except:
@@ -108,13 +94,12 @@ def scrape_indeed_rss_southwest():
     if errors and not all_jobs:
         return [], fail_result("; ".join(errors))
     if not all_jobs:
-        return [], success_result(0, "No relevant Caravan/PC-12 jobs found")
+        return [], success_result(0, "No relevant jobs found")
     return all_jobs, success_result(len(all_jobs))
 
 # -------------------------------
-# Company scrapers (filtered)
+# Company scrapers
 # -------------------------------
-
 def scrape_cutter():
     url = "https://cutteraviation.com/careers"
     jobs = []
@@ -137,7 +122,7 @@ def scrape_cutter():
             }
             if is_relevant(job):
                 jobs.append(add_tags(job))
-        return jobs, success_result(len(jobs), "Filtered to Caravan/PC-12")
+        return jobs, success_result(len(jobs))
     except Exception as e:
         return [], fail_result(e)
 
@@ -163,7 +148,7 @@ def scrape_boutique_air():
             }
             if is_relevant(job):
                 jobs.append(add_tags(job))
-        return jobs, success_result(len(jobs), "Filtered to Caravan/PC-12")
+        return jobs, success_result(len(jobs))
     except Exception as e:
         return [], fail_result(e)
 
@@ -189,7 +174,7 @@ def scrape_contour_aviation():
             }
             if is_relevant(job):
                 jobs.append(add_tags(job))
-        return jobs, success_result(len(jobs), "Filtered to Caravan/PC-12")
+        return jobs, success_result(len(jobs))
     except Exception as e:
         return [], fail_result(e)
 
@@ -215,7 +200,7 @@ def scrape_ameriflight():
             }
             if is_relevant(job):
                 jobs.append(add_tags(job))
-        return jobs, success_result(len(jobs), "Filtered to Caravan/PC-12")
+        return jobs, success_result(len(jobs))
     except Exception as e:
         return [], fail_result(e)
 
@@ -241,11 +226,10 @@ def scrape_skywest():
             }
             if is_relevant(job):
                 jobs.append(add_tags(job))
-        return jobs, success_result(len(jobs), "Filtered to Caravan/PC-12")
+        return jobs, success_result(len(jobs))
     except Exception as e:
         return [], fail_result(e)
 
-# (Optional) PilotCareerCenter Phoenix/AZ pages — kept conservative
 def scrape_pilotcareercenter_sw():
     urls = [
         "https://pilotcareercenter.com/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL",
@@ -268,7 +252,7 @@ def scrape_pilotcareercenter_sw():
                         "title": title,
                         "company": "PilotCareerCenter",
                         "link": href if (href and href.startswith("http")) else url,
-                        "source": "PilotCareerCenter",
+                        "source": "PilotCareerCenter.com",
                         "tags": [],
                         "date_posted": today_str()
                     }
@@ -278,15 +262,13 @@ def scrape_pilotcareercenter_sw():
                 errs.append(f"{url}: {e}")
         if errs and not jobs:
             return [], fail_result("; ".join(errs))
-        msg = "Filtered to Caravan/PC-12"
-        return jobs, success_result(len(jobs), msg if jobs else "No relevant jobs found")
+        return jobs, success_result(len(jobs))
     except Exception as e:
         return [], fail_result(e)
 
 # -------------------------------
 # Aggregator
 # -------------------------------
-
 def scrape_all_sites():
     all_jobs = []
     results = {}
@@ -298,27 +280,23 @@ def scrape_all_sites():
         "Contour Aviation": scrape_contour_aviation,
         "Ameriflight": scrape_ameriflight,
         "SkyWest": scrape_skywest,
-        "PilotCareerCenter (AZ pages)": scrape_pilotcareercenter_sw,
+        "PilotCareerCenter.com": scrape_pilotcareercenter_sw,
     }
 
     for name, func in scrapers.items():
         jobs, result = func()
         print(f"{name}: {result.get('count', 0)} jobs scraped ({result.get('message','')})")
-        # Deduplicate by (title, company, link)
         dedup = {(j["title"], j.get("company",""), j["link"]): j for j in jobs}
         jobs = list(dedup.values())
-
         all_jobs.extend(jobs)
         results[name] = result
 
-    # Global dedupe
     all_jobs = list({(j["title"], j.get("company",""), j["link"]): j for j in all_jobs}.values())
     return all_jobs, results
 
 # -------------------------------
-# Save / Load
+# Save
 # -------------------------------
-
 def save_history(today_jobs, results):
     today = today_str()
 
@@ -341,10 +319,9 @@ def save_history(today_jobs, results):
 # -------------------------------
 # Main
 # -------------------------------
-
 def main():
     all_jobs, results = scrape_all_sites()
-    print("Total relevant (Caravan/PC-12) jobs scraped:", len(all_jobs))
+    print("Total relevant jobs scraped:", len(all_jobs))
     save_history(all_jobs, results)
 
 if __name__ == "__main__":
