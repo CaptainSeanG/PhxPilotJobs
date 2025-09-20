@@ -2,55 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pilot Jobs in Phoenix, AZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilot Jobs – Southwest USA</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9fafb;
-      color: #111;
+      background: var(--bg);
+      color: var(--fg);
+      transition: background 0.3s, color 0.3s;
+    }
+    :root {
+      --bg: #ffffff;
+      --fg: #000000;
+      --card-bg: #f5f5f5;
+      --card-border: #ddd;
+    }
+    body.dark {
+      --bg: #121212;
+      --fg: #f0f0f0;
+      --card-bg: #1e1e1e;
+      --card-border: #444;
     }
     header {
-      background: #2563eb;
-      color: white;
+      background: var(--card-bg);
       padding: 1rem;
-      text-align: center;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
     }
     header h1 {
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
-    #last-updated {
-      font-size: 0.9rem;
-      margin-top: 0.25rem;
+    #controls {
+      margin: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
-    .controls {
-      text-align: center;
-      padding: 1rem;
-      background: #e5e7eb;
-    }
-    .controls input {
-      padding: 0.5rem;
-      margin-right: 0.5rem;
-    }
-    .controls button {
-      padding: 0.5rem 1rem;
-      margin: 0.2rem;
-      border: none;
+    #controls button {
+      padding: 0.4rem 0.8rem;
+      border: 1px solid var(--card-border);
       border-radius: 6px;
+      background: var(--card-bg);
       cursor: pointer;
-      background: #d1d5db;
+      transition: background 0.3s, color 0.3s;
     }
-    .controls button.active {
-      background: #2563eb;
-      color: white;
+    #controls button.active {
+      background: #0077cc;
+      color: #fff;
+      border-color: #0077cc;
     }
-    #filter-summary {
-      text-align: center;
-      font-size: 0.9rem;
-      margin: 0.5rem 0;
-      color: #374151;
+    #controls input {
+      padding: 0.4rem;
+      flex: 1;
+      min-width: 180px;
     }
     #jobs-container {
       display: grid;
@@ -59,78 +69,90 @@
       padding: 1rem;
     }
     .job-card {
-      border: 1px solid #ddd;
-      padding: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
       border-radius: 8px;
-      background: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+    .job-card:hover {
+      transform: translateY(-3px);
     }
     .job-card h3 {
-      margin-top: 0;
-      font-size: 1.2rem;
+      margin: 0 0 0.5rem;
     }
     .job-card a {
       text-decoration: none;
-      color: #2563eb;
+      color: #0077cc;
     }
-    .job-card a:hover {
-      text-decoration: underline;
+    .job-card p {
+      margin: 0.25rem 0;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #f3f4f6;
-      font-size: 0.9rem;
-      margin-top: 2rem;
+    #last-updated, #filter-summary {
+      margin: 0.5rem 1rem;
+      font-style: italic;
     }
     table {
-      margin: 1rem auto;
       border-collapse: collapse;
+      margin: 1rem;
+      width: calc(100% - 2rem);
     }
-    th, td {
+    table th, table td {
+      border: 1px solid var(--card-border);
       padding: 8px;
-      border: 1px solid #ddd;
+      text-align: left;
+    }
+    #theme-toggle {
+      margin-left: auto;
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Pilot Jobs in Phoenix, AZ</h1>
-    <div id="last-updated">Last updated: ...</div>
+    <h1>Southwest Pilot Jobs</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
   </header>
 
-  <div class="controls">
+  <div id="controls">
+    <button data-tag="Caravan" onclick="toggleFilter('Caravan')">Caravan</button>
+    <button data-tag="Cessna 208" onclick="toggleFilter('Cessna 208')">Cessna 208</button>
+    <button data-tag="PC-12" onclick="toggleFilter('PC-12')">PC-12</button>
+    <button data-tag="Pilatus" onclick="toggleFilter('Pilatus')">Pilatus</button>
     <input type="text" id="search" placeholder="Search jobs..." oninput="renderJobs()">
     <button onclick="clearFilters()">Clear Filters</button>
-    <button data-tag="Caravan" onclick="toggleFilter('Caravan')">Caravan</button>
-    <button data-tag="PC-12" onclick="toggleFilter('PC-12')">PC-12</button>
-    <button data-tag="King Air" onclick="toggleFilter('King Air')">King Air</button>
-    <button data-tag="SkyCourier" onclick="toggleFilter('SkyCourier')">SkyCourier</button>
-    <button data-tag="Baron" onclick="toggleFilter('Baron')">Baron</button>
-    <button data-tag="Navajo" onclick="toggleFilter('Navajo')">Navajo</button>
-    <button data-tag="Part 91" onclick="toggleFilter('Part 91')">Part 91</button>
-    <button data-tag="Ameriflight" onclick="toggleFilter('Ameriflight')">Ameriflight</button>
   </div>
 
-  <div id="filter-summary">No filters active</div>
+  <p id="filter-summary">No filters active</p>
+  <p id="last-updated">Last updated: …</p>
 
   <div id="jobs-container"></div>
 
-  <h2 style="text-align:center;">Scraper Status</h2>
+  <h2 style="margin-left:1rem;">Scraper Status</h2>
   <table id="status-table">
     <thead>
       <tr>
         <th>Source</th>
         <th>Status</th>
+        <th>Notes</th>
       </tr>
     </thead>
     <tbody></tbody>
   </table>
 
-  <footer>
-    <p>Built with ❤️ for Phoenix-area pilots</p>
-  </footer>
-
   <script src="script.js"></script>
+  <script>
+    // Dark/light mode toggle
+    const themeToggle = document.getElementById("theme-toggle");
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      if (document.body.classList.contains("dark")) {
+        themeToggle.textContent = "☀️ Light Mode";
+      } else {
+        themeToggle.textContent = "🌙 Dark Mode";
+      }
+    });
+  </script>
 </body>
 </html>
