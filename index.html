@@ -2,115 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phoenix Pilot Jobs</title>
+  <title>Pilot Jobs in Phoenix, AZ</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f3f4f6;
       margin: 0;
       padding: 0;
+      background: #f9fafb;
+      color: #111;
     }
     header {
-      background: #1e3a8a;
+      background: #2563eb;
       color: white;
       padding: 1rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 1.75rem;
+      font-size: 1.8rem;
     }
     #last-updated {
       font-size: 0.9rem;
-      margin-top: 0.3rem;
-      color: #d1d5db;
+      margin-top: 0.25rem;
     }
     .controls {
-      padding: 1rem;
       text-align: center;
+      padding: 1rem;
       background: #e5e7eb;
     }
     .controls input {
       padding: 0.5rem;
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-      width: 250px;
+      margin-right: 0.5rem;
     }
     .controls button {
-      margin: 0.25rem;
       padding: 0.5rem 1rem;
+      margin: 0.2rem;
       border: none;
-      border-radius: 8px;
-      background: #9ca3af;
-      color: white;
+      border-radius: 6px;
       cursor: pointer;
-      transition: background 0.2s;
-    }
-    .controls button:hover {
-      background: #6b7280;
+      background: #d1d5db;
     }
     .controls button.active {
-      font-weight: bold;
+      background: #2563eb;
       color: white;
     }
-    /* Individual colors for active filters */
-    .controls button.active[data-tag="Caravan"] {
-      background-color: #16a34a; /* green */
+    #filter-summary {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+      color: #374151;
     }
-    .controls button.active[data-tag="PC-12"] {
-      background-color: #9333ea; /* purple */
-    }
-    .controls button.active[data-tag="King Air"] {
-      background-color: #f97316; /* orange */
-    }
-    .controls button.active[data-tag="Part 91"] {
-      background-color: #2563eb; /* blue */
-    }
-    .controls button.active[data-tag="SkyCourier"] {
-      background-color: #0891b2; /* teal */
-    }
-    .controls button.active[data-tag="Baron"] {
-      background-color: #dc2626; /* red */
-    }
-    .controls button.active[data-tag="Navajo"] {
-      background-color: #ca8a04; /* gold */
-    }
-    .controls button.active[data-tag="Ameriflight"] {
-      background-color: #1e40af; /* dark blue */
-    }
-
-    /* Jobs grid */
-    .jobs {
+    #jobs-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1rem;
       padding: 1rem;
-      max-width: 1200px;
-      margin: auto;
     }
-
     .job-card {
-      background: white;
-      border-radius: 12px;
+      border: 1px solid #ddd;
       padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .job-card h3 {
       margin-top: 0;
+      font-size: 1.2rem;
     }
     .job-card a {
-      color: #1e3a8a;
       text-decoration: none;
+      color: #2563eb;
     }
     .job-card a:hover {
       text-decoration: underline;
     }
-
-    #filter-summary {
+    footer {
       text-align: center;
-      margin: 1rem;
-      font-weight: bold;
+      padding: 1rem;
+      background: #f3f4f6;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    table {
+      margin: 1rem auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #ddd;
     }
   </style>
 </head>
@@ -122,20 +101,35 @@
 
   <div class="controls">
     <input type="text" id="search" placeholder="Search jobs..." oninput="renderJobs()">
-    <br>
-    <button onclick="toggleFilter('Caravan')" data-tag="Caravan">Caravan</button>
-    <button onclick="toggleFilter('PC-12')" data-tag="PC-12">PC-12</button>
-    <button onclick="toggleFilter('King Air')" data-tag="King Air">King Air</button>
-    <button onclick="toggleFilter('Part 91')" data-tag="Part 91">Part 91</button>
-    <button onclick="toggleFilter('SkyCourier')" data-tag="SkyCourier">SkyCourier</button>
-    <button onclick="toggleFilter('Baron')" data-tag="Baron">Baron</button>
-    <button onclick="toggleFilter('Navajo')" data-tag="Navajo">Navajo</button>
-    <button onclick="toggleFilter('Ameriflight')" data-tag="Ameriflight">Ameriflight</button>
     <button onclick="clearFilters()">Clear Filters</button>
+    <button data-tag="Caravan" onclick="toggleFilter('Caravan')">Caravan</button>
+    <button data-tag="PC-12" onclick="toggleFilter('PC-12')">PC-12</button>
+    <button data-tag="King Air" onclick="toggleFilter('King Air')">King Air</button>
+    <button data-tag="SkyCourier" onclick="toggleFilter('SkyCourier')">SkyCourier</button>
+    <button data-tag="Baron" onclick="toggleFilter('Baron')">Baron</button>
+    <button data-tag="Navajo" onclick="toggleFilter('Navajo')">Navajo</button>
+    <button data-tag="Part 91" onclick="toggleFilter('Part 91')">Part 91</button>
+    <button data-tag="Ameriflight" onclick="toggleFilter('Ameriflight')">Ameriflight</button>
   </div>
 
   <div id="filter-summary">No filters active</div>
-  <div id="jobs-container" class="jobs"></div>
+
+  <div id="jobs-container"></div>
+
+  <h2 style="text-align:center;">Scraper Status</h2>
+  <table id="status-table">
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <footer>
+    <p>Built with ❤️ for Phoenix-area pilots</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
