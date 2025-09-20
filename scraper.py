@@ -1,224 +1,217 @@
 import requests
 from bs4 import BeautifulSoup
-import feedparser
 import json
 from datetime import datetime
 import os
 
-# ---------- Tag Detection ----------
-def detect_tags(title):
-    tags = []
-    t = title.lower()
-    if "caravan" in t or "cessna 208" in t:
-        tags.append("Caravan")
-    if "pc-12" in t or "pc12" in t or "pilatus" in t:
-        tags.append("PC-12")
-    if "king air" in t:
-        tags.append("King Air")
-    if "baron" in t:
-        tags.append("Baron")
-    if "navajo" in t:
-        tags.append("Navajo")
-    if "sky courier" in t or "skycourier" in t:
-        tags.append("SkyCourier")
-    if "part 91" in t:
-        tags.append("Part 91")
-    return tags
+OUTPUT_FILE = "jobs.json"
+HISTORY_FILE = "jobs_history.json"
 
-# ---------- Scrapers ----------
-def scrape_indeed_rss(results):
-    url = "https://www.indeed.com/rss?q=pilot&l=Phoenix%2C+AZ"
+# -------------------------------
+# Scrapers
+# -------------------------------
+
+def scrape_indeed_rss():
+    url = "https://rss.indeed.com/rss?q=pilot&l=Arizona"
     jobs = []
     try:
-        feed = feedparser.parse(url)
-        for entry in feed.entries:
-            jobs.append({
-                "title": entry.title,
-                "company": entry.get("author", "Unknown"),
-                "link": entry.link,
-                "source": "Indeed RSS",
-                "tags": detect_tags(entry.title)
-            })
-        results["Indeed RSS"] = {"status": "success", "count": len(jobs)}
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "xml")
+        for item in soup.find_all("item"):
+            title = item.title.get_text()
+            link = item.link.get_text()
+            if any(tag in title.lower() for tag in ["caravan", "pc-12", "pc12", "pilatus", "cessna", "baron", "navajo", "king air"]):
+                jobs.append({
+                    "title": title,
+                    "company": "Indeed",
+                    "link": link,
+                    "source": "Indeed RSS",
+                    "tags": []
+                })
+        status = "success"
     except Exception as e:
         print("Error scraping Indeed RSS:", e)
-        results["Indeed RSS"] = {"status": "fail", "count": 0}
-    return jobs
+        status, jobs = "fail", []
+    return jobs, {"status": status, "count": len(jobs)}
 
-def scrape_cutter(results):
-    url = "https://cutteraviation.com/careers/"
+def scrape_cutter():
+    url = "https://cutteraviation.com/careers"
     jobs = []
     try:
-        resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+        resp = requests.get(url, timeout=10)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-        listings = soup.select("ul.job_listings li.job_listing a.job_listing-clickbox")
-
-        for li in listings:
-            title = li.get("title", "Pilot Job")
-            link = li["href"]
-            jobs.append({
-                "title": title,
-                "company": "Cutter Aviation",
-                "link": link,
-                "source": "Cutter Aviation",
-                "tags": detect_tags(title)
-            })
-        results["Cutter Aviation"] = {"status": "success", "count": len(jobs)}
-    except Exception as e:
-        print("Error scraping Cutter Aviation:", e)
-        results["Cutter Aviation"] = {"status": "fail", "count": 0}
-    return jobs
-
-def scrape_contour(results):
-    url = "https://contouraviation.com/careers"
-    jobs = []
-    try:
-        resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
-        listings = soup.select("a[href*='position']")
-
-        for a in listings:
-            title = a.get_text(strip=True)
-            link = a["href"]
-            if not link.startswith("http"):
-                link = "https://contouraviation.com" + link
-            jobs.append({
-                "title": title,
-                "company": "Contour Aviation",
-                "link": link,
-                "source": "Contour Aviation",
-                "tags": detect_tags(title)
-            })
-        results["Contour Aviation"] = {"status": "success", "count": len(jobs)}
-    except Exception as e:
-        print("Error scraping Contour Aviation:", e)
-        results["Contour Aviation"] = {"status": "fail", "count": 0}
-    return jobs
-
-def scrape_ameriflight(results):
-    url = "https://www.ameriflight.com/careers/"
-    jobs = []
-    try:
-        resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
-        listings = soup.select("a[href*='careers']")
-
-        for a in listings:
-            title = a.get_text(strip=True)
-            link = a["href"]
-            if not link.startswith("http"):
-                link = "https://www.ameriflight.com" + link
-            if "pilot" in title.lower():
+        for job in soup.select("a"):
+            title = job.get_text(strip=True)
+            link = job.get("href")
+            if title and "pilot" in title.lower():
                 jobs.append({
                     "title": title,
-                    "company": "Ameriflight",
-                    "link": link,
-                    "source": "Ameriflight",
-                    "tags": detect_tags(title)
+                    "company": "Cutter Aviation",
+                    "link": link if link and link.startswith("http") else url,
+                    "source": "Cutter Aviation",
+                    "tags": []
                 })
-        results["Ameriflight"] = {"status": "success", "count": len(jobs)}
+        status = "success"
     except Exception as e:
-        print("Error scraping Ameriflight:", e)
-        results["Ameriflight"] = {"status": "fail", "count": 0}
-    return jobs
+        print("Error scraping Cutter:", e)
+        status, jobs = "fail", []
+    return jobs, {"status": status, "count": len(jobs)}
 
-def scrape_skywest(results):
-    url = "https://www.skywest.com/skywest-airline-jobs/"
+def scrape_boutique_air():
+    url = "https://www.boutiqueair.com/careers"
     jobs = []
     try:
-        resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+        resp = requests.get(url, timeout=10)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-        listings = soup.select("a.jobTitle")
-
-        for a in listings:
-            title = a.get_text(strip=True)
-            link = a["href"]
-            if not link.startswith("http"):
-                link = "https://www.skywest.com" + link
-            if "pilot" in title.lower():
-                jobs.append({
-                    "title": title,
-                    "company": "SkyWest Airlines",
-                    "link": link,
-                    "source": "SkyWest",
-                    "tags": detect_tags(title)
-                })
-        results["SkyWest"] = {"status": "success", "count": len(jobs)}
-    except Exception as e:
-        print("Error scraping SkyWest:", e)
-        results["SkyWest"] = {"status": "fail", "count": 0}
-    return jobs
-
-def scrape_boutique(results):
-    url = "https://www.boutiqueair.com/pages/careers"
-    jobs = []
-    try:
-        resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
-        listings = soup.select("a[href*='jobs']")
-
-        for a in listings:
-            title = a.get_text(strip=True)
-            link = a["href"]
-            if not link.startswith("http"):
-                link = "https://www.boutiqueair.com" + link
+        for job in soup.select("div.careers-listing li, div.careers-listing a, li a"):
+            title = job.get_text(strip=True)
+            link = job.get("href") if job.has_attr("href") else url
             if "pilot" in title.lower():
                 jobs.append({
                     "title": title,
                     "company": "Boutique Air",
-                    "link": link,
+                    "link": link if link.startswith("http") else url,
                     "source": "Boutique Air",
-                    "tags": detect_tags(title)
+                    "tags": []
                 })
-        results["Boutique Air"] = {"status": "success", "count": len(jobs)}
+        status = "success"
     except Exception as e:
         print("Error scraping Boutique Air:", e)
-        results["Boutique Air"] = {"status": "fail", "count": 0}
-    return jobs
+        status, jobs = "fail", []
+    return jobs, {"status": status, "count": len(jobs)}
 
-# ---------- Save & Load History ----------
-def load_history():
-    if os.path.exists("jobs.json"):
-        with open("jobs.json", "r") as f:
-            return json.load(f)
-    return {"today": [], "history": {}, "results": {}}
+def scrape_contour_aviation():
+    url = "https://www.contouraviation.com/careers"
+    jobs = []
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for job in soup.select("div.job-listing, li a, h3, h4"):
+            title = job.get_text(strip=True)
+            link = job.get("href") if job.has_attr("href") else url
+            if "pilot" in title.lower():
+                jobs.append({
+                    "title": title,
+                    "company": "Contour Aviation",
+                    "link": link if link.startswith("http") else url,
+                    "source": "Contour Aviation",
+                    "tags": []
+                })
+        status = "success"
+    except Exception as e:
+        print("Error scraping Contour Aviation:", e)
+        status, jobs = "fail", []
+    return jobs, {"status": status, "count": len(jobs)}
 
-def save_history(data):
-    with open("jobs.json", "w") as f:
-        json.dump(data, f, indent=2)
+def scrape_ameriflight():
+    url = "https://www.ameriflight.com/careers"
+    jobs = []
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for job in soup.select("a"):
+            title = job.get_text(strip=True)
+            link = job.get("href")
+            if title and "pilot" in title.lower():
+                jobs.append({
+                    "title": title,
+                    "company": "Ameriflight",
+                    "link": link if link and link.startswith("http") else url,
+                    "source": "Ameriflight",
+                    "tags": []
+                })
+        status = "success"
+    except Exception as e:
+        print("Error scraping Ameriflight:", e)
+        status, jobs = "fail", []
+    return jobs, {"status": status, "count": len(jobs)}
 
-# ---------- Main ----------
-def main():
+def scrape_skywest():
+    url = "https://www.skywest.com/skywest-airline-jobs/career-guides/pilots/"
+    jobs = []
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for job in soup.select("a"):
+            title = job.get_text(strip=True)
+            link = job.get("href")
+            if title and "pilot" in title.lower():
+                jobs.append({
+                    "title": title,
+                    "company": "SkyWest",
+                    "link": link if link and link.startswith("http") else url,
+                    "source": "SkyWest",
+                    "tags": []
+                })
+        status = "success"
+    except Exception as e:
+        print("Error scraping SkyWest:", e)
+        status, jobs = "fail", []
+    return jobs, {"status": status, "count": len(jobs)}
+
+# -------------------------------
+# Main Aggregator
+# -------------------------------
+
+def scrape_all_sites():
     all_jobs = []
     results = {}
 
-    all_jobs.extend(scrape_indeed_rss(results))
-    all_jobs.extend(scrape_cutter(results))
-    all_jobs.extend(scrape_contour(results))
-    all_jobs.extend(scrape_ameriflight(results))
-    all_jobs.extend(scrape_skywest(results))
-    all_jobs.extend(scrape_boutique(results))
+    scrapers = {
+        "Indeed RSS": scrape_indeed_rss,
+        "Cutter Aviation": scrape_cutter,
+        "Boutique Air": scrape_boutique_air,
+        "Contour Aviation": scrape_contour_aviation,
+        "Ameriflight": scrape_ameriflight,
+        "SkyWest": scrape_skywest,
+    }
 
+    for name, func in scrapers.items():
+        jobs, result = func()
+        print(f"{name}: {result['count']} jobs scraped")
+        all_jobs.extend(jobs)
+        results[name] = result
+
+    return all_jobs, results
+
+# -------------------------------
+# Save / Load Helpers
+# -------------------------------
+
+def save_history(today_jobs, results):
     today = datetime.now().strftime("%Y-%m-%d")
 
-    history = load_history()
-    history["today"] = all_jobs
-    history["history"][today] = all_jobs
+    if os.path.exists(OUTPUT_FILE):
+        with open(OUTPUT_FILE, "r") as f:
+            history = json.load(f)
+    else:
+        history = {"today": [], "history": {}, "results": {}}
+
+    history["today"] = today_jobs
+    history["history"][today] = today_jobs
     history["results"] = results
 
-    # Keep only last 30 days of history
-    dates = sorted(history["history"].keys(), reverse=True)
-    for d in dates[30:]:
-        del history["history"][d]
+    with open(OUTPUT_FILE, "w") as f:
+        json.dump(history, f, indent=2)
 
-    save_history(history)
-    print(f"Saved {len(all_jobs)} jobs for {today}")
-    print("Scraper results:", results)
+    # Also save to jobs_history.json for redundancy
+    with open(HISTORY_FILE, "w") as f:
+        json.dump(history, f, indent=2)
+
+# -------------------------------
+# Main
+# -------------------------------
+
+def main():
+    all_jobs, results = scrape_all_sites()
+    print("Total jobs scraped:", len(all_jobs))
+    save_history(all_jobs, results)
 
 if __name__ == "__main__":
     main()
