@@ -1,83 +1,131 @@
-let jobsData = [];
+let jobs = [];
+let activeFilters = new Set();
+let scraperResults = {};
 
-function loadJobs() {
-  fetch("jobs.json")
-    .then(response => response.json())
-    .then(data => {
-      jobsData = data.today && data.today.length
-        ? data.today
-        : data.history[Object.keys(data.history).pop()];
+async function loadJobs() {
+  const response = await fetch("jobs.json");
+  const data = await response.json();
 
-      renderJobs(jobsData);
-      renderScraperStatus(data.results);
-      renderLastUpdated();
-    })
-    .catch(err => console.error("Error loading jobs:", err));
+  // Use today if populated, else merge all jobs from history
+  if (data.today && data.today.length > 0) {
+    jobs = data.today;
+  } else if (data.history) {
+    jobs = Object.values(data.history).flat();
+  } else {
+    jobs = [];
+  }
+
+  scraperResults = data.results || {};
+
+  // Debug logging
+  console.log("Jobs loaded:", jobs.length, jobs.slice(0, 3));
+  console.log("Scraper results:", scraperResults);
+
+  // Show last updated (Arizona time)
+  const lastUpdated = document.getElementById("last-updated");
+  const arizonaTime = new Date().toLocaleString("en-US", {
+    timeZone: "America/Phoenix",
+    dateStyle: "full",
+    timeStyle: "short",
+  });
+  lastUpdated.textContent = "Last updated: " + arizonaTime;
+
+  renderJobs();
+  renderStatus(scraperResults);
 }
 
-function renderJobs(jobs) {
-  const container = document.getElementById("jobs");
+function renderJobs() {
+  const container = document.getElementById("jobs-container");
   container.innerHTML = "";
 
-  if (!jobs || jobs.length === 0) {
-    container.innerHTML = "<p>No jobs available.</p>";
-    return;
-  }
+  const searchValue = document.getElementById("search").value.toLowerCase();
 
-  jobs.forEach(job => {
-    const card = document.createElement("div");
-    card.className = "job-card p-4 rounded-xl shadow-md bg-white dark:bg-gray-800";
-    card.innerHTML = `
-      <h3 class="font-bold text-lg mb-2">
-        <a href="${job.link}" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">
-          ${job.title}
-        </a>
-      </h3>
-      <p class="text-sm text-gray-700 dark:text-gray-300">${job.company || ""}</p>
-      <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Source: ${job.source}</p>
-      <div class="flex flex-wrap gap-2">
-        ${job.tags.map(tag => `<span class="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-xs rounded">${tag}</span>`).join("")}
-      </div>
-    `;
-    container.appendChild(card);
+  let filteredJobs = jobs.filter(job => {
+    const matchesSearch =
+      job.title.toLowerCase().includes(searchValue) ||
+      job.company.toLowerCase().includes(searchValue);
+    const matchesFilter =
+      activeFilters.size === 0 ||
+      (job.tags && job.tags.some(tag => activeFilters.has(tag)));
+    return matchesSearch && matchesFilter;
   });
+
+  filteredJobs.forEach(job => {
+    const div = document.createElement("div");
+    div.className = "job-card";
+    div.innerHTML = `
+      <h3><a href="${job.link}" target="_blank">${job.title}</a></h3>
+      <p><strong>${job.company}</strong></p>
+      <p><em>${job.source}</em></p>
+      <p>${(job.tags || []).join(", ")}</p>
+    `;
+    container.appendChild(div);
+  });
+
+  renderFilterSummary(searchValue);
 }
 
-function renderScraperStatus(results) {
-  const statusDiv = document.getElementById("scraper-status");
-  if (!results) {
-    statusDiv.innerHTML = "<p>No scraper status available.</p>";
+function toggleFilter(tag) {
+  const button = document.querySelector(`button[data-tag="${tag}"]`);
+  if (activeFilters.has(tag)) {
+    activeFilters.delete(tag);
+    button.classList.remove("active");
+  } else {
+    activeFilters.add(tag);
+    button.classList.add("active");
+  }
+  renderJobs();
+}
+
+function clearFilters() {
+  activeFilters.clear();
+  document.querySelectorAll(".controls button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+  renderJobs();
+}
+
+function renderFilterSummary(searchValue) {
+  const summary = document.getElementById("filter-summary");
+  let text = "";
+
+  if (activeFilters.size > 0) {
+    text += "Active filters: " + Array.from(activeFilters).join(", ");
+  }
+  if (searchValue) {
+    if (text) text += " | ";
+    text += `Search: "${searchValue}"`;
+  }
+  if (!text) {
+    text = "No filters active";
+  }
+  summary.textContent = text;
+}
+
+function renderStatus(results) {
+  const tbody = document.querySelector("#status-table tbody");
+  tbody.innerHTML = "";
+
+  if (!results || Object.keys(results).length === 0) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td colspan="2" style="text-align:center; padding:8px;">
+      No scraper status available
+    </td>`;
+    tbody.appendChild(tr);
     return;
   }
-
-  let html = '<h2 class="text-lg font-bold mt-6 mb-2">Scraper Status</h2>';
-  html += '<table class="w-full text-sm border">';
-  html += '<tr><th class="border px-2">Source</th><th class="border px-2">Status</th></tr>';
 
   for (const [source, info] of Object.entries(results)) {
-    const statusIcon = info.status === "success"
-      ? (info.count > 0 ? "✅ (" + info.count + ")" : "❌ (0)")
-      : "❌";
-    html += `<tr><td class="border px-2">${source}</td><td class="border px-2">${statusIcon}</td></tr>`;
+    const statusIcon = info.status === "success" ? "✅" : "❌";
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td style="padding:8px; border:1px solid #ddd;">${source}</td>
+      <td style="padding:8px; border:1px solid #ddd; text-align:center;">
+        ${statusIcon} (${info.count})
+      </td>
+    `;
+    tbody.appendChild(tr);
   }
-
-  html += "</table>";
-  statusDiv.innerHTML = html;
 }
 
-function renderLastUpdated() {
-  const el = document.getElementById("last-updated");
-  const now = new Date();
-  const options = {
-    timeZone: "America/Phoenix",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  };
-  el.textContent = "Last updated: " + now.toLocaleString("en-US", options);
-}
-
-document.addEventListener("DOMContentLoaded", loadJobs);
+window.onload = loadJobs;
