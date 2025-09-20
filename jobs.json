@@ -200,8 +200,9 @@
   },
   "results": {
     "PilotCareerCenter": {
-      "status": "success",
-      "count": 0
+      "status": "fail",
+      "count": 0,
+      "error": "403 Client Error: Forbidden: Access is denied. for url: https://pilotcareercenter.com/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL"
     }
   }
 }
