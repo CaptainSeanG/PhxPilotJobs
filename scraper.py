@@ -231,12 +231,14 @@ def scrape_skywest():
         return [], fail_result(e)
 
 def scrape_pilotcareercenter_sw():
+    base = "https://pilotcareercenter.com"
     urls = [
-        "https://pilotcareercenter.com/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL",
-        "https://pilotcareercenter.com/AZ",
+        f"{base}/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL",
+        f"{base}/AZ",
     ]
     jobs = []
     errs = []
+    total_found = 0
     try:
         for url in urls:
             try:
@@ -248,21 +250,27 @@ def scrape_pilotcareercenter_sw():
                     href = a.get("href")
                     if not title:
                         continue
+                    link = href if (href and href.startswith("http")) else (
+                        base + href if href else url
+                    )
                     job = {
                         "title": title,
                         "company": "PilotCareerCenter",
-                        "link": href if (href and href.startswith("http")) else url,
+                        "link": link,
                         "source": "PilotCareerCenter.com",
                         "tags": [],
                         "date_posted": today_str()
                     }
+                    total_found += 1
                     if is_relevant(job):
                         jobs.append(add_tags(job))
             except Exception as e:
                 errs.append(f"{url}: {e}")
         if errs and not jobs:
             return [], fail_result("; ".join(errs))
-        return jobs, success_result(len(jobs))
+        if total_found > 0 and not jobs:
+            return [], success_result(0, f"{total_found} jobs found, none matched filters")
+        return jobs, success_result(len(jobs), f"{total_found} scraped, {len(jobs)} matched filters")
     except Exception as e:
         return [], fail_result(e)
 
