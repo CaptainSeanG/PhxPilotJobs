@@ -2,6 +2,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+from requests_html import HTMLSession
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
@@ -10,25 +11,29 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 # -------------------------------
 
 def scrape_pilotcareercenter():
+    """Scrape PilotCareerCenter jobs for Arizona using headless rendering"""
     url = "https://pilotcareercenter.com/Pilot-Job-Search?c=USA&s=Arizona"
     jobs = []
     results = {"status": "fail", "count": 0}
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=20)
-        if resp.status_code == 200:
-            soup = BeautifulSoup(resp.text, "html.parser")
-            listings = soup.select("tr")
-            for l in listings:
-                link = l.find("a", href=True)
-                if link and ("Pilot" in link.text or "Captain" in link.text or "First Officer" in link.text):
-                    jobs.append({
-                        "title": link.get_text(strip=True),
-                        "company": "PilotCareerCenter",
-                        "link": "https://pilotcareercenter.com" + link["href"],
-                        "source": "PilotCareerCenter",
-                        "tags": []
-                    })
-            results = {"status": "success", "count": len(jobs)}
+        session = HTMLSession()
+        resp = session.get(url, headers=HEADERS, timeout=30)
+        resp.html.render(timeout=30, sleep=2)  # run JS and wait a bit
+        listings = resp.html.find("a")
+
+        for l in listings:
+            text = l.text.strip()
+            href = l.attrs.get("href", "")
+            if any(word in text for word in ["Pilot", "Captain", "First Officer"]):
+                jobs.append({
+                    "title": text,
+                    "company": "PilotCareerCenter",
+                    "link": "https://pilotcareercenter.com" + href if href.startswith("/") else href,
+                    "source": "PilotCareerCenter",
+                    "tags": []
+                })
+
+        results = {"status": "success", "count": len(jobs)}
     except Exception as e:
         print("Error scraping PilotCareerCenter:", e)
     return jobs, results
