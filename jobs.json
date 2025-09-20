@@ -200,11 +200,15 @@
   },
   "results": {
     "Indeed RSS": {
-      "status": "success",
+      "status": "fail",
       "count": 0
     },
     "Cutter Aviation": {
       "status": "success",
+      "count": 0
+    },
+    "Boutique Air": {
+      "status": "fail",
       "count": 0
     },
     "Contour Aviation": {
@@ -216,10 +220,6 @@
       "count": 0
     },
     "SkyWest": {
-      "status": "success",
-      "count": 0
-    },
-    "Boutique Air": {
       "status": "fail",
       "count": 0
     }
