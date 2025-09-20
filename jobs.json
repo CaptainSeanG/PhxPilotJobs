@@ -1,72 +1,5 @@
 {
-  "today": [
-    {
-      "title": "Pilatus",
-      "company": "Cutter Aviation",
-      "link": "https://cutteraviation.com/careers",
-      "source": "Cutter Aviation",
-      "tags": [
-        "PC-12",
-        "Pilatus"
-      ],
-      "date_posted": "2025-09-20"
-    },
-    {
-      "title": "Pilatus PC-24",
-      "company": "Cutter Aviation",
-      "link": "https://cutteraviation.com/aircraft-charter/charter-aircraft-fleet/pilatus-pc-24/",
-      "source": "Cutter Aviation",
-      "tags": [
-        "PC-12",
-        "Pilatus"
-      ],
-      "date_posted": "2025-09-20"
-    },
-    {
-      "title": "Pilatus PC-12 NG",
-      "company": "Cutter Aviation",
-      "link": "https://cutteraviation.com/careers",
-      "source": "Cutter Aviation",
-      "tags": [
-        "PC-12",
-        "Pilatus"
-      ],
-      "date_posted": "2025-09-20"
-    },
-    {
-      "title": "Pilatus Services",
-      "company": "Cutter Aviation",
-      "link": "https://cutteraviation.com/careers",
-      "source": "Cutter Aviation",
-      "tags": [
-        "PC-12",
-        "Pilatus"
-      ],
-      "date_posted": "2025-09-20"
-    },
-    {
-      "title": "Pilatus TXi Upgrade",
-      "company": "Cutter Aviation",
-      "link": "https://cutteraviation.com/careers",
-      "source": "Cutter Aviation",
-      "tags": [
-        "PC-12",
-        "Pilatus"
-      ],
-      "date_posted": "2025-09-20"
-    },
-    {
-      "title": "Speed Cowl for Pilatus PC-12",
-      "company": "Cutter Aviation",
-      "link": "https://cutteraviation.com/careers",
-      "source": "Cutter Aviation",
-      "tags": [
-        "PC-12",
-        "Pilatus"
-      ],
-      "date_posted": "2025-09-20"
-    }
-  ],
+  "today": [],
   "history": {
     "2025-09-19": [
       {
@@ -263,110 +196,12 @@
         "tags": []
       }
     ],
-    "2025-09-20": [
-      {
-        "title": "Pilatus",
-        "company": "Cutter Aviation",
-        "link": "https://cutteraviation.com/careers",
-        "source": "Cutter Aviation",
-        "tags": [
-          "PC-12",
-          "Pilatus"
-        ],
-        "date_posted": "2025-09-20"
-      },
-      {
-        "title": "Pilatus PC-24",
-        "company": "Cutter Aviation",
-        "link": "https://cutteraviation.com/aircraft-charter/charter-aircraft-fleet/pilatus-pc-24/",
-        "source": "Cutter Aviation",
-        "tags": [
-          "PC-12",
-          "Pilatus"
-        ],
-        "date_posted": "2025-09-20"
-      },
-      {
-        "title": "Pilatus PC-12 NG",
-        "company": "Cutter Aviation",
-        "link": "https://cutteraviation.com/careers",
-        "source": "Cutter Aviation",
-        "tags": [
-          "PC-12",
-          "Pilatus"
-        ],
-        "date_posted": "2025-09-20"
-      },
-      {
-        "title": "Pilatus Services",
-        "company": "Cutter Aviation",
-        "link": "https://cutteraviation.com/careers",
-        "source": "Cutter Aviation",
-        "tags": [
-          "PC-12",
-          "Pilatus"
-        ],
-        "date_posted": "2025-09-20"
-      },
-      {
-        "title": "Pilatus TXi Upgrade",
-        "company": "Cutter Aviation",
-        "link": "https://cutteraviation.com/careers",
-        "source": "Cutter Aviation",
-        "tags": [
-          "PC-12",
-          "Pilatus"
-        ],
-        "date_posted": "2025-09-20"
-      },
-      {
-        "title": "Speed Cowl for Pilatus PC-12",
-        "company": "Cutter Aviation",
-        "link": "https://cutteraviation.com/careers",
-        "source": "Cutter Aviation",
-        "tags": [
-          "PC-12",
-          "Pilatus"
-        ],
-        "date_posted": "2025-09-20"
-      }
-    ]
+    "2025-09-20": []
   },
   "results": {
-    "Indeed RSS (SW multi-city)": {
-      "status": "fail",
-      "count": 0,
-      "message": "Phoenix, AZ: HTTP 403; Scottsdale, AZ: HTTP 403; Mesa, AZ: HTTP 403; Chandler, AZ: HTTP 403; Glendale, AZ: HTTP 403; Tempe, AZ: HTTP 403; Prescott, AZ: HTTP 403; Flagstaff, AZ: HTTP 403; Tucson, AZ: HTTP 403; Yuma, AZ: HTTP 403; Albuquerque, NM: HTTP 403; Santa Fe, NM: HTTP 403; Las Cruces, NM: HTTP 403; Las Vegas, NV: HTTP 403; Henderson, NV: HTTP 403; North Las Vegas, NV: HTTP 403; St George, UT: HTTP 403; Cedar City, UT: HTTP 403; Grand Junction, CO: HTTP 403; Durango, CO: HTTP 403; Montrose, CO: HTTP 403; Colorado Springs, CO: HTTP 403; El Paso, TX: HTTP 403; Midland, TX: HTTP 403; Odessa, TX: HTTP 403; San Diego, CA: HTTP 403; Carlsbad, CA: HTTP 403; Oceanside, CA: HTTP 403; Riverside, CA: HTTP 403; San Bernardino, CA: HTTP 403; Ontario, CA: HTTP 403; Palm Springs, CA: HTTP 403; Imperial, CA: HTTP 403; Burbank, CA: HTTP 403; Long Beach, CA: HTTP 403; Orange County, CA: HTTP 403"
-    },
-    "Cutter Aviation": {
+    "PilotCareerCenter": {
       "status": "success",
-      "count": 12,
-      "message": "OK"
-    },
-    "Boutique Air": {
-      "status": "fail",
-      "count": 0,
-      "message": "404 Client Error: Not Found for url: https://www.boutiqueair.com/careers"
-    },
-    "Contour Aviation": {
-      "status": "fail",
-      "count": 0,
-      "message": "404 Client Error: Not Found for url: https://www.contouraviation.com/careers"
-    },
-    "Ameriflight": {
-      "status": "success",
-      "count": 0,
-      "message": "OK"
-    },
-    "SkyWest": {
-      "status": "fail",
-      "count": 0,
-      "message": "404 Client Error: Not Found for url: https://www.skywest.com/skywest-airline-jobs/career-guides/pilots/"
-    },
-    "PilotCareerCenter.com": {
-      "status": "fail",
-      "count": 0,
-      "message": "https://pilotcareercenter.com/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL: 403 Client Error: Forbidden: Access is denied. for url: https://pilotcareercenter.com/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL; https://pilotcareercenter.com/AZ: 403 Client Error: Forbidden: Access is denied. for url: https://pilotcareercenter.com/AZ"
+      "count": 0
     }
   }
 }
