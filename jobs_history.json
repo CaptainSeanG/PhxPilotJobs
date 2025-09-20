@@ -354,9 +354,9 @@
       "message": "404 Client Error: Not Found for url: https://www.contouraviation.com/careers"
     },
     "Ameriflight": {
-      "status": "fail",
+      "status": "success",
       "count": 0,
-      "message": "HTTPSConnectionPool(host='www.ameriflight.com', port=443): Read timed out. (read timeout=12)"
+      "message": "Filtered to Caravan/PC-12"
     },
     "SkyWest": {
       "status": "fail",
