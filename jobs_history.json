@@ -1,10 +1,144 @@
 {
-  "today": [],
+  "today": [
+    {
+      "title": "Pilots Apply Here",
+      "company": "SkyWest",
+      "link": "https://jobs.skywest.com/skywest-airlines/jobs",
+      "source": "SkyWest",
+      "tags": []
+    },
+    {
+      "title": "Pilot",
+      "company": "SkyWest",
+      "link": "/skywest-airline-jobs/career-guides/pilot-jobs",
+      "source": "SkyWest",
+      "tags": []
+    },
+    {
+      "title": "Pilot Pathway Program",
+      "company": "SkyWest",
+      "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program",
+      "source": "SkyWest",
+      "tags": []
+    },
+    {
+      "title": "Pilots Apply Here",
+      "company": "SkyWest",
+      "link": "https://jobs.skywest.com/skywest-airlines/jobs",
+      "source": "SkyWest",
+      "tags": []
+    },
+    {
+      "title": "Pilot",
+      "company": "SkyWest",
+      "link": "/skywest-airline-jobs/career-guides/pilot-jobs",
+      "source": "SkyWest",
+      "tags": []
+    },
+    {
+      "title": "Pilot Pathway Program",
+      "company": "SkyWest",
+      "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program",
+      "source": "SkyWest",
+      "tags": []
+    },
+    {
+      "title": "Pilot Jobs",
+      "company": "SkyWest",
+      "link": "/skywest-airline-jobs/career-guides/pilot-jobs/",
+      "source": "SkyWest",
+      "tags": []
+    },
+    {
+      "title": "Pilot Pathway Program",
+      "company": "SkyWest",
+      "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program/",
+      "source": "SkyWest",
+      "tags": []
+    }
+  ],
   "history": {
-    "2025-09-20": []
+    "2025-09-20": [
+      {
+        "title": "Pilots Apply Here",
+        "company": "SkyWest",
+        "link": "https://jobs.skywest.com/skywest-airlines/jobs",
+        "source": "SkyWest",
+        "tags": []
+      },
+      {
+        "title": "Pilot",
+        "company": "SkyWest",
+        "link": "/skywest-airline-jobs/career-guides/pilot-jobs",
+        "source": "SkyWest",
+        "tags": []
+      },
+      {
+        "title": "Pilot Pathway Program",
+        "company": "SkyWest",
+        "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program",
+        "source": "SkyWest",
+        "tags": []
+      },
+      {
+        "title": "Pilots Apply Here",
+        "company": "SkyWest",
+        "link": "https://jobs.skywest.com/skywest-airlines/jobs",
+        "source": "SkyWest",
+        "tags": []
+      },
+      {
+        "title": "Pilot",
+        "company": "SkyWest",
+        "link": "/skywest-airline-jobs/career-guides/pilot-jobs",
+        "source": "SkyWest",
+        "tags": []
+      },
+      {
+        "title": "Pilot Pathway Program",
+        "company": "SkyWest",
+        "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program",
+        "source": "SkyWest",
+        "tags": []
+      },
+      {
+        "title": "Pilot Jobs",
+        "company": "SkyWest",
+        "link": "/skywest-airline-jobs/career-guides/pilot-jobs/",
+        "source": "SkyWest",
+        "tags": []
+      },
+      {
+        "title": "Pilot Pathway Program",
+        "company": "SkyWest",
+        "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program/",
+        "source": "SkyWest",
+        "tags": []
+      }
+    ]
   },
   "results": {
     "PilotCareerCenter": {
+      "status": "fail",
+      "count": 0
+    },
+    "Ameriflight": {
+      "status": "success",
+      "count": 0
+    },
+    "Cutter Aviation": {
+      "status": "success",
+      "count": 0
+    },
+    "Contour Aviation": {
+      "status": "fail",
+      "count": 0
+    },
+    "SkyWest": {
+      "status": "fail",
+      "count": 0
+    },
+    "Boutique Air": {
       "status": "fail",
       "count": 0
     }
