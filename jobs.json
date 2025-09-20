@@ -201,27 +201,33 @@
   "results": {
     "Indeed RSS": {
       "status": "fail",
-      "count": 0
+      "count": 0,
+      "message": "403 Client Error: Forbidden for url: https://rss.indeed.com/rss?q=pilot&l=Arizona"
     },
     "Cutter Aviation": {
       "status": "success",
-      "count": 0
+      "count": 0,
+      "message": "No jobs found"
     },
     "Boutique Air": {
       "status": "fail",
-      "count": 0
+      "count": 0,
+      "message": "404 Client Error: Not Found for url: https://www.boutiqueair.com/careers"
     },
     "Contour Aviation": {
       "status": "fail",
-      "count": 0
+      "count": 0,
+      "message": "404 Client Error: Not Found for url: https://www.contouraviation.com/careers"
     },
     "Ameriflight": {
       "status": "success",
-      "count": 0
+      "count": 0,
+      "message": "No jobs found"
     },
     "SkyWest": {
       "status": "fail",
-      "count": 0
+      "count": 0,
+      "message": "404 Client Error: Not Found for url: https://www.skywest.com/skywest-airline-jobs/career-guides/pilots/"
     }
   }
 }
