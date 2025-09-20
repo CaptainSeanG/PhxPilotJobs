@@ -123,6 +123,60 @@ def scrape_ameriflight():
         print("Error scraping Ameriflight:", e)
     return jobs
 
+# ---------- SkyWest ----------
+def scrape_skywest():
+    url = "https://www.skywest.com/skywest-airline-jobs/"
+    jobs = []
+    try:
+        resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        for a in soup.select("a.jobTitle"):
+            title = a.get_text(strip=True)
+            link = a["href"]
+            if not link.startswith("http"):
+                link = "https://www.skywest.com" + link
+            company = "SkyWest Airlines"
+            if "pilot" in title.lower():
+                jobs.append({
+                    "title": title,
+                    "company": company,
+                    "link": link,
+                    "source": "SkyWest",
+                    "tags": detect_tags(title)
+                })
+    except Exception as e:
+        print("Error scraping SkyWest:", e)
+    return jobs
+
+# ---------- Boutique Air ----------
+def scrape_boutique():
+    url = "https://www.boutiqueair.com/pages/careers"
+    jobs = []
+    try:
+        resp = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        for a in soup.select("a[href*='jobs']"):
+            title = a.get_text(strip=True)
+            link = a["href"]
+            if not link.startswith("http"):
+                link = "https://www.boutiqueair.com" + link
+            company = "Boutique Air"
+            if "pilot" in title.lower():
+                jobs.append({
+                    "title": title,
+                    "company": company,
+                    "link": link,
+                    "source": "Boutique Air",
+                    "tags": detect_tags(title)
+                })
+    except Exception as e:
+        print("Error scraping Boutique Air:", e)
+    return jobs
+
 # ---------- Save & Load History ----------
 def load_history():
     if os.path.exists("jobs.json"):
@@ -141,6 +195,8 @@ def main():
     all_jobs.extend(scrape_cutter())
     all_jobs.extend(scrape_contour())
     all_jobs.extend(scrape_ameriflight())
+    all_jobs.extend(scrape_skywest())
+    all_jobs.extend(scrape_boutique())
 
     today = datetime.now().strftime("%Y-%m-%d")
 
