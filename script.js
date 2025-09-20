@@ -4,7 +4,6 @@ async function loadJobs() {
     const data = await response.json();
 
     const jobs = data.today || [];
-    const history = data.history || {};
     const results = data.results || {};
 
     console.log("Jobs loaded:", jobs.length);
@@ -16,15 +15,19 @@ async function loadJobs() {
     jobs.forEach(job => {
       const tile = document.createElement("div");
       tile.className = "job-tile";
+
       tile.innerHTML = `
         <h3><a href="${job.link}" target="_blank">${job.title}</a></h3>
-        <p>${job.company}</p>
+        <p><strong>Company:</strong> ${job.company}</p>
         <p><strong>Source:</strong> ${job.source}</p>
+        ${job.tags && job.tags.length > 0 ? `<p><strong>Tags:</strong> ${job.tags.join(", ")}</p>` : ""}
+        ${job.hours_required ? `<p><strong>Hours Required:</strong> ${job.hours_required}</p>` : ""}
       `;
+
       container.appendChild(tile);
     });
 
-    // Update last updated timestamp (local AZ time)
+    // Update last updated timestamp (Arizona time)
     const updatedEl = document.getElementById("last-updated");
     const now = new Date();
     updatedEl.textContent = "Updated: " + now.toLocaleString("en-US", { timeZone: "America/Phoenix" });
