@@ -2,84 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Phoenix Pilot Jobs</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background: #f4f4f4;
       color: #333;
       transition: background 0.3s, color 0.3s;
     }
+
     body.dark {
-      background-color: #121212;
-      color: #ffffff;
+      background: #121212;
+      color: #f4f4f4;
     }
+
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem;
-      background: #0078d7;
+      padding: 20px;
+      text-align: center;
+      background: #007bff;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header.dark {
+      background: #222;
+    }
+
+    #filters {
+      margin: 15px;
+      text-align: center;
+    }
+
+    .filter-btn {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      background: #ddd;
+      transition: background 0.3s;
+    }
+
+    .filter-btn.active {
+      background: #007bff;
       color: white;
     }
-    header.dark {
-      background: #1e1e1e;
-    }
+
     #theme-toggle {
-      padding: 0.5rem 1rem;
+      margin: 10px;
+      padding: 10px 15px;
+      cursor: pointer;
       border: none;
       border-radius: 5px;
-      background: white;
-      color: #0078d7;
-      cursor: pointer;
-    }
-    body.dark #theme-toggle {
-      background: #333;
+      background: #444;
       color: white;
     }
-    .container {
+
+    #jobs-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
-      padding: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 15px;
+      padding: 20px;
     }
+
     .job-tile {
       background: white;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       transition: background 0.3s, color 0.3s;
+      position: relative;
     }
+
     body.dark .job-tile {
       background: #1e1e1e;
+      color: #f4f4f4;
+    }
+
+    .job-tile h3 {
+      margin-top: 0;
+    }
+
+    .job-tile a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .job-tile a:hover {
+      text-decoration: underline;
+    }
+
+    .low-time-badge {
+      background: green;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 5px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    #scraper-status {
+      margin: 20px auto;
+      width: 90%;
+      border-collapse: collapse;
+    }
+
+    #scraper-status th, #scraper-status td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    #scraper-status th {
+      background: #007bff;
       color: white;
     }
-    footer {
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    .status-table {
-      margin-top: 2rem;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    .status-table th, .status-table td {
-      border: 1px solid #ccc;
-      padding: 0.5rem;
-      text-align: left;
-    }
+
     .status-success {
       color: green;
       font-weight: bold;
     }
+
     .status-fail {
       color: red;
       font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -87,21 +148,36 @@
   <header>
     <h1>Phoenix Pilot Jobs</h1>
     <button id="theme-toggle">Toggle Theme</button>
+    <p id="last-updated">Updated: …</p>
   </header>
 
-  <main>
-    <div class="container" id="jobs-container"></div>
-    <footer>
-      <p id="last-updated">Updated: loading…</p>
-      <h2>Scraper Status</h2>
-      <table class="status-table" id="scraper-status">
-        <thead>
-          <tr><th>Source</th><th>Status</th><th>Jobs Found</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </footer>
-  </main>
+  <div id="filters">
+    <button class="filter-btn" data-filter="Caravan">Caravan</button>
+    <button class="filter-btn" data-filter="PC-12">PC-12</button>
+    <button class="filter-btn" data-filter="King Air">King Air</button>
+    <button class="filter-btn" data-filter="LowTime">Low-Time Friendly</button>
+  </div>
+
+  <div id="jobs-container">
+    <!-- Jobs will be loaded here -->
+  </div>
+
+  <table id="scraper-status">
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Status</th>
+        <th>Jobs Found</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Populated by script.js -->
+    </tbody>
+  </table>
+
+  <footer>
+    Phoenix Pilot Jobs — Automated Updates
+  </footer>
 
   <script src="script.js"></script>
 </body>
