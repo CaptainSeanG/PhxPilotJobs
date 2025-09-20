@@ -10,14 +10,14 @@
     {
       "title": "Pilot",
       "company": "SkyWest",
-      "link": "/skywest-airline-jobs/career-guides/pilot-jobs",
+      "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-jobs",
       "source": "SkyWest",
       "tags": []
     },
     {
       "title": "Pilot Pathway Program",
       "company": "SkyWest",
-      "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program",
+      "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-pathway-program",
       "source": "SkyWest",
       "tags": []
     },
@@ -31,28 +31,42 @@
     {
       "title": "Pilot",
       "company": "SkyWest",
-      "link": "/skywest-airline-jobs/career-guides/pilot-jobs",
+      "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-jobs",
       "source": "SkyWest",
       "tags": []
     },
     {
       "title": "Pilot Pathway Program",
       "company": "SkyWest",
-      "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program",
+      "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-pathway-program",
       "source": "SkyWest",
       "tags": []
     },
     {
       "title": "Pilot Jobs",
       "company": "SkyWest",
-      "link": "/skywest-airline-jobs/career-guides/pilot-jobs/",
+      "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-jobs/",
       "source": "SkyWest",
       "tags": []
     },
     {
       "title": "Pilot Pathway Program",
       "company": "SkyWest",
-      "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program/",
+      "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-pathway-program/",
+      "source": "SkyWest",
+      "tags": []
+    },
+    {
+      "title": "Pilots",
+      "company": "SkyWest",
+      "link": "https://skywest.com",
+      "source": "SkyWest",
+      "tags": []
+    },
+    {
+      "title": "Pilot Pathway",
+      "company": "SkyWest",
+      "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-pathway-program",
       "source": "SkyWest",
       "tags": []
     }
@@ -69,14 +83,14 @@
       {
         "title": "Pilot",
         "company": "SkyWest",
-        "link": "/skywest-airline-jobs/career-guides/pilot-jobs",
+        "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-jobs",
         "source": "SkyWest",
         "tags": []
       },
       {
         "title": "Pilot Pathway Program",
         "company": "SkyWest",
-        "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program",
+        "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-pathway-program",
         "source": "SkyWest",
         "tags": []
       },
@@ -90,28 +104,42 @@
       {
         "title": "Pilot",
         "company": "SkyWest",
-        "link": "/skywest-airline-jobs/career-guides/pilot-jobs",
+        "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-jobs",
         "source": "SkyWest",
         "tags": []
       },
       {
         "title": "Pilot Pathway Program",
         "company": "SkyWest",
-        "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program",
+        "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-pathway-program",
         "source": "SkyWest",
         "tags": []
       },
       {
         "title": "Pilot Jobs",
         "company": "SkyWest",
-        "link": "/skywest-airline-jobs/career-guides/pilot-jobs/",
+        "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-jobs/",
         "source": "SkyWest",
         "tags": []
       },
       {
         "title": "Pilot Pathway Program",
         "company": "SkyWest",
-        "link": "/skywest-airline-jobs/career-guides/pilot-pathway-program/",
+        "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-pathway-program/",
+        "source": "SkyWest",
+        "tags": []
+      },
+      {
+        "title": "Pilots",
+        "company": "SkyWest",
+        "link": "https://skywest.com",
+        "source": "SkyWest",
+        "tags": []
+      },
+      {
+        "title": "Pilot Pathway",
+        "company": "SkyWest",
+        "link": "https://skywest.com/skywest-airline-jobs/career-guides/pilot-pathway-program",
         "source": "SkyWest",
         "tags": []
       }
@@ -135,8 +163,8 @@
       "count": 0
     },
     "SkyWest": {
-      "status": "fail",
-      "count": 0
+      "status": "success",
+      "count": 10
     },
     "Boutique Air": {
       "status": "fail",
