@@ -16,7 +16,15 @@ async function loadJobs() {
       const tile = document.createElement("div");
       tile.className = "job-tile";
 
+      // ✅ highlight jobs with <= 1100 hours required
+      let lowTimeBadge = "";
+      if (job.hours_required && job.hours_required <= 1100) {
+        tile.style.border = "3px solid green";
+        lowTimeBadge = `<div class="low-time-badge">Low-Time Friendly</div>`;
+      }
+
       tile.innerHTML = `
+        ${lowTimeBadge}
         <h3><a href="${job.link}" target="_blank">${job.title}</a></h3>
         <p><strong>Company:</strong> ${job.company}</p>
         <p><strong>Source:</strong> ${job.source}</p>
