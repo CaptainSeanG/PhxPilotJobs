@@ -341,7 +341,7 @@
     "Cutter Aviation": {
       "status": "success",
       "count": 12,
-      "message": "Filtered to Caravan/PC-12"
+      "message": "OK"
     },
     "Boutique Air": {
       "status": "fail",
@@ -354,16 +354,16 @@
       "message": "404 Client Error: Not Found for url: https://www.contouraviation.com/careers"
     },
     "Ameriflight": {
-      "status": "success",
+      "status": "fail",
       "count": 0,
-      "message": "Filtered to Caravan/PC-12"
+      "message": "HTTPSConnectionPool(host='www.ameriflight.com', port=443): Read timed out. (read timeout=12)"
     },
     "SkyWest": {
       "status": "fail",
       "count": 0,
       "message": "404 Client Error: Not Found for url: https://www.skywest.com/skywest-airline-jobs/career-guides/pilots/"
     },
-    "PilotCareerCenter (AZ pages)": {
+    "PilotCareerCenter.com": {
       "status": "fail",
       "count": 0,
       "message": "https://pilotcareercenter.com/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL: 403 Client Error: Forbidden: Access is denied. for url: https://pilotcareercenter.com/PHOENIX-PILOT-JOBS/KIWA-KDVT-KPHX-KSDL; https://pilotcareercenter.com/AZ: 403 Client Error: Forbidden: Access is denied. for url: https://pilotcareercenter.com/AZ"
