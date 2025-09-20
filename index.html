@@ -3,52 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phoenix & Southwest Pilot Jobs</title>
+  <title>Pilot Jobs Phoenix</title>
   <script src="script.js" defer></script>
-  <script>
-    // Dark/Light Mode Toggle
-    function toggleTheme() {
-      document.documentElement.classList.toggle("dark");
-      const theme = document.documentElement.classList.contains("dark")
-        ? "dark"
-        : "light";
-      localStorage.setItem("theme", theme);
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      if (localStorage.getItem("theme") === "light") {
-        document.documentElement.classList.remove("dark");
-      }
-    });
-  </script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
   <div class="container mx-auto p-4">
-    <h1 class="text-3xl font-bold mb-4 text-center">Pilot Jobs – Phoenix & Southwest</h1>
-
-    <!-- Controls -->
-    <div id="controls" class="flex flex-wrap gap-2 justify-center mb-4">
-      <button data-tag="Caravan" onclick="toggleFilter('Caravan')" class="px-3 py-1 rounded border">Caravan</button>
-      <button data-tag="Cessna 208" onclick="toggleFilter('Cessna 208')" class="px-3 py-1 rounded border">Cessna 208</button>
-      <button data-tag="PC-12" onclick="toggleFilter('PC-12')" class="px-3 py-1 rounded border">PC-12</button>
-      <button data-tag="Pilatus" onclick="toggleFilter('Pilatus')" class="px-3 py-1 rounded border">Pilatus</button>
-      <button data-tag="King Air" onclick="toggleFilter('King Air')" class="px-3 py-1 rounded border">King Air</button>
-      <button data-tag="Navajo" onclick="toggleFilter('Navajo')" class="px-3 py-1 rounded border">Navajo</button>
-      <input id="search" type="text" placeholder="Search jobs..." class="px-3 py-1 rounded border flex-grow sm:flex-none" />
-      <button onclick="clearFilters()" class="px-3 py-1 rounded border">Clear Filters</button>
-      <button onclick="toggleTheme()" class="px-3 py-1 rounded border">Toggle Dark/Light</button>
-    </div>
-
-    <!-- Active filter summary -->
-    <p id="active-filters" class="text-center text-sm text-gray-700 dark:text-gray-300 mb-2">No filters active</p>
-    <p id="last-updated" class="text-center text-xs text-gray-500 dark:text-gray-400 mb-6">Updated: --</p>
-
-    <!-- Jobs grid -->
+    <h1 class="text-3xl font-bold mb-4 text-center">Pilot Jobs – Phoenix Area</h1>
     <div id="jobs" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-
-    <!-- Scraper status -->
-    <div id="scraper-status" class="mt-8"></div>
   </div>
 </body>
 </html>
