@@ -2,123 +2,110 @@ let jobs = [];
 let activeFilters = new Set();
 
 async function loadJobs() {
-  try {
-    const res = await fetch("jobs.json");
-    if (!res.ok) throw new Error("Failed to fetch jobs.json");
-    const data = await res.json();
-    console.log("Loaded jobs:", data);
+  const response = await fetch("jobs.json");
+  const data = await response.json();
 
-    jobs = data.today || [];
-    let lastUpdated = null;
+  jobs = data.today || [];
 
-    // Fallback to history if today is empty
-    if (jobs.length === 0 && data.history) {
-      const dates = Object.keys(data.history).sort().reverse();
-      if (dates.length > 0) {
-        const latest = dates[0];
-        jobs = data.history[latest] || [];
-        lastUpdated = latest + " (history)";
-      }
-    }
+  // Show last updated (Arizona time)
+  const lastUpdated = document.getElementById("last-updated");
+  const arizonaTime = new Date().toLocaleString("en-US", {
+    timeZone: "America/Phoenix",
+    dateStyle: "full",
+    timeStyle: "short",
+  });
+  lastUpdated.textContent = "Last updated: " + arizonaTime;
 
-    // Show Arizona local time if today’s jobs exist
-    if (!lastUpdated) {
-      const now = new Date();
-      const options = { timeZone: "America/Phoenix", hour12: false };
-      const azTime = new Intl.DateTimeFormat("en-US", {
-        ...options,
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit"
-      }).format(now);
-
-      lastUpdated = azTime + " (Arizona Time)";
-    }
-
-    document.getElementById("last-updated").innerText =
-      "Last updated: " + lastUpdated;
-    renderJobs();
-  } catch (err) {
-    console.error("Error loading jobs:", err);
-    document.getElementById("jobs-container").innerHTML =
-      "<p>Could not load jobs.</p>";
+  renderJobs();
+  if (data.results) {
+    renderStatus(data.results);
   }
 }
 
 function renderJobs() {
   const container = document.getElementById("jobs-container");
-  const summary = document.getElementById("filter-summary");
-  const search = document.getElementById("search").value.toLowerCase();
   container.innerHTML = "";
 
-  // Update filter summary
-  if (activeFilters.size > 0) {
-    summary.innerText = "Active filters: " + [...activeFilters].join(", ");
-  } else {
-    summary.innerText = "No filters active";
-  }
+  const searchValue = document.getElementById("search").value.toLowerCase();
 
-  const filtered = jobs.filter((j) => {
-    const matchesFilters =
-      activeFilters.size === 0 ||
-      [...activeFilters].some(
-        (tag) =>
-          (j.tags && j.tags.includes(tag)) ||
-          (tag === "Ameriflight" && j.company === "Ameriflight")
-      );
-
+  let filteredJobs = jobs.filter(job => {
     const matchesSearch =
-      j.title.toLowerCase().includes(search) ||
-      j.company.toLowerCase().includes(search);
-
-    return matchesFilters && matchesSearch;
+      job.title.toLowerCase().includes(searchValue) ||
+      job.company.toLowerCase().includes(searchValue);
+    const matchesFilter =
+      activeFilters.size === 0 ||
+      job.tags.some(tag => activeFilters.has(tag));
+    return matchesSearch && matchesFilter;
   });
 
-  if (filtered.length === 0) {
-    container.innerHTML = "<p>No jobs found.</p>";
-    return;
-  }
-
-  filtered.forEach((j) => {
+  filteredJobs.forEach(job => {
     const div = document.createElement("div");
     div.className = "job-card";
     div.innerHTML = `
-      <h3><a href="${j.link}" target="_blank">${j.title}</a></h3>
-      <p><strong>Company:</strong> ${j.company}</p>
-      <p><strong>Source:</strong> ${j.source}</p>
-      <p><strong>Tags:</strong> ${j.tags ? j.tags.join(", ") : "None"}</p>
+      <h3><a href="${job.link}" target="_blank">${job.title}</a></h3>
+      <p><strong>${job.company}</strong></p>
+      <p><em>${job.source}</em></p>
+      <p>${job.tags.join(", ")}</p>
     `;
     container.appendChild(div);
   });
+
+  renderFilterSummary(searchValue);
 }
 
 function toggleFilter(tag) {
-  const button = [...document.querySelectorAll(".controls button")].find(
-    (btn) => btn.textContent === tag
-  );
-
+  const button = document.querySelector(`button[data-tag="${tag}"]`);
   if (activeFilters.has(tag)) {
     activeFilters.delete(tag);
-    if (button) button.classList.remove("active");
+    button.classList.remove("active");
   } else {
     activeFilters.add(tag);
-    if (button) {
-      button.classList.add("active");
-      button.setAttribute("data-tag", tag);
-    }
+    button.classList.add("active");
   }
-
   renderJobs();
 }
 
 function clearFilters() {
   activeFilters.clear();
-  document
-    .querySelectorAll(".controls button")
-    .forEach((btn) => btn.classList.remove("active"));
+  document.querySelectorAll(".controls button").forEach(btn => {
+    btn.classList.remove("active");
+  });
   renderJobs();
 }
 
-loadJobs();
+function renderFilterSummary(searchValue) {
+  const summary = document.getElementById("filter-summary");
+  let text = "";
+
+  if (activeFilters.size > 0) {
+    text += "Active filters: " + Array.from(activeFilters).join(", ");
+  }
+  if (searchValue) {
+    if (text) text += " | ";
+    text += `Search: "${searchValue}"`;
+  }
+  if (!text) {
+    text = "No filters active";
+  }
+  summary.textContent = text;
+}
+
+function renderStatus(results) {
+  const tbody = document.querySelector("#status-table tbody");
+  if (!tbody) return;
+
+  tbody.innerHTML = "";
+  for (const [source, info] of Object.entries(results)) {
+    const statusIcon = info.status === "success" ? "✅" : "❌";
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td style="padding:8px; border:1px solid #ddd;">${source}</td>
+      <td style="padding:8px; border:1px solid #ddd; text-align:center;">
+        ${statusIcon} (${info.count})
+      </td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
+window.onload = loadJobs;
