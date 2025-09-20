@@ -9,6 +9,7 @@ function loadJobs() {
         : data.history[Object.keys(data.history).pop()];
 
       renderJobs(jobsData);
+      renderScraperStatus(data.results);
     })
     .catch(err => console.error("Error loading jobs:", err));
 }
@@ -39,6 +40,28 @@ function renderJobs(jobs) {
     `;
     container.appendChild(card);
   });
+}
+
+function renderScraperStatus(results) {
+  const statusDiv = document.getElementById("scraper-status");
+  if (!results) {
+    statusDiv.innerHTML = "<p>No scraper status available.</p>";
+    return;
+  }
+
+  let html = '<h2 class="text-lg font-bold mt-6 mb-2">Scraper Status</h2>';
+  html += '<table class="w-full text-sm border">';
+  html += '<tr><th class="border px-2">Source</th><th class="border px-2">Status</th></tr>';
+
+  for (const [source, info] of Object.entries(results)) {
+    const statusIcon = info.status === "success"
+      ? (info.count > 0 ? "✅ (" + info.count + ")" : "❌ (0)")
+      : "❌";
+    html += `<tr><td class="border px-2">${source}</td><td class="border px-2">${statusIcon}</td></tr>`;
+  }
+
+  html += "</table>";
+  statusDiv.innerHTML = html;
 }
 
 document.addEventListener("DOMContentLoaded", loadJobs);
