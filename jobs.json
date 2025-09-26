@@ -31,6 +31,16 @@
       "hours_required": null
     },
     {
+      "title": "PIC & SIC \u2014 Pilatus PC24 - Lancaster PA",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22706/USA/PIC-&-SIC/Pilatus-PC24---Lancaster-PA/Venture-Jets",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "First Officer \u2014 King Air 350 - Hawthorne CA",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22688/USA/First-Officer/King-Air-350---Hawthorne-CA/Advanced-Air",
@@ -1326,6 +1336,16 @@
         "hours_required": null
       },
       {
+        "title": "PIC & SIC \u2014 Pilatus PC24 - Lancaster PA",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22706/USA/PIC-&-SIC/Pilatus-PC24---Lancaster-PA/Venture-Jets",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "First Officer \u2014 King Air 350 - Hawthorne CA",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22688/USA/First-Officer/King-Air-350---Hawthorne-CA/Advanced-Air",
@@ -1470,7 +1490,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 12
+      "count": 13
     },
     "PilotsGlobal": {
       "status": "success",
