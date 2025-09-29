@@ -249,16 +249,6 @@
         "King Air"
       ],
       "hours_required": null
-    },
-    {
-      "title": "Captain - PC-12Airmedic | Corporate / Biz AvPilatusPC-12Canada | MontrealFlight time1200Turbine time500IR, SAMRA SARONTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-airmedic-CA-24269e75d2?c=15",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
     }
   ],
   "history": {
@@ -2210,16 +2200,6 @@
           "King Air"
         ],
         "hours_required": null
-      },
-      {
-        "title": "Captain - PC-12Airmedic | Corporate / Biz AvPilatusPC-12Canada | MontrealFlight time1200Turbine time500IR, SAMRA SARONTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-airmedic-CA-24269e75d2?c=15",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
       }
     ]
   },
@@ -2230,7 +2210,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 6
     },
     "SkyWest": {
       "status": "success",
