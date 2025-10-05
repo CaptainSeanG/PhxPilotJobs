@@ -201,19 +201,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5?c=0",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -223,7 +213,7 @@
     {
       "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5?c=1",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5?c=0",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -231,12 +221,32 @@
       "hours_required": null
     },
     {
-      "title": "Captain - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time1000CPL, IR, METCCA",
+      "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-canwest_air-CA-1776fc6244?c=8",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205?c=1",
       "source": "PilotsGlobal",
       "tags": [
-        "Caravan"
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz?c=2",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=8",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
       ],
       "hours_required": null
     },
@@ -247,46 +257,6 @@
       "source": "PilotsGlobal",
       "tags": [
         "Navajo"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | St. John'sFlight time2000PIC time500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c?c=11",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2000ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7?c=14",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaFlight time3000PIC time1000ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci?c=17",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=18",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
       ],
       "hours_required": null
     }
@@ -3794,19 +3764,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5?c=0",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -3816,7 +3776,7 @@
       {
         "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5?c=1",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5?c=0",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -3824,12 +3784,32 @@
         "hours_required": null
       },
       {
-        "title": "Captain - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time1000CPL, IR, METCCA",
+        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-canwest_air-CA-1776fc6244?c=8",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205?c=1",
         "source": "PilotsGlobal",
         "tags": [
-          "Caravan"
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz?c=2",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=8",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
         ],
         "hours_required": null
       },
@@ -3842,46 +3822,6 @@
           "Navajo"
         ],
         "hours_required": null
-      },
-      {
-        "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | St. John'sFlight time2000PIC time500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c?c=11",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2000ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7?c=14",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaFlight time3000PIC time1000ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci?c=17",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=18",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
       }
     ]
   },
@@ -3892,7 +3832,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 9
+      "count": 6
     },
     "SkyWest": {
       "status": "success",
