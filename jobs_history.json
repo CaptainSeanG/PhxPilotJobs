@@ -111,16 +111,6 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 Pilatus PC24 - Phoenix AZ",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19105/USA/Captain/Pilatus-PC24---Phoenix-AZ/Cutter-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Caravan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Caravan",
@@ -4330,16 +4320,6 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 Pilatus PC24 - Phoenix AZ",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19105/USA/Captain/Pilatus-PC24---Phoenix-AZ/Cutter-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Caravan",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Caravan",
@@ -4424,7 +4404,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 15
+      "count": 14
     },
     "PilotsGlobal": {
       "status": "success",
