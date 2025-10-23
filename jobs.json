@@ -211,6 +211,26 @@
       "hours_required": null
     },
     {
+      "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaFlight time3000PIC time1000ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci?c=2",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Chief Pilot - PC-12Private Air | Corporate / Biz AvPilatusPC-12Canada | TorontoFlight time2500PIC time500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-chief-pilot-private_air-CA-AFuOsq50nr?c=3",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain - Cessna 408 SkyCourierMountain Air Cargo | Airline - CargoCessnaCessna 408 SkyCourierPuerto Rico | San JuanFlight time1800PIC time500CPL, MEFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/Cessna-408-SkyCourier-captain-mountain_air_cargo-PR-49cdfa4596?c=6",
@@ -224,6 +244,16 @@
       "title": "Captain - Super King AirSunwest Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | CalgaryFlight time1500PIC time500ATPLTCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/Super-King-Air-captain-sunwest_aviation-CA-9ce2a6094a?c=8",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Training Manager - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | St. John'sFlight time2500PIC time1000ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-training-manager-pal_aerospace-CA-pgtUt1q5hf?c=15",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -7740,6 +7770,26 @@
         "hours_required": null
       },
       {
+        "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaFlight time3000PIC time1000ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci?c=2",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Chief Pilot - PC-12Private Air | Corporate / Biz AvPilatusPC-12Canada | TorontoFlight time2500PIC time500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-chief-pilot-private_air-CA-AFuOsq50nr?c=3",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain - Cessna 408 SkyCourierMountain Air Cargo | Airline - CargoCessnaCessna 408 SkyCourierPuerto Rico | San JuanFlight time1800PIC time500CPL, MEFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/Cessna-408-SkyCourier-captain-mountain_air_cargo-PR-49cdfa4596?c=6",
@@ -7753,6 +7803,16 @@
         "title": "Captain - Super King AirSunwest Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | CalgaryFlight time1500PIC time500ATPLTCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/Super-King-Air-captain-sunwest_aviation-CA-9ce2a6094a?c=8",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Training Manager - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | St. John'sFlight time2500PIC time1000ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-training-manager-pal_aerospace-CA-pgtUt1q5hf?c=15",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
@@ -7778,7 +7838,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 6
+      "count": 9
     },
     "SkyWest": {
       "status": "success",
