@@ -151,12 +151,22 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time200CPL, IR, METCCA",
+      "title": "Captain - PC-12Rise Air | Airline - RegionalPilatusPC-12Canada | La RongeFlight time1500PIC time500ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-canwest_air-CA-F3dHsjaor2?c=6",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-rise_air-CA-4MaRslx6pq?c=6",
       "source": "PilotsGlobal",
       "tags": [
-        "Caravan"
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=7",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
       ],
       "hours_required": null
     },
@@ -173,10 +183,20 @@
     {
       "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148?c=13",
+      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148?c=12",
       "source": "PilotsGlobal",
       "tags": [
         "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Chief Pilot - PC-12Private Air | Corporate / Biz AvPilatusPC-12Canada | TorontoFlight time2500PIC time500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-chief-pilot-private_air-CA-AFuOsq50nr?c=16",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
       ],
       "hours_required": null
     }
@@ -10586,12 +10606,22 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time200CPL, IR, METCCA",
+        "title": "Captain - PC-12Rise Air | Airline - RegionalPilatusPC-12Canada | La RongeFlight time1500PIC time500ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-canwest_air-CA-F3dHsjaor2?c=6",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-rise_air-CA-4MaRslx6pq?c=6",
         "source": "PilotsGlobal",
         "tags": [
-          "Caravan"
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=7",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
         ],
         "hours_required": null
       },
@@ -10608,10 +10638,20 @@
       {
         "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148?c=13",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148?c=12",
         "source": "PilotsGlobal",
         "tags": [
           "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Chief Pilot - PC-12Private Air | Corporate / Biz AvPilatusPC-12Canada | TorontoFlight time2500PIC time500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-chief-pilot-private_air-CA-AFuOsq50nr?c=16",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
         ],
         "hours_required": null
       }
@@ -10624,7 +10664,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 6
+      "count": 8
     },
     "SkyWest": {
       "status": "success",
