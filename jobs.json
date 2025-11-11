@@ -159,26 +159,6 @@
         "SkyCourier"
       ],
       "hours_required": null
-    },
-    {
-      "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=17",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Navajo"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time200CPL, IR, METCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-canwest_air-CA-F3dHsjaor2?c=18",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
     }
   ],
   "history": {
@@ -11696,26 +11676,6 @@
           "SkyCourier"
         ],
         "hours_required": null
-      },
-      {
-        "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=17",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Navajo"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time200CPL, IR, METCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-canwest_air-CA-F3dHsjaor2?c=18",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
       }
     ]
   },
@@ -11726,7 +11686,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 5
     },
     "SkyWest": {
       "status": "success",
