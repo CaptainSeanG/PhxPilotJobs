@@ -161,16 +161,6 @@
       "hours_required": null
     },
     {
-      "title": "Captain - Super King AirKeewatin Air | Corporate / Biz AvBeechcraftSuper King AirCanada | WinnipegFlight time2000PIC time500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-keewatin_air-CA-RAIXt09b3y?c=5",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - King AirBuffalo Airways | Corporate / Biz AvBeechcraftKing AirCanada | YellowknifeFlight time250CPL, IR, METCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/King-Air-first-officer-buffalo_airways-CA-af8d6a6bc4?c=7",
@@ -184,16 +174,6 @@
       "title": "Captain - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time1200ATPL, IATRATCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/King-Air-captain-air_nunavut-CA-f349f1cbc9?c=9",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2000ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7?c=18",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -11880,16 +11860,6 @@
         "hours_required": null
       },
       {
-        "title": "Captain - Super King AirKeewatin Air | Corporate / Biz AvBeechcraftSuper King AirCanada | WinnipegFlight time2000PIC time500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-keewatin_air-CA-RAIXt09b3y?c=5",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - King AirBuffalo Airways | Corporate / Biz AvBeechcraftKing AirCanada | YellowknifeFlight time250CPL, IR, METCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/King-Air-first-officer-buffalo_airways-CA-af8d6a6bc4?c=7",
@@ -11908,16 +11878,6 @@
           "King Air"
         ],
         "hours_required": null
-      },
-      {
-        "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2000ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7?c=18",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
       }
     ]
   },
@@ -11928,7 +11888,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 8
+      "count": 6
     },
     "SkyWest": {
       "status": "success",
