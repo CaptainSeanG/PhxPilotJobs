@@ -11,6 +11,16 @@
       "hours_required": null
     },
     {
+      "title": "Caravan",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/caravan",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Pilatus PC12",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/PC12",
@@ -31,9 +41,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 Pilatus PC12 - Lewisville TX",
+      "title": "First Officer \u2014 Pilatus PC12 - Lausanne",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22712/USA/Captain/Pilatus-PC12---Lewisville-TX/Guardian-Flight",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22959/EUROPE-UK/First-Officer/Pilatus-PC12---Lausanne/Fly-7-Executive-Aviation",
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
@@ -41,9 +51,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 Pilatus PC24 - St Paul MN",
+      "title": "Captain \u2014 Pilatus PC12 - Lausanne",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22499/USA/Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22957/EUROPE-UK/Captain/Pilatus-PC12---Lausanne/Fly-7-Executive-Aviation",
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
@@ -51,9 +61,9 @@
       "hours_required": null
     },
     {
-      "title": "Lead Captain \u2014 Pilatus PC24 - St Paul MN",
+      "title": "Captain \u2014 Pilatus PC12 - Luxembourg",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22498/USA/Lead-Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22958/EUROPE-UK/Captain/Pilatus-PC12---Luxembourg/Fly-7-Executive-Aviation",
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
@@ -61,19 +71,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 King Air 200/300 - Anchorage AK",
+      "title": "Private Pilot \u2014 Pilatus PC24 / Cessna CJ - CH",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22716/USA/Captain/King-Air-200-300---Anchorage-AK/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 Pilatus PC12 - Rosebud SD",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21098/USA/Captain/Pilatus-PC12---Rosebud-SD/Guardian-Flight",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22955/EUROPE-UK/Private-Pilot/Pilatus-PC24---Cessna-CJ---CH/Family-Office",
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
@@ -81,19 +81,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 Pilatus PC12 - Ogden UT",
+      "title": "SET Captain \u2014 C208 Caravan - UK airfields",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22220/USA/Captain/Pilatus-PC12----Ogden-UT/SkyShare",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 C208 Caravan - Dillingham AK",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22155/USA/Captain/C208-Caravan---Dillingham-AK/Guardian-Flight",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22887/EUROPE-UK/SET-Captain/C208-Caravan---UK-airfields/GoSkydive",
       "source": "PilotCareerCenter",
       "tags": [
         "Caravan"
@@ -101,42 +91,22 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 King Air C90 - Springerville AZ",
+      "title": "Type Rated Captain \u2014 Pilatus PC24 - Geneva",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22343/USA/Captain/King-Air-C90---Springerville-AZ/Guardian-Flight",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22881/EUROPE-UK/Type-Rated-Captain/Pilatus-PC24---Geneva/Global-Jet",
       "source": "PilotCareerCenter",
       "tags": [
-        "King Air"
+        "PC-12"
       ],
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 King Air 200 - San Antonio TX",
+      "title": "Type Rated Captains \u2014 Pilatus PC24 - Munich",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22598/USA/Captain/King-Air-200---San-Antonio-TX/Guardian-Flight",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22434/EUROPE-UK/Type-Rated-Captains/Pilatus-PC24---Munich/International-Jet-Management",
       "source": "PilotCareerCenter",
       "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Contract Captain \u2014 King Air 200 - Orlando Sanford",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22889/USA/Contract-Captain/King-Air-200---Orlando-Sanford/Air-Unlimited",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Chief Pilot \u2014 King Air 200 - Orlando Sanford",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22888/USA/Chief-Pilot/King-Air-200---Orlando-Sanford/Air-Unlimited",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
+        "PC-12"
       ],
       "hours_required": null
     },
@@ -144,6 +114,16 @@
       "title": "Caravan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Caravan",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Caravan",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/caravan",
       "source": "PilotCareerCenter",
       "tags": [
         "Caravan"
@@ -15696,6 +15676,16 @@
         "hours_required": null
       },
       {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/caravan",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Pilatus PC12",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/PC12",
@@ -15716,9 +15706,9 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 Pilatus PC12 - Lewisville TX",
+        "title": "First Officer \u2014 Pilatus PC12 - Lausanne",
         "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22712/USA/Captain/Pilatus-PC12---Lewisville-TX/Guardian-Flight",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22959/EUROPE-UK/First-Officer/Pilatus-PC12---Lausanne/Fly-7-Executive-Aviation",
         "source": "PilotCareerCenter",
         "tags": [
           "PC-12"
@@ -15726,9 +15716,9 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 Pilatus PC24 - St Paul MN",
+        "title": "Captain \u2014 Pilatus PC12 - Lausanne",
         "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22499/USA/Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22957/EUROPE-UK/Captain/Pilatus-PC12---Lausanne/Fly-7-Executive-Aviation",
         "source": "PilotCareerCenter",
         "tags": [
           "PC-12"
@@ -15736,9 +15726,9 @@
         "hours_required": null
       },
       {
-        "title": "Lead Captain \u2014 Pilatus PC24 - St Paul MN",
+        "title": "Captain \u2014 Pilatus PC12 - Luxembourg",
         "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22498/USA/Lead-Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22958/EUROPE-UK/Captain/Pilatus-PC12---Luxembourg/Fly-7-Executive-Aviation",
         "source": "PilotCareerCenter",
         "tags": [
           "PC-12"
@@ -15746,19 +15736,9 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 King Air 200/300 - Anchorage AK",
+        "title": "Private Pilot \u2014 Pilatus PC24 / Cessna CJ - CH",
         "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22716/USA/Captain/King-Air-200-300---Anchorage-AK/Guardian-Flight",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 Pilatus PC12 - Rosebud SD",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21098/USA/Captain/Pilatus-PC12---Rosebud-SD/Guardian-Flight",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22955/EUROPE-UK/Private-Pilot/Pilatus-PC24---Cessna-CJ---CH/Family-Office",
         "source": "PilotCareerCenter",
         "tags": [
           "PC-12"
@@ -15766,19 +15746,9 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 Pilatus PC12 - Ogden UT",
+        "title": "SET Captain \u2014 C208 Caravan - UK airfields",
         "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22220/USA/Captain/Pilatus-PC12----Ogden-UT/SkyShare",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 C208 Caravan - Dillingham AK",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22155/USA/Captain/C208-Caravan---Dillingham-AK/Guardian-Flight",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22887/EUROPE-UK/SET-Captain/C208-Caravan---UK-airfields/GoSkydive",
         "source": "PilotCareerCenter",
         "tags": [
           "Caravan"
@@ -15786,42 +15756,22 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 King Air C90 - Springerville AZ",
+        "title": "Type Rated Captain \u2014 Pilatus PC24 - Geneva",
         "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22343/USA/Captain/King-Air-C90---Springerville-AZ/Guardian-Flight",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22881/EUROPE-UK/Type-Rated-Captain/Pilatus-PC24---Geneva/Global-Jet",
         "source": "PilotCareerCenter",
         "tags": [
-          "King Air"
+          "PC-12"
         ],
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 King Air 200 - San Antonio TX",
+        "title": "Type Rated Captains \u2014 Pilatus PC24 - Munich",
         "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22598/USA/Captain/King-Air-200---San-Antonio-TX/Guardian-Flight",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22434/EUROPE-UK/Type-Rated-Captains/Pilatus-PC24---Munich/International-Jet-Management",
         "source": "PilotCareerCenter",
         "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Contract Captain \u2014 King Air 200 - Orlando Sanford",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22889/USA/Contract-Captain/King-Air-200---Orlando-Sanford/Air-Unlimited",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Chief Pilot \u2014 King Air 200 - Orlando Sanford",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22888/USA/Chief-Pilot/King-Air-200---Orlando-Sanford/Air-Unlimited",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
+          "PC-12"
         ],
         "hours_required": null
       },
@@ -15829,6 +15779,16 @@
         "title": "Caravan",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Caravan",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/caravan",
         "source": "PilotCareerCenter",
         "tags": [
           "Caravan"
@@ -15920,7 +15880,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 17
+      "count": 15
     },
     "PilotsGlobal": {
       "status": "success",
