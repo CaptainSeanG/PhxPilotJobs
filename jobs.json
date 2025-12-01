@@ -219,46 +219,6 @@
         "PC-12"
       ],
       "hours_required": null
-    },
-    {
-      "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=7",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Navajo"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time2000PIC time750CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-wasaya_airways-CA-300d23825e?c=9",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148?c=13",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d?c=18",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
     }
   ],
   "history": {
@@ -16146,46 +16106,6 @@
           "PC-12"
         ],
         "hours_required": null
-      },
-      {
-        "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=7",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Navajo"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time2000PIC time750CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-wasaya_airways-CA-300d23825e?c=9",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148?c=13",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d?c=18",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
       }
     ]
   },
@@ -16196,7 +16116,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 3
     },
     "SkyWest": {
       "status": "success",
