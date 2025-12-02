@@ -199,6 +199,56 @@
         "PC-12"
       ],
       "hours_required": null
+    },
+    {
+      "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be?c=5",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PC-12Royal Canadian Mounted Police | Government / Defence / AerospacePilatusPC-12Canada | OttawaPIC time3000CPL, IRTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-royal_canadian_mounted_police-CA-0a5ebef9d7?c=10",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c?c=11",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=16",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time500CPL, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-canwest_air-CA-63d3958bc4?c=18",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
     }
   ],
   "history": {
@@ -16288,6 +16338,56 @@
           "PC-12"
         ],
         "hours_required": null
+      },
+      {
+        "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be?c=5",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PC-12Royal Canadian Mounted Police | Government / Defence / AerospacePilatusPC-12Canada | OttawaPIC time3000CPL, IRTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-royal_canadian_mounted_police-CA-0a5ebef9d7?c=10",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c?c=11",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=16",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time500CPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-first-officer-canwest_air-CA-63d3958bc4?c=18",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
       }
     ]
   },
@@ -16298,7 +16398,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 3
+      "count": 8
     },
     "SkyWest": {
       "status": "success",
