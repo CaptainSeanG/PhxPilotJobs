@@ -141,6 +141,26 @@
       "hours_required": null
     },
     {
+      "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0?c=3",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=4",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d?c=7",
@@ -171,9 +191,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time2000PIC time750CPL, IRTCCA",
+      "title": "Captain - PC-12Airmedic | Corporate / Biz AvPilatusPC-12Canada | MontrealFlight time1200Turbine time500IR, SAMRA SARONTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-wasaya_airways-CA-300d23825e?c=16",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-airmedic-CA-24269e75d2?c=16",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -16444,6 +16464,26 @@
         "hours_required": null
       },
       {
+        "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0?c=3",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=4",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d?c=7",
@@ -16474,9 +16514,9 @@
         "hours_required": null
       },
       {
-        "title": "Captain - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time2000PIC time750CPL, IRTCCA",
+        "title": "Captain - PC-12Airmedic | Corporate / Biz AvPilatusPC-12Canada | MontrealFlight time1200Turbine time500IR, SAMRA SARONTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-wasaya_airways-CA-300d23825e?c=16",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-airmedic-CA-24269e75d2?c=16",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -16492,7 +16532,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 9
     },
     "SkyWest": {
       "status": "success",
