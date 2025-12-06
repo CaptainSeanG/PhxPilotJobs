@@ -1,6 +1,116 @@
 {
   "today": [
     {
+      "title": "Caravan",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Caravan",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC12",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC12",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC24",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC24",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Fire Management Captain \u2014 King Air 200 - CNO",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22752/USA/Fire-Management-Captain/King-Air-200---CNO/Dynamic-Aviation",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Contact Captain \u2014 Pilatus PC12 - Tampa",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21126/USA/Contact-Captain/Pilatus-PC12---Tampa/FlyUSA",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 Pilatus PC12 - Lewisville TX",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22712/USA/Captain/Pilatus-PC12---Lewisville-TX/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 Pilatus PC24 - St Paul MN",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22499/USA/Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Lead Captain \u2014 Pilatus PC24 - St Paul MN",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22498/USA/Lead-Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Caravan",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Caravan",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC12",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC12",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC24",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC24",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
@@ -16568,6 +16678,116 @@
     ],
     "2025-12-06": [
       {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Caravan",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Fire Management Captain \u2014 King Air 200 - CNO",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22752/USA/Fire-Management-Captain/King-Air-200---CNO/Dynamic-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Contact Captain \u2014 Pilatus PC12 - Tampa",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21126/USA/Contact-Captain/Pilatus-PC12---Tampa/FlyUSA",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Pilatus PC12 - Lewisville TX",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22712/USA/Captain/Pilatus-PC12---Lewisville-TX/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Pilatus PC24 - St Paul MN",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22499/USA/Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Lead Captain \u2014 Pilatus PC24 - St Paul MN",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22498/USA/Lead-Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Caravan",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
@@ -16641,8 +16861,8 @@
   },
   "results": {
     "PilotCareerCenter": {
-      "status": "fail",
-      "count": 0
+      "status": "success",
+      "count": 11
     },
     "PilotsGlobal": {
       "status": "success",
