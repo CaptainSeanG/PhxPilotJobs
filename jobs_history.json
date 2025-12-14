@@ -81,26 +81,6 @@
       "hours_required": null
     },
     {
-      "title": "Fire Management Captain \u2014 King Air 200 - CNO",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22752/USA/Fire-Management-Captain/King-Air-200---CNO/Dynamic-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Contact Captain \u2014 Pilatus PC12 - Tampa",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21126/USA/Contact-Captain/Pilatus-PC12---Tampa/FlyUSA",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Caravan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Caravan",
@@ -131,9 +111,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
+      "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -141,9 +121,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+      "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5?c=0",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205?c=0",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -161,29 +141,19 @@
       "hours_required": null
     },
     {
-      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+      "title": "Captain - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time1000CPL, IR, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=3",
+      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-canwest_air-CA-1776fc6244?c=10",
       "source": "PilotsGlobal",
       "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirRise Air | Airline - RegionalBeechcraftKing AirCanada | La RongeFlight time1500PIC time500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-rise_air-CA-cb2070cff1?c=8",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
+        "Caravan"
       ],
       "hours_required": null
     },
     {
       "title": "First Officer - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time500CPL, IR, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd?c=10",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd?c=14",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -18464,26 +18434,6 @@
         "hours_required": null
       },
       {
-        "title": "Fire Management Captain \u2014 King Air 200 - CNO",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22752/USA/Fire-Management-Captain/King-Air-200---CNO/Dynamic-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Contact Captain \u2014 Pilatus PC12 - Tampa",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21126/USA/Contact-Captain/Pilatus-PC12---Tampa/FlyUSA",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Caravan",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Caravan",
@@ -18514,9 +18464,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
+        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -18524,9 +18474,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5?c=0",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205?c=0",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -18544,29 +18494,19 @@
         "hours_required": null
       },
       {
-        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+        "title": "Captain - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time1000CPL, IR, METCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=3",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-canwest_air-CA-1776fc6244?c=10",
         "source": "PilotsGlobal",
         "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirRise Air | Airline - RegionalBeechcraftKing AirCanada | La RongeFlight time1500PIC time500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-rise_air-CA-cb2070cff1?c=8",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
+          "Caravan"
         ],
         "hours_required": null
       },
       {
         "title": "First Officer - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time500CPL, IR, METCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd?c=10",
+        "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd?c=14",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
@@ -18578,11 +18518,11 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 13
+      "count": 11
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 6
+      "count": 5
     },
     "SkyWest": {
       "status": "success",
