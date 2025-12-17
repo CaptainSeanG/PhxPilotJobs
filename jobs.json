@@ -141,36 +141,6 @@
       "hours_required": null
     },
     {
-      "title": "Captain - PC-12Royal Canadian Mounted Police | Government / Defence / AerospacePilatusPC-12Canada | OttawaPIC time3000CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-royal_canadian_mounted_police-CA-0a5ebef9d7?c=2",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time200CPL, IR, METCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-canwest_air-CA-F3dHsjaor2?c=6",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - PA-31 NavajoSkyCare | Corporate / Biz AvPiperPA-31 NavajoCanada | Sioux LookoutFlight time500CPL, IR, METCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-first-officer-skycare-CA-poG2sc89l9?c=7",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Navajo"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time500CPL, IR, METCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/King-Air-first-officer-canwest_air-CA-63d3958bc4?c=10",
@@ -181,19 +151,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000PIC time500ATPLTCCA",
+      "title": "First Officer - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time500CPL, IR, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i?c=11",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d?c=13",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd?c=14",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -201,9 +161,19 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time500CPL, IR, METCCA",
+      "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | GoldenPIC time1000Multi-engine200CPL, IR, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd?c=14",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d?c=16",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci?c=18",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -18970,59 +18940,9 @@
         "hours_required": null
       },
       {
-        "title": "Captain - PC-12Royal Canadian Mounted Police | Government / Defence / AerospacePilatusPC-12Canada | OttawaPIC time3000CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-royal_canadian_mounted_police-CA-0a5ebef9d7?c=2",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time200CPL, IR, METCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-canwest_air-CA-F3dHsjaor2?c=6",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - PA-31 NavajoSkyCare | Corporate / Biz AvPiperPA-31 NavajoCanada | Sioux LookoutFlight time500CPL, IR, METCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-first-officer-skycare-CA-poG2sc89l9?c=7",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Navajo"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time500CPL, IR, METCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/King-Air-first-officer-canwest_air-CA-63d3958bc4?c=10",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000PIC time500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i?c=11",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d?c=13",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
@@ -19038,6 +18958,26 @@
           "King Air"
         ],
         "hours_required": null
+      },
+      {
+        "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | GoldenPIC time1000Multi-engine200CPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d?c=16",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci?c=18",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
       }
     ]
   },
@@ -19048,7 +18988,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 10
+      "count": 7
     },
     "SkyWest": {
       "status": "fail",
