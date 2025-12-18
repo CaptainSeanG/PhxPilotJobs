@@ -31,6 +31,16 @@
       "hours_required": null
     },
     {
+      "title": "PIC (Single Pilot) \u2014 2025 Pilatus PC12NGX - San Diego",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23041/USA/PIC-(Single-Pilot)/2025-Pilatus-PC12NGX---San-Diego/Private-Family",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain \u2014 King Air 200 - Albuquerque NM",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22010/USA/Captain/King-Air-200---Albuquerque-NM/Guardian-Flight",
@@ -19012,6 +19022,16 @@
         "hours_required": null
       },
       {
+        "title": "PIC (Single Pilot) \u2014 2025 Pilatus PC12NGX - San Diego",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23041/USA/PIC-(Single-Pilot)/2025-Pilatus-PC12NGX---San-Diego/Private-Family",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain \u2014 King Air 200 - Albuquerque NM",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22010/USA/Captain/King-Air-200---Albuquerque-NM/Guardian-Flight",
@@ -19166,7 +19186,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 11
+      "count": 12
     },
     "PilotsGlobal": {
       "status": "success",
