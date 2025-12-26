@@ -31,9 +31,9 @@
       "hours_required": null
     },
     {
-      "title": "Lead Captain \u2014 Pilatus PC24 - St Paul MN",
+      "title": "Non Rated Captain \u2014 Pilatus PC12 - Prague",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22498/USA/Lead-Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23018/EUROPE-UK/Non-Rated-Captain/Pilatus-PC12---Prague/Alpha-Aviation",
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
@@ -41,9 +41,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 Pilatus PC24 - St Paul MN",
+      "title": "Type Rated Captains \u2014 Pilatus PC12 - Prague",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22499/USA/Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21624/EUROPE-UK/Type-Rated-Captains/Pilatus-PC12---Prague/OK-Aviation-Wings",
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
@@ -51,9 +51,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 Pilatus PC12NG - Salt Lake City UT",
+      "title": "First Officer \u2014 Pilatus PC12 - Lausanne",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22856/USA/Captain/Pilatus-PC12NG---Salt-Lake-City-UT/SkyShare",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22959/EUROPE-UK/First-Officer/Pilatus-PC12---Lausanne/Fly-7-Executive-Aviation",
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
@@ -61,9 +61,29 @@
       "hours_required": null
     },
     {
-      "title": "PIC (Single Pilot) \u2014 2025 Pilatus PC12NGX - San Diego",
+      "title": "Captain \u2014 Pilatus PC12 - Lausanne",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23041/USA/PIC-(Single-Pilot)/2025-Pilatus-PC12NGX---San-Diego/Private-Family",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22957/EUROPE-UK/Captain/Pilatus-PC12---Lausanne/Fly-7-Executive-Aviation",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 Pilatus PC12 - Luxembourg",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22958/EUROPE-UK/Captain/Pilatus-PC12---Luxembourg/Fly-7-Executive-Aviation",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Private Pilot \u2014 Pilatus PC24 / Cessna CJ - CH",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22955/EUROPE-UK/Private-Pilot/Pilatus-PC24---Cessna-CJ---CH/Family-Office",
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
@@ -20445,12 +20465,174 @@
         ],
         "hours_required": null
       }
+    ],
+    "2025-12-26": [
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Caravan",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Non Rated Captain \u2014 Pilatus PC12 - Prague",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23018/EUROPE-UK/Non-Rated-Captain/Pilatus-PC12---Prague/Alpha-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Type Rated Captains \u2014 Pilatus PC12 - Prague",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21624/EUROPE-UK/Type-Rated-Captains/Pilatus-PC12---Prague/OK-Aviation-Wings",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer \u2014 Pilatus PC12 - Lausanne",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22959/EUROPE-UK/First-Officer/Pilatus-PC12---Lausanne/Fly-7-Executive-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Pilatus PC12 - Lausanne",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22957/EUROPE-UK/Captain/Pilatus-PC12---Lausanne/Fly-7-Executive-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Pilatus PC12 - Luxembourg",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22958/EUROPE-UK/Captain/Pilatus-PC12---Luxembourg/Fly-7-Executive-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Private Pilot \u2014 Pilatus PC24 / Cessna CJ - CH",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22955/EUROPE-UK/Private-Pilot/Pilatus-PC24---Cessna-CJ---CH/Family-Office",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Caravan",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5?c=0",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Second in Command - PC-12Western Aircraft | Corporate / Biz AvPilatusPC-12United States | HonoluluCPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-second-in-command-western_aircraft-US-829be3a65b?c=1",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5?c=2",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      }
     ]
   },
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 10
+      "count": 12
     },
     "PilotsGlobal": {
       "status": "success",
