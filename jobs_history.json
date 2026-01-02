@@ -31,22 +31,12 @@
       "hours_required": null
     },
     {
-      "title": "Lead Captain \u2014 Pilatus PC24 - St Paul MN",
+      "title": "Captains \u2014 Cessna 208B - Kingsford MI",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22498/USA/Lead-Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/17331/USA/Captains/Cessna-208B---Kingsford-MI/CSA-Air,-Inc.",
       "source": "PilotCareerCenter",
       "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 Pilatus PC24 - St Paul MN",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22499/USA/Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
+        "Caravan"
       ],
       "hours_required": null
     },
@@ -21832,22 +21822,12 @@
         "hours_required": null
       },
       {
-        "title": "Lead Captain \u2014 Pilatus PC24 - St Paul MN",
+        "title": "Captains \u2014 Cessna 208B - Kingsford MI",
         "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22498/USA/Lead-Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/17331/USA/Captains/Cessna-208B---Kingsford-MI/CSA-Air,-Inc.",
         "source": "PilotCareerCenter",
         "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 Pilatus PC24 - St Paul MN",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22499/USA/Captain/Pilatus-PC24---St-Paul-MN/Clay-Lacy-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
+          "Caravan"
         ],
         "hours_required": null
       },
@@ -21986,7 +21966,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 8
+      "count": 7
     },
     "PilotsGlobal": {
       "status": "success",
