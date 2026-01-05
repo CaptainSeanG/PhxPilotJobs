@@ -201,16 +201,6 @@
       "hours_required": null
     },
     {
-      "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148?c=3",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be?c=5",
@@ -221,22 +211,12 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time750CPL, IR, METCCA",
+      "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-pal_aerospace-CA-6j1it4z4rm?c=8",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=16",
       "source": "PilotsGlobal",
       "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=15",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
+        "Navajo"
       ],
       "hours_required": null
     }
@@ -22628,16 +22608,6 @@
         "hours_required": null
       },
       {
-        "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148?c=3",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be?c=5",
@@ -22648,22 +22618,12 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time750CPL, IR, METCCA",
+        "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-pal_aerospace-CA-6j1it4z4rm?c=8",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=16",
         "source": "PilotsGlobal",
         "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e?c=15",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
+          "Navajo"
         ],
         "hours_required": null
       }
@@ -22676,7 +22636,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 8
+      "count": 6
     },
     "SkyWest": {
       "status": "fail",
