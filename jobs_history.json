@@ -211,6 +211,26 @@
       "hours_required": null
     },
     {
+      "title": "Captain - 208B Grand Caravan AmphibianWings Over Kississing | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | Flin FlonCPL, Float RatingTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-wings_over_kississing-CA-ykMgt70ef5?c=8",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju?c=13",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=16",
@@ -22618,6 +22638,26 @@
         "hours_required": null
       },
       {
+        "title": "Captain - 208B Grand Caravan AmphibianWings Over Kississing | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | Flin FlonCPL, Float RatingTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-wings_over_kississing-CA-ykMgt70ef5?c=8",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju?c=13",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2?c=16",
@@ -22636,7 +22676,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 6
+      "count": 8
     },
     "SkyWest": {
       "status": "fail",
