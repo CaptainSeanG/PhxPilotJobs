@@ -219,6 +219,26 @@
         "King Air"
       ],
       "hours_required": null
+    },
+    {
+      "title": "First Officer - PA-31 NavajoSkyCare | Corporate / Biz AvPiperPA-31 NavajoCanada | Sioux LookoutFlight time500CPL, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-first-officer-skycare-CA-poG2sc89l9?c=15",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz?c=16",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
     }
   ],
   "history": {
@@ -23252,6 +23272,26 @@
           "King Air"
         ],
         "hours_required": null
+      },
+      {
+        "title": "First Officer - PA-31 NavajoSkyCare | Corporate / Biz AvPiperPA-31 NavajoCanada | Sioux LookoutFlight time500CPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-first-officer-skycare-CA-poG2sc89l9?c=15",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz?c=16",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
       }
     ]
   },
@@ -23262,7 +23302,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 9
     },
     "SkyWest": {
       "status": "fail",
