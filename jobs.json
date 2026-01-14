@@ -31,7 +31,17 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 King Air 200 - Orlando/Sanford",
+      "title": "Chief Pilot \u2014 King Air 200 - Orlando Sanford",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22888/USA/Chief-Pilot/King-Air-200---Orlando-Sanford/Air-Unlimited",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 King Air 200 - Orlando Sanford",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21251/USA/Captain/King-Air-200---Orlando-Sanford/Air-Unlimited",
       "source": "PilotCareerCenter",
@@ -24296,7 +24306,17 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 King Air 200 - Orlando/Sanford",
+        "title": "Chief Pilot \u2014 King Air 200 - Orlando Sanford",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22888/USA/Chief-Pilot/King-Air-200---Orlando-Sanford/Air-Unlimited",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air 200 - Orlando Sanford",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21251/USA/Captain/King-Air-200---Orlando-Sanford/Air-Unlimited",
         "source": "PilotCareerCenter",
@@ -24500,7 +24520,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 14
+      "count": 15
     },
     "PilotsGlobal": {
       "status": "success",
