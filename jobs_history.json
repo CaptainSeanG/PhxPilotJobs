@@ -141,16 +141,6 @@
       "hours_required": null
     },
     {
-      "title": "Floater Captains \u2014 Cessna 408 SkyCourier",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19866/USA/Floater-Captains/Cessna-408-SkyCourier/Mountain-Air-Cargo",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "SkyCourier"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Caravan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Caravan",
@@ -25284,16 +25274,6 @@
         "hours_required": null
       },
       {
-        "title": "Floater Captains \u2014 Cessna 408 SkyCourier",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19866/USA/Floater-Captains/Cessna-408-SkyCourier/Mountain-Air-Cargo",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "SkyCourier"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Caravan",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Caravan",
@@ -25378,7 +25358,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 18
+      "count": 17
     },
     "PilotsGlobal": {
       "status": "success",
