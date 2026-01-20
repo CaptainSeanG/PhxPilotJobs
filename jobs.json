@@ -211,9 +211,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time750CPL, IR, METCCA",
+      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-pal_aerospace-CA-6j1it4z4rm",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -221,12 +221,52 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+      "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | GoldenPIC time1000Multi-engine200CPL, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - Cessna 208 CaravanThunder Airlines | Airline - Charter / LeisureCessnaCessna 208 CaravanCanada | Thunder BayCPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-thunder_airlines-CA-b32467ed01",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Caravan"
       ],
       "hours_required": null
     }
@@ -25848,9 +25888,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time750CPL, IR, METCCA",
+        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-pal_aerospace-CA-6j1it4z4rm",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
@@ -25858,12 +25898,52 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+        "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | GoldenPIC time1000Multi-engine200CPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - Cessna 208 CaravanThunder Airlines | Airline - Charter / LeisureCessnaCessna 208 CaravanCanada | Thunder BayCPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-thunder_airlines-CA-b32467ed01",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
         ],
         "hours_required": null
       }
@@ -25876,7 +25956,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 6
+      "count": 10
     },
     "SkyWest": {
       "status": "fail",
