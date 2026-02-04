@@ -221,6 +221,16 @@
       "hours_required": null
     },
     {
+      "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Second in Command - PC-12Western Aircraft | Corporate / Biz AvPilatusPC-12United States | HonoluluCPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-second-in-command-western_aircraft-US-829be3a65b",
@@ -237,16 +247,6 @@
       "source": "PilotsGlobal",
       "tags": [
         "Navajo"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirRise Air | Airline - RegionalBeechcraftKing AirCanada | La RongeFlight time1500PIC time500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-rise_air-CA-cb2070cff1",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
       ],
       "hours_required": null
     },
@@ -29408,6 +29408,16 @@
         "hours_required": null
       },
       {
+        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Second in Command - PC-12Western Aircraft | Corporate / Biz AvPilatusPC-12United States | HonoluluCPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-second-in-command-western_aircraft-US-829be3a65b",
@@ -29424,16 +29434,6 @@
         "source": "PilotsGlobal",
         "tags": [
           "Navajo"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirRise Air | Airline - RegionalBeechcraftKing AirCanada | La RongeFlight time1500PIC time500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-rise_air-CA-cb2070cff1",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
         ],
         "hours_required": null
       },
