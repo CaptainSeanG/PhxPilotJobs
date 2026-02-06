@@ -151,16 +151,6 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
@@ -181,16 +171,6 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
@@ -201,32 +181,32 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+      "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
       "source": "PilotsGlobal",
       "tags": [
-        "King Air"
+        "PC-12"
       ],
       "hours_required": null
     },
     {
-      "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | Boundary BayPIC time1000Multi-engine PIC750IR, ME, SAMRA SARONTCCA",
+      "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
       "source": "PilotsGlobal",
       "tags": [
-        "Navajo"
+        "PC-12"
       ],
       "hours_required": null
     },
     {
-      "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000ATPLTCCA",
+      "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c",
+      "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
       "source": "PilotsGlobal",
       "tags": [
-        "King Air"
+        "PC-12"
       ],
       "hours_required": null
     },
@@ -237,6 +217,46 @@
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PC-12Airmedic | Corporate / Biz AvPilatusPC-12Canada | MontrealFlight time1200Turbine time500IR, SAMRA SARONTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-airmedic-CA-24269e75d2",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - Super King AirKeewatin Air | Corporate / Biz AvBeechcraftSuper King AirCanada | WinnipegFlight time2000PIC time500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-keewatin_air-CA-RAIXt09b3y",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
       ],
       "hours_required": null
     },
@@ -29502,16 +29522,6 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
@@ -29532,16 +29542,6 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
@@ -29552,32 +29552,32 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+        "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
         "source": "PilotsGlobal",
         "tags": [
-          "King Air"
+          "PC-12"
         ],
         "hours_required": null
       },
       {
-        "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | Boundary BayPIC time1000Multi-engine PIC750IR, ME, SAMRA SARONTCCA",
+        "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
         "source": "PilotsGlobal",
         "tags": [
-          "Navajo"
+          "PC-12"
         ],
         "hours_required": null
       },
       {
-        "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000ATPLTCCA",
+        "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c",
+        "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
         "source": "PilotsGlobal",
         "tags": [
-          "King Air"
+          "PC-12"
         ],
         "hours_required": null
       },
@@ -29588,6 +29588,46 @@
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PC-12Airmedic | Corporate / Biz AvPilatusPC-12Canada | MontrealFlight time1200Turbine time500IR, SAMRA SARONTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-airmedic-CA-24269e75d2",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - Super King AirKeewatin Air | Corporate / Biz AvBeechcraftSuper King AirCanada | WinnipegFlight time2000PIC time500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-keewatin_air-CA-RAIXt09b3y",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PA-31 NavajoIskwew Air | Airline - CommuterPiperPA-31 NavajoCanada | VancouverPIC time1000Multi-engine200CPL, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-captain-iskwew_air-CA-16071853c2",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
         ],
         "hours_required": null
       },
@@ -29610,7 +29650,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 10
+      "count": 12
     },
     "SkyWest": {
       "status": "fail",
