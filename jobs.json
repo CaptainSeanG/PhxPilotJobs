@@ -1,6 +1,136 @@
 {
   "today": [
     {
+      "title": "Caravan",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Caravan",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC12",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC12",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC24",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC24",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 King Air 200 - Ketchikan AK",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22598/USA/Captain/King-Air-200---Ketchikan-AK/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 King Air 200 - Redding CA",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23261/USA/Captain/King-Air-200---Redding-CA/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 Cessna Caravan - Fort Lauderdale",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23250/USA/Captain/Cessna-Caravan---Fort-Lauderdale/Skymax-Air-Charter",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Chief Pilot \u2014 C208 Caravan Amphib - Miami",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21818/USA/Chief-Pilot/C208-Caravan-Amphib---Miami-/flyExclusive",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer \u2014 C208 Caravan Amphib - Miami",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22077/USA/First-Officer/C208-Caravan-Amphib---Miami/flyExclusive",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 King Air C90 - Crescent City CA",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22714/USA/Captain/King-Air-C90---Crescent-City-CA/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 King Air C90 - Lander WY",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21461/USA/Captain/King-Air-C90---Lander-WY/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Caravan",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Caravan",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC12",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC12",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC24",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC24",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
@@ -51,22 +181,32 @@
       "hours_required": null
     },
     {
-      "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
+      "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
       "source": "PilotsGlobal",
       "tags": [
-        "PC-12"
+        "Navajo"
       ],
       "hours_required": null
     },
     {
-      "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+      "title": "Captain - Super King AirKeewatin Air | Corporate / Biz AvBeechcraftSuper King AirCanada | WinnipegFlight time2000PIC time500ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
+      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-keewatin_air-CA-RAIXt09b3y",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - PA-31 NavajoSkyCare | Corporate / Biz AvPiperPA-31 NavajoCanada | Sioux LookoutFlight time500CPL, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-first-officer-skycare-CA-poG2sc89l9",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
       ],
       "hours_required": null
     }
@@ -30644,6 +30784,136 @@
     ],
     "2026-02-12": [
       {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Caravan",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air 200 - Ketchikan AK",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22598/USA/Captain/King-Air-200---Ketchikan-AK/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air 200 - Redding CA",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23261/USA/Captain/King-Air-200---Redding-CA/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Cessna Caravan - Fort Lauderdale",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23250/USA/Captain/Cessna-Caravan---Fort-Lauderdale/Skymax-Air-Charter",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Chief Pilot \u2014 C208 Caravan Amphib - Miami",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21818/USA/Chief-Pilot/C208-Caravan-Amphib---Miami-/flyExclusive",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer \u2014 C208 Caravan Amphib - Miami",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22077/USA/First-Officer/C208-Caravan-Amphib---Miami/flyExclusive",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air C90 - Crescent City CA",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22714/USA/Captain/King-Air-C90---Crescent-City-CA/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air C90 - Lander WY",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21461/USA/Captain/King-Air-C90---Lander-WY/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Caravan",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
@@ -30694,22 +30964,32 @@
         "hours_required": null
       },
       {
-        "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
+        "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
         "source": "PilotsGlobal",
         "tags": [
-          "PC-12"
+          "Navajo"
         ],
         "hours_required": null
       },
       {
-        "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+        "title": "Captain - Super King AirKeewatin Air | Corporate / Biz AvBeechcraftSuper King AirCanada | WinnipegFlight time2000PIC time500ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
+        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-keewatin_air-CA-RAIXt09b3y",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PA-31 NavajoSkyCare | Corporate / Biz AvPiperPA-31 NavajoCanada | Sioux LookoutFlight time500CPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-first-officer-skycare-CA-poG2sc89l9",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
         ],
         "hours_required": null
       }
@@ -30717,12 +30997,12 @@
   },
   "results": {
     "PilotCareerCenter": {
-      "status": "fail",
-      "count": 0
+      "status": "success",
+      "count": 13
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 8
     },
     "SkyWest": {
       "status": "fail",
