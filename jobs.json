@@ -51,16 +51,6 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 Cessna Caravan - Fort Lauderdale",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23250/USA/Captain/Cessna-Caravan---Fort-Lauderdale/Skymax-Air-Charter",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Caravan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Caravan",
@@ -141,12 +131,42 @@
       "hours_required": null
     },
     {
-      "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
       ],
       "hours_required": null
     }
@@ -31432,16 +31452,6 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 Cessna Caravan - Fort Lauderdale",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23250/USA/Captain/Cessna-Caravan---Fort-Lauderdale/Skymax-Air-Charter",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Caravan",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Caravan",
@@ -31522,12 +31532,42 @@
         "hours_required": null
       },
       {
-        "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
         ],
         "hours_required": null
       }
@@ -31536,11 +31576,11 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 9
+      "count": 8
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 6
+      "count": 9
     },
     "SkyWest": {
       "status": "fail",
