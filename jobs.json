@@ -1,76 +1,6 @@
 {
   "today": [
     {
-      "title": "Caravan",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Caravan",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC12",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC12",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC24",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC24",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 350 - Watsonville CA",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23367/USA/Captain/King-Air-350---Watsonville-CA/Solairus-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Caravan",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Caravan",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC12",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC12",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC24",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC24",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
@@ -111,19 +41,19 @@
       "hours_required": null
     },
     {
-      "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
+      "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
+      "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
       "source": "PilotsGlobal",
       "tags": [
-        "Navajo"
+        "PC-12"
       ],
       "hours_required": null
     },
     {
-      "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
+      "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -131,19 +61,9 @@
       "hours_required": null
     },
     {
-      "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | Boundary BayPIC time1000Multi-engine PIC750IR, ME, SAMRA SARONTCCA",
+      "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Navajo"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2500Multi-engine500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -32458,76 +32378,6 @@
     ],
     "2026-02-24": [
       {
-        "title": "Caravan",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Caravan",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC12",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC12",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC24",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC24",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air 350 - Watsonville CA",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23367/USA/Captain/King-Air-350---Watsonville-CA/Solairus-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Caravan",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Caravan",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC12",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC12",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC24",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC24",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
@@ -32568,12 +32418,22 @@
         "hours_required": null
       },
       {
-        "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
+        "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
+        "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
         "source": "PilotsGlobal",
         "tags": [
-          "Navajo"
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
         ],
         "hours_required": null
       },
@@ -32586,37 +32446,17 @@
           "King Air"
         ],
         "hours_required": null
-      },
-      {
-        "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | Boundary BayPIC time1000Multi-engine PIC750IR, ME, SAMRA SARONTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Navajo"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2500Multi-engine500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
       }
     ]
   },
   "results": {
     "PilotCareerCenter": {
-      "status": "success",
-      "count": 7
+      "status": "fail",
+      "count": 0
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 8
+      "count": 7
     },
     "SkyWest": {
       "status": "fail",
