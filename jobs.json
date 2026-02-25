@@ -111,22 +111,32 @@
       "hours_required": null
     },
     {
+      "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - King AirRise Air | Airline - RegionalBeechcraftKing AirCanada | La RongeFlight time1500PIC time500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-rise_air-CA-cb2070cff1",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148",
       "source": "PilotsGlobal",
       "tags": [
         "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Navajo"
       ],
       "hours_required": null
     }
@@ -32690,22 +32700,32 @@
         "hours_required": null
       },
       {
+        "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - King AirRise Air | Airline - RegionalBeechcraftKing AirCanada | La RongeFlight time1500PIC time500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-rise_air-CA-cb2070cff1",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain - Cessna 208 CaravanSGL Sander Geophysics | Other (General aviation)CessnaCessna 208 CaravanCanada | OttawaFlight time1000CPL, IRTCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-sgl_sander_geophysics-CA-cc3694e148",
         "source": "PilotsGlobal",
         "tags": [
           "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Navajo"
         ],
         "hours_required": null
       }
@@ -32718,7 +32738,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 6
+      "count": 7
     },
     "SkyWest": {
       "status": "fail",
