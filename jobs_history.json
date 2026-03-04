@@ -161,29 +161,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time500CPL, IR, METCCA",
+      "title": "Captain - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time1200ATPL, IATRATCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Navajo"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-air_nunavut-CA-f349f1cbc9",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -33844,29 +33824,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time500CPL, IR, METCCA",
+        "title": "Captain - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time1200ATPL, IATRATCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Navajo"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-carson_air-CA-E8Eyt365ci",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-air_nunavut-CA-f349f1cbc9",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
@@ -33882,7 +33842,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 8
+      "count": 6
     },
     "SkyWest": {
       "status": "fail",
