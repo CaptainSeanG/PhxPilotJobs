@@ -31,12 +31,42 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 C208 Caravan - Dillingham AK",
+      "title": "Captain \u2014 King Air C90 - Honolulu HI",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22155/USA/Captain/C208-Caravan---Dillingham-AK/Guardian-Flight",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22713/USA/Captain/King-Air-C90---Honolulu-HI/Guardian-Flight",
       "source": "PilotCareerCenter",
       "tags": [
-        "Caravan"
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 Pilatus PC12 - Ely NV",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23131/USA/Captain/Pilatus-PC12---Ely-NV/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 Pilatus PC12 - Bishop CA",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22629/USA/Captain/Pilatus-PC12---Bishop-CA/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 King Air 200/C90 -",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22984/USA/Captain/King-Air-200-C90---/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
       ],
       "hours_required": null
     },
@@ -47,6 +77,16 @@
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 King Air C90 - Lihue, HI",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22983/USA/Captain/King-Air-C90---Lihue,-HI/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
       ],
       "hours_required": null
     },
@@ -38254,12 +38294,42 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 C208 Caravan - Dillingham AK",
+        "title": "Captain \u2014 King Air C90 - Honolulu HI",
         "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22155/USA/Captain/C208-Caravan---Dillingham-AK/Guardian-Flight",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22713/USA/Captain/King-Air-C90---Honolulu-HI/Guardian-Flight",
         "source": "PilotCareerCenter",
         "tags": [
-          "Caravan"
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Pilatus PC12 - Ely NV",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23131/USA/Captain/Pilatus-PC12---Ely-NV/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Pilatus PC12 - Bishop CA",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22629/USA/Captain/Pilatus-PC12---Bishop-CA/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air 200/C90 -",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22984/USA/Captain/King-Air-200-C90---/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
         ],
         "hours_required": null
       },
@@ -38270,6 +38340,16 @@
         "source": "PilotCareerCenter",
         "tags": [
           "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air C90 - Lihue, HI",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22983/USA/Captain/King-Air-C90---Lihue,-HI/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
         ],
         "hours_required": null
       },
@@ -38418,7 +38498,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 8
+      "count": 12
     },
     "PilotsGlobal": {
       "status": "success",
