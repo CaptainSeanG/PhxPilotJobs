@@ -1,116 +1,6 @@
 {
   "today": [
     {
-      "title": "Caravan",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/CARAVAN",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC12",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC12",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC24",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC24",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 200 - Lubbock TX",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22710/USA/Captain/King-Air-200---Lubbock-TX/EagleMed",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 200 - Lubbock TX",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23261/USA/Captain/King-Air-200---Lubbock-TX/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 200 - Fairbanks AK",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23174/USA/Captain/King-Air-200---Fairbanks-AK/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air C90 - Dodge City KS",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22985/USA/Captain/King-Air-C90---Dodge-City-KS/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 Pilatus PC12 - Kingsford MI",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22629/USA/Captain/Pilatus-PC12---Kingsford-MI/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Caravan",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/CARAVAN",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC12",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC12",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC24",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC24",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
@@ -181,9 +71,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+      "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+      "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -211,9 +101,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
+      "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -42102,116 +41992,6 @@
     ],
     "2026-04-17": [
       {
-        "title": "Caravan",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/CARAVAN",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC12",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC12",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC24",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC24",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air 200 - Lubbock TX",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22710/USA/Captain/King-Air-200---Lubbock-TX/EagleMed",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air 200 - Lubbock TX",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23261/USA/Captain/King-Air-200---Lubbock-TX/Guardian-Flight",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air 200 - Fairbanks AK",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23174/USA/Captain/King-Air-200---Fairbanks-AK/Guardian-Flight",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air C90 - Dodge City KS",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22985/USA/Captain/King-Air-C90---Dodge-City-KS/Guardian-Flight",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 Pilatus PC12 - Kingsford MI",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22629/USA/Captain/Pilatus-PC12---Kingsford-MI/Guardian-Flight",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Caravan",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/CARAVAN",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC12",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC12",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC24",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC24",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
@@ -42282,9 +42062,9 @@
         "hours_required": null
       },
       {
-        "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+        "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+        "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -42312,9 +42092,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
+        "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -42325,8 +42105,8 @@
   },
   "results": {
     "PilotCareerCenter": {
-      "status": "success",
-      "count": 11
+      "status": "fail",
+      "count": 0
     },
     "PilotsGlobal": {
       "status": "success",
