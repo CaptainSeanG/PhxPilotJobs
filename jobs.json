@@ -219,6 +219,56 @@
         "PC-12"
       ],
       "hours_required": null
+    },
+    {
+      "title": "Captain - 208B Grand Caravan AmphibianSeair Seaplanes | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | VancouverPIC time2000CPL, Float RatingTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-seair_seaplanes-CA-cff8f4ccf8",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - Cessna 208 CaravanThunder Airlines | Airline - Charter / LeisureCessnaCessna 208 CaravanCanada | Thunder BayCPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-thunder_airlines-CA-b32467ed01",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
     }
   ],
   "history": {
@@ -42886,6 +42936,56 @@
           "PC-12"
         ],
         "hours_required": null
+      },
+      {
+        "title": "Captain - 208B Grand Caravan AmphibianSeair Seaplanes | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | VancouverPIC time2000CPL, Float RatingTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-seair_seaplanes-CA-cff8f4ccf8",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - Cessna 208 CaravanThunder Airlines | Airline - Charter / LeisureCessnaCessna 208 CaravanCanada | Thunder BayCPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-thunder_airlines-CA-b32467ed01",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
       }
     ]
   },
@@ -42896,7 +42996,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 5
+      "count": 10
     },
     "SkyWest": {
       "status": "fail",
