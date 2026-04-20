@@ -221,6 +221,16 @@
       "hours_required": null
     },
     {
+      "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain - 208B Grand Caravan AmphibianSeair Seaplanes | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | VancouverPIC time2000CPL, Float RatingTCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-seair_seaplanes-CA-cff8f4ccf8",
@@ -261,9 +271,19 @@
       "hours_required": null
     },
     {
-      "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+      "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -42938,6 +42958,16 @@
         "hours_required": null
       },
       {
+        "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain - 208B Grand Caravan AmphibianSeair Seaplanes | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | VancouverPIC time2000CPL, Float RatingTCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-seair_seaplanes-CA-cff8f4ccf8",
@@ -42978,9 +43008,19 @@
         "hours_required": null
       },
       {
-        "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
+        "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -42996,7 +43036,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 10
+      "count": 12
     },
     "SkyWest": {
       "status": "fail",
