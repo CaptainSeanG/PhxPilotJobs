@@ -31,6 +31,26 @@
       "hours_required": null
     },
     {
+      "title": "Captain \u2014 Pilatus PC12 - Orlando",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22791/USA/Captain/Pilatus-PC12---Orlando/Northern-Jet-Management",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 King Air C90 - Honolulu HI",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22713/USA/Captain/King-Air-C90---Honolulu-HI/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "First Officers \u2014 C408 SkyCourier - San Juan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23589/USA/First-Officers/C408-SkyCourier---San-Juan/Mountain-Air-Cargo",
@@ -57,46 +77,6 @@
       "source": "PilotCareerCenter",
       "tags": [
         "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 200 - Lubbock TX",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23261/USA/Captain/King-Air-200---Lubbock-TX/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 200 - Fairbanks AK",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23174/USA/Captain/King-Air-200---Fairbanks-AK/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air C90 - Dodge City KS",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22985/USA/Captain/King-Air-C90---Dodge-City-KS/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 Pilatus PC12 - Kingsford MI",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22629/USA/Captain/Pilatus-PC12---Kingsford-MI/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
       ],
       "hours_required": null
     },
@@ -42685,12 +42665,234 @@
         ],
         "hours_required": null
       }
+    ],
+    "2026-04-20": [
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/CARAVAN",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Pilatus PC12 - Orlando",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22791/USA/Captain/Pilatus-PC12---Orlando/Northern-Jet-Management",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air C90 - Honolulu HI",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22713/USA/Captain/King-Air-C90---Honolulu-HI/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officers \u2014 C408 SkyCourier - San Juan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23589/USA/First-Officers/C408-SkyCourier---San-Juan/Mountain-Air-Cargo",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "SkyCourier"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officers \u2014 C408 SkyCourier - San Juan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23588/USA/First-Officers/C408-SkyCourier---San-Juan/Mountain-Air-Cargo",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "SkyCourier"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air 200 - Lubbock TX",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22710/USA/Captain/King-Air-200---Lubbock-TX/EagleMed",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/CARAVAN",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Second in Command - PC-12Advanced Air | Corporate / Biz AvPilatusPC-12United States | HawthorneFlight time1000PIC time500CPL, IR, MEFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-second-in-command-advanced_air-US-Cz2mscs4iu",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - Cessna 208 CaravanMountain Air Cargo | Airline - CargoCessnaCessna 208 CaravanPuerto Rico | San JuanFlight time1200PIC time500CPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-mountain_air_cargo-PR-26b4839c1e",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Chief Pilot - PC-12Levaero Aviation | Corporate / Biz AvPilatusPC-12Canada | Thunder BayIn type2000CPL, IRTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-chief-pilot-levaero_aviation-CA-5a9f775a3e",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - Cessna 208 CaravanMorningstar Air Express | Airline - CargoCessnaCessna 208 CaravanCanada | TorontoFlight time1500CPL, IRTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-morningstar_air_express-CA-4aea5feb6e",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time200CPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-canwest_air-CA-F3dHsjaor2",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      }
     ]
   },
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 13
+      "count": 11
     },
     "PilotsGlobal": {
       "status": "success",
