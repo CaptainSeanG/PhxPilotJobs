@@ -161,36 +161,6 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Second in Command - PC-12Advanced Air | Corporate / Biz AvPilatusPC-12United States | HawthorneFlight time1000PIC time500CPL, IR, MEFAA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-second-in-command-advanced_air-US-Cz2mscs4iu",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
@@ -211,42 +181,32 @@
       "hours_required": null
     },
     {
-      "title": "Captain - Cessna 208 CaravanMountain Air Cargo | Airline - CargoCessnaCessna 208 CaravanPuerto Rico | San JuanFlight time1200PIC time500CPL, IRFAA",
+      "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-mountain_air_cargo-PR-26b4839c1e",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
       "source": "PilotsGlobal",
       "tags": [
-        "Caravan"
+        "PC-12"
       ],
       "hours_required": null
     },
     {
-      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+      "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
       "source": "PilotsGlobal",
       "tags": [
-        "King Air"
+        "PC-12"
       ],
       "hours_required": null
     },
     {
-      "title": "First Officer - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time500CPL, IR, METCCA",
+      "title": "Second in Command - PC-12Advanced Air | Corporate / Biz AvPilatusPC-12United States | HawthorneFlight time1000PIC time500CPL, IR, MEFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd",
+      "link": "https://pilotsglobal.com/job/PC-12-second-in-command-advanced_air-US-Cz2mscs4iu",
       "source": "PilotsGlobal",
       "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2500Multi-engine500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
+        "PC-12"
       ],
       "hours_required": null
     },
@@ -254,6 +214,66 @@
       "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - Cessna 208 CaravanThunder Airlines | Airline - Charter / LeisureCessnaCessna 208 CaravanCanada | Thunder BayCPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-thunder_airlines-CA-b32467ed01",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000Multi-engine PIC500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - Cessna 208 CaravanMorningstar Air Express | Airline - CargoCessnaCessna 208 CaravanCanada | TorontoFlight time1500CPL, IRTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-morningstar_air_express-CA-4aea5feb6e",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - PC-12Royal Canadian Mounted Police (RCMP) | Government / Defence / AerospacePilatusPC-12Canada | OttawaPIC time3000CPL, IRTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-royal_canadian_mounted_police_rcmp-CA-0a5ebef9d7",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -43946,36 +43966,6 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Second in Command - PC-12Advanced Air | Corporate / Biz AvPilatusPC-12United States | HawthorneFlight time1000PIC time500CPL, IR, MEFAA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-second-in-command-advanced_air-US-Cz2mscs4iu",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
@@ -43996,42 +43986,32 @@
         "hours_required": null
       },
       {
-        "title": "Captain - Cessna 208 CaravanMountain Air Cargo | Airline - CargoCessnaCessna 208 CaravanPuerto Rico | San JuanFlight time1200PIC time500CPL, IRFAA",
+        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-mountain_air_cargo-PR-26b4839c1e",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
         "source": "PilotsGlobal",
         "tags": [
-          "Caravan"
+          "PC-12"
         ],
         "hours_required": null
       },
       {
-        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+        "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
         "source": "PilotsGlobal",
         "tags": [
-          "King Air"
+          "PC-12"
         ],
         "hours_required": null
       },
       {
-        "title": "First Officer - King AirAir Nunavut | Corporate / Biz AvBeechcraftKing AirCanada | IqaluitFlight time500CPL, IR, METCCA",
+        "title": "Second in Command - PC-12Advanced Air | Corporate / Biz AvPilatusPC-12United States | HawthorneFlight time1000PIC time500CPL, IR, MEFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-air_nunavut-CA-df90c595cd",
+        "link": "https://pilotsglobal.com/job/PC-12-second-in-command-advanced_air-US-Cz2mscs4iu",
         "source": "PilotsGlobal",
         "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2500Multi-engine500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
+          "PC-12"
         ],
         "hours_required": null
       },
@@ -44039,6 +44019,66 @@
         "title": "Captain - PC-12Keewatin Air | Corporate / Biz AvPilatusPC-12Canada | WinnipegFlight time2000In type100ATPLTCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-captain-keewatin_air-CA-t3Pqrzxa7i",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - King AirCarson Air | Corporate / Biz AvBeechcraftKing AirCanada | KelownaCPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-first-officer-carson_air-CA-209ff775be",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - Cessna 208 CaravanThunder Airlines | Airline - Charter / LeisureCessnaCessna 208 CaravanCanada | Thunder BayCPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-thunder_airlines-CA-b32467ed01",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000Multi-engine PIC500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - Cessna 208 CaravanMorningstar Air Express | Airline - CargoCessnaCessna 208 CaravanCanada | TorontoFlight time1500CPL, IRTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-morningstar_air_express-CA-4aea5feb6e",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - PC-12Royal Canadian Mounted Police (RCMP) | Government / Defence / AerospacePilatusPC-12Canada | OttawaPIC time3000CPL, IRTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-royal_canadian_mounted_police_rcmp-CA-0a5ebef9d7",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -44054,7 +44094,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 10
+      "count": 12
     },
     "SkyWest": {
       "status": "fail",
