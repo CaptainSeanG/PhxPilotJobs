@@ -1,169 +1,9 @@
 {
   "today": [
     {
-      "title": "Caravan",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/CARAVAN",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC12",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC12",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC24",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC24",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Type Rated Captain \u2014 King Air 200/350 - LEX",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21671/USA/Type-Rated-Captain/King-Air-200-350---LEX/Triton-Airways",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 Pilatus PC12 - Oakland CA",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19623/USA/Captain/Pilatus-PC12---Oakland-CA/Pacific-Coast-Jet",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 Pilatus PC12 - Addison TX",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23603/USA/Captain/Pilatus-PC12---Addison-TX/Cutter-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 Pilatus PC24 - Phoenix AZ",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19105/USA/Captain/Pilatus-PC24---Phoenix-AZ/Cutter-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 Pilatus PC12 - Ogden UT",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22220/USA/Captain/Pilatus-PC12----Ogden-UT/SkyShare",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air C90 - Mexico/Texas",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22168/USA/Captain/King-Air-C90---Mexico-Texas/Dynamic-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Fire Management Captain \u2014 King Air 200 - Bridgewater VA",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22752/USA/Fire-Management-Captain/King-Air-200---Bridgewater-VA/Dynamic-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Aerial Survey First Officer \u2014 King Air - Bridgewater VA",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23602/USA/Aerial-Survey-First-Officer/King-Air---Bridgewater-VA/Dynamic-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Chief Pilot \u2014 C208 Caravan Amphib - Miami",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21818/USA/Chief-Pilot/C208-Caravan-Amphib---Miami-/flyExclusive",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Caravan",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/CARAVAN",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC12",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC12",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC24",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC24",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
+      "title": "Second in Command - PC-12Advanced Air | Corporate / Biz AvPilatusPC-12United States | HawthorneFlight time1000PIC time500CPL, IR, MEFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
+      "link": "https://pilotsglobal.com/job/PC-12-second-in-command-advanced_air-US-Cz2mscs4iu",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -181,6 +21,16 @@
       "hours_required": null
     },
     {
+      "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
@@ -191,9 +41,9 @@
       "hours_required": null
     },
     {
-      "title": "Second in Command - PC-12Advanced Air | Corporate / Biz AvPilatusPC-12United States | HawthorneFlight time1000PIC time500CPL, IR, MEFAA",
+      "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-second-in-command-advanced_air-US-Cz2mscs4iu",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -201,29 +51,29 @@
       "hours_required": null
     },
     {
-      "title": "Captain - King AirSiBi Air | Corporate / Biz AvBeechcraftKing AirCanada | ChisasibiFlight time1600Turbine200ATPLTCCA",
+      "title": "Chief Pilot - PC-12Levaero Aviation | Corporate / Biz AvPilatusPC-12Canada | Thunder BayIn type2000CPL, IRTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-sibi_air-CA-ce1889c372",
+      "link": "https://pilotsglobal.com/job/PC-12-chief-pilot-levaero_aviation-CA-5a9f775a3e",
       "source": "PilotsGlobal",
       "tags": [
-        "King Air"
+        "PC-12"
       ],
       "hours_required": null
     },
     {
-      "title": "Second in Command - Cessna 408 SkyCourierMountain Air Cargo | Airline - CargoCessnaCessna 408 SkyCourierPuerto Rico | San JuanFlight time800PIC time500CPL, IR, MEFAA",
+      "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-408-SkyCourier-second-in-command-mountain_air_cargo-PR-fVkHsfcm6d",
+      "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
       "source": "PilotsGlobal",
       "tags": [
-        "SkyCourier"
+        "PC-12"
       ],
       "hours_required": null
     },
     {
-      "title": "Captain - Cessna 208 CaravanMountain Air Cargo | Airline - CargoCessnaCessna 208 CaravanPuerto Rico | San JuanFlight time1200PIC time500CPL, IRFAA",
+      "title": "First Officer - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time200CPL, IR, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-mountain_air_cargo-PR-26b4839c1e",
+      "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-canwest_air-CA-F3dHsjaor2",
       "source": "PilotsGlobal",
       "tags": [
         "Caravan"
@@ -231,9 +81,29 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - Super King AirInnotech-Execaire Aviation Group | Corporate / Biz AvBeechcraftSuper King AirCanada | CalgaryFlight time5000ATPLTCCA",
+      "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Super-King-Air-first-officer-innotech-execaire_aviation_group-CA-XFsutdu546",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain - Super King AirInnotech-Execaire Aviation Group | Corporate / Biz AvBeechcraftSuper King AirCanada | CalgaryFlight time5000ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-innotech-execaire_aviation_group-CA-d676db2692",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -44290,169 +44160,9 @@
     ],
     "2026-04-26": [
       {
-        "title": "Caravan",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/CARAVAN",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC12",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC12",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC24",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC24",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Type Rated Captain \u2014 King Air 200/350 - LEX",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21671/USA/Type-Rated-Captain/King-Air-200-350---LEX/Triton-Airways",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 Pilatus PC12 - Oakland CA",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19623/USA/Captain/Pilatus-PC12---Oakland-CA/Pacific-Coast-Jet",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 Pilatus PC12 - Addison TX",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23603/USA/Captain/Pilatus-PC12---Addison-TX/Cutter-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 Pilatus PC24 - Phoenix AZ",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19105/USA/Captain/Pilatus-PC24---Phoenix-AZ/Cutter-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 Pilatus PC12 - Ogden UT",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22220/USA/Captain/Pilatus-PC12----Ogden-UT/SkyShare",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air C90 - Mexico/Texas",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22168/USA/Captain/King-Air-C90---Mexico-Texas/Dynamic-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Fire Management Captain \u2014 King Air 200 - Bridgewater VA",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22752/USA/Fire-Management-Captain/King-Air-200---Bridgewater-VA/Dynamic-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Aerial Survey First Officer \u2014 King Air - Bridgewater VA",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23602/USA/Aerial-Survey-First-Officer/King-Air---Bridgewater-VA/Dynamic-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Chief Pilot \u2014 C208 Caravan Amphib - Miami",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21818/USA/Chief-Pilot/C208-Caravan-Amphib---Miami-/flyExclusive",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Caravan",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/CARAVAN",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC12",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC12",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC24",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC24",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
+        "title": "Second in Command - PC-12Advanced Air | Corporate / Biz AvPilatusPC-12United States | HawthorneFlight time1000PIC time500CPL, IR, MEFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
+        "link": "https://pilotsglobal.com/job/PC-12-second-in-command-advanced_air-US-Cz2mscs4iu",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -44470,6 +44180,16 @@
         "hours_required": null
       },
       {
+        "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
@@ -44480,9 +44200,9 @@
         "hours_required": null
       },
       {
-        "title": "Second in Command - PC-12Advanced Air | Corporate / Biz AvPilatusPC-12United States | HawthorneFlight time1000PIC time500CPL, IR, MEFAA",
+        "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-second-in-command-advanced_air-US-Cz2mscs4iu",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -44490,29 +44210,29 @@
         "hours_required": null
       },
       {
-        "title": "Captain - King AirSiBi Air | Corporate / Biz AvBeechcraftKing AirCanada | ChisasibiFlight time1600Turbine200ATPLTCCA",
+        "title": "Chief Pilot - PC-12Levaero Aviation | Corporate / Biz AvPilatusPC-12Canada | Thunder BayIn type2000CPL, IRTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-sibi_air-CA-ce1889c372",
+        "link": "https://pilotsglobal.com/job/PC-12-chief-pilot-levaero_aviation-CA-5a9f775a3e",
         "source": "PilotsGlobal",
         "tags": [
-          "King Air"
+          "PC-12"
         ],
         "hours_required": null
       },
       {
-        "title": "Second in Command - Cessna 408 SkyCourierMountain Air Cargo | Airline - CargoCessnaCessna 408 SkyCourierPuerto Rico | San JuanFlight time800PIC time500CPL, IR, MEFAA",
+        "title": "Captain - PC-24 Super Versatile JetKeewatin Air | Corporate / Biz AvPilatusPC-24 Super Versatile JetCanada | WinnipegFlight time2500In type100ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-408-SkyCourier-second-in-command-mountain_air_cargo-PR-fVkHsfcm6d",
+        "link": "https://pilotsglobal.com/job/PC-24-Super-Versatile-Jet-captain-keewatin_air-CA-6C87rzx9v4",
         "source": "PilotsGlobal",
         "tags": [
-          "SkyCourier"
+          "PC-12"
         ],
         "hours_required": null
       },
       {
-        "title": "Captain - Cessna 208 CaravanMountain Air Cargo | Airline - CargoCessnaCessna 208 CaravanPuerto Rico | San JuanFlight time1200PIC time500CPL, IRFAA",
+        "title": "First Officer - Cessna 208 CaravanCanWest Air | Corporate / Biz AvCessnaCessna 208 CaravanCanada | EdmontonFlight time200CPL, IR, METCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-captain-mountain_air_cargo-PR-26b4839c1e",
+        "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-canwest_air-CA-F3dHsjaor2",
         "source": "PilotsGlobal",
         "tags": [
           "Caravan"
@@ -44520,9 +44240,29 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - Super King AirInnotech-Execaire Aviation Group | Corporate / Biz AvBeechcraftSuper King AirCanada | CalgaryFlight time5000ATPLTCCA",
+        "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Super-King-Air-first-officer-innotech-execaire_aviation_group-CA-XFsutdu546",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain - Super King AirInnotech-Execaire Aviation Group | Corporate / Biz AvBeechcraftSuper King AirCanada | CalgaryFlight time5000ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-innotech-execaire_aviation_group-CA-d676db2692",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
@@ -44533,12 +44273,12 @@
   },
   "results": {
     "PilotCareerCenter": {
-      "status": "success",
-      "count": 15
+      "status": "fail",
+      "count": 0
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 9
+      "count": 11
     },
     "SkyWest": {
       "status": "fail",
