@@ -182,16 +182,6 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - Super King AirInnotech-Execaire Aviation Group | Corporate / Biz AvBeechcraftSuper King AirCanada | CalgaryFlight time5000ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Super-King-Air-first-officer-innotech-execaire_aviation_group-CA-XFsutdu546",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0",
@@ -45594,16 +45584,6 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - Super King AirInnotech-Execaire Aviation Group | Corporate / Biz AvBeechcraftSuper King AirCanada | CalgaryFlight time5000ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Super-King-Air-first-officer-innotech-execaire_aviation_group-CA-XFsutdu546",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Captain - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | SudburyFlight time2000PIC time500ATPLTCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-captain-ornge-CA-2ab66f82d0",
@@ -45632,7 +45612,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 10
+      "count": 9
     },
     "SkyWest": {
       "status": "fail",
