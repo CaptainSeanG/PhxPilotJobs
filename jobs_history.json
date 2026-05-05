@@ -192,6 +192,16 @@
       "hours_required": null
     },
     {
+      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
@@ -218,16 +228,6 @@
       "source": "PilotsGlobal",
       "tags": [
         "SkyCourier"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - King AirSiBi Air | Corporate / Biz AvBeechcraftKing AirCanada | ChisasibiFlight time300CPL, IR, METCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-sibi_air-CA-m94Ctdv754",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
       ],
       "hours_required": null
     }
@@ -46355,6 +46355,16 @@
         "hours_required": null
       },
       {
+        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
@@ -46381,16 +46391,6 @@
         "source": "PilotsGlobal",
         "tags": [
           "SkyCourier"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - King AirSiBi Air | Corporate / Biz AvBeechcraftKing AirCanada | ChisasibiFlight time300CPL, IR, METCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-sibi_air-CA-m94Ctdv754",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
         ],
         "hours_required": null
       }
