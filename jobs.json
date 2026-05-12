@@ -202,16 +202,6 @@
       "hours_required": null
     },
     {
-      "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | Boundary BayPIC time1000Multi-engine PIC750IR, ME, SAMRA SARONTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Navajo"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - Cessna 208 CaravanThunder Airlines | Airline - Charter / LeisureCessnaCessna 208 CaravanCanada | Thunder BayCPLTCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-thunder_airlines-CA-b32467ed01",
@@ -232,22 +222,12 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
+      "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
       ],
       "hours_required": null
     },
@@ -47442,16 +47422,6 @@
         "hours_required": null
       },
       {
-        "title": "Survey Pilot - PA-31 NavajoKisik Aerial Survey | Other (General aviation)PiperPA-31 NavajoCanada | Boundary BayPIC time1000Multi-engine PIC750IR, ME, SAMRA SARONTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-kisik_aerial_survey-CA-6Dburz6x3d",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Navajo"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - Cessna 208 CaravanThunder Airlines | Airline - Charter / LeisureCessnaCessna 208 CaravanCanada | Thunder BayCPLTCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/Cessna-208-Caravan-first-officer-thunder_airlines-CA-b32467ed01",
@@ -47472,22 +47442,12 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
+        "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
         ],
         "hours_required": null
       },
@@ -47510,7 +47470,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 12
+      "count": 10
     },
     "SkyWest": {
       "status": "fail",
