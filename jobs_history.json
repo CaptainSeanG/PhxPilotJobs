@@ -81,29 +81,19 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -121,29 +111,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain - 208B Grand Caravan AmphibianSeair Seaplanes | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | VancouverPIC time2000CPL, Float RatingTCCA",
+      "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-seair_seaplanes-CA-cff8f4ccf8",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Chief Pilot - PC-12Levaero Aviation | Corporate / Biz AvPilatusPC-12Canada | Thunder BayIn type2000CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-chief-pilot-levaero_aviation-CA-5a9f775a3e",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -151,12 +121,12 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+      "title": "Captain - PC-12Royal Canadian Mounted Police (RCMP) | Government / Defence / AerospacePilatusPC-12Canada | OttawaPIC time3000CPL, IRTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-royal_canadian_mounted_police_rcmp-CA-0a5ebef9d7",
       "source": "PilotsGlobal",
       "tags": [
-        "King Air"
+        "PC-12"
       ],
       "hours_required": null
     }
@@ -50481,29 +50451,19 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - PC-12Tradewind Aviation | Corporate / Biz AvPilatusPC-12United States | White PlainsCPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-tradewind_aviation-US-78d69cf205",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -50521,29 +50481,9 @@
         "hours_required": null
       },
       {
-        "title": "Captain - 208B Grand Caravan AmphibianSeair Seaplanes | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | VancouverPIC time2000CPL, Float RatingTCCA",
+        "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time1000CPLFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-seair_seaplanes-CA-cff8f4ccf8",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirKenn Borek Air | Airline - Charter / LeisureBeechcraftKing AirCanada | CalgaryFlight time1500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-kenn_borek_air-CA-0299a0c26e",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Chief Pilot - PC-12Levaero Aviation | Corporate / Biz AvPilatusPC-12Canada | Thunder BayIn type2000CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-chief-pilot-levaero_aviation-CA-5a9f775a3e",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -50551,12 +50491,12 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - King AirThunder Airlines | Airline - Charter / LeisureBeechcraftKing AirCanada | Thunder BayCPLTCCA",
+        "title": "Captain - PC-12Royal Canadian Mounted Police (RCMP) | Government / Defence / AerospacePilatusPC-12Canada | OttawaPIC time3000CPL, IRTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-first-officer-thunder_airlines-CA-47f06e284d",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-royal_canadian_mounted_police_rcmp-CA-0a5ebef9d7",
         "source": "PilotsGlobal",
         "tags": [
-          "King Air"
+          "PC-12"
         ],
         "hours_required": null
       }
@@ -50569,7 +50509,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 8
+      "count": 5
     },
     "SkyWest": {
       "status": "fail",
