@@ -1,6 +1,86 @@
 {
   "today": [
     {
+      "title": "Caravan",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/CARAVAN",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC12",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC12",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC24",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC24",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 Pilatus PC12 - Oakland CA",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19623/USA/Captain/Pilatus-PC12---Oakland-CA/Pacific-Coast-Jet",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 Pilatus PC12 - Phoenix AZ",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19790/USA/Captain/Pilatus-PC12---Phoenix-AZ/Cutter-Aviation",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Caravan",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/CARAVAN",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC12",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC12",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Pilatus PC24",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/PC24",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "First Officer - PC-12Silver Air | Corporate / Biz AvPilatusPC-12United States | Van NuysFlight time1000Multi-engine100CPL, IR, MEFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-silver_air-US-3mo1tg0eny",
@@ -50961,6 +51041,86 @@
     ],
     "2026-06-04": [
       {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/CARAVAN",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Pilatus PC12 - Oakland CA",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19623/USA/Captain/Pilatus-PC12---Oakland-CA/Pacific-Coast-Jet",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 Pilatus PC12 - Phoenix AZ",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19790/USA/Captain/Pilatus-PC12---Phoenix-AZ/Cutter-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/CARAVAN",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "First Officer - PC-12Silver Air | Corporate / Biz AvPilatusPC-12United States | Van NuysFlight time1000Multi-engine100CPL, IR, MEFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-silver_air-US-3mo1tg0eny",
@@ -51034,8 +51194,8 @@
   },
   "results": {
     "PilotCareerCenter": {
-      "status": "fail",
-      "count": 0
+      "status": "success",
+      "count": 8
     },
     "PilotsGlobal": {
       "status": "success",
