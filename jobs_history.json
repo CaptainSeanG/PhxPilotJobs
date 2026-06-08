@@ -179,6 +179,16 @@
         "King Air"
       ],
       "hours_required": null
+    },
+    {
+      "title": "First Officer - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time500CPL, IRTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-wasaya_airways-CA-P26Ctfdxel",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
     }
   ],
   "history": {
@@ -51807,6 +51817,16 @@
           "King Air"
         ],
         "hours_required": null
+      },
+      {
+        "title": "First Officer - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time500CPL, IRTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-wasaya_airways-CA-P26Ctfdxel",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
       }
     ]
   },
@@ -51817,7 +51837,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 8
     },
     "SkyWest": {
       "status": "fail",
