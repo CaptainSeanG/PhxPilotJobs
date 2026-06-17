@@ -51,12 +51,12 @@
       "hours_required": null
     },
     {
-      "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
+      "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
       "source": "PilotsGlobal",
       "tags": [
-        "Navajo"
+        "PC-12"
       ],
       "hours_required": null
     },
@@ -67,16 +67,6 @@
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time2000CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-wasaya_airways-CA-300d23825e",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
       ],
       "hours_required": null
     }
@@ -52687,12 +52677,12 @@
         "hours_required": null
       },
       {
-        "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
+        "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
         "source": "PilotsGlobal",
         "tags": [
-          "Navajo"
+          "PC-12"
         ],
         "hours_required": null
       },
@@ -52705,16 +52695,6 @@
           "King Air"
         ],
         "hours_required": null
-      },
-      {
-        "title": "Captain - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time2000CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-wasaya_airways-CA-300d23825e",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
       }
     ]
   },
@@ -52725,7 +52705,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 8
+      "count": 7
     },
     "SkyWest": {
       "status": "fail",
