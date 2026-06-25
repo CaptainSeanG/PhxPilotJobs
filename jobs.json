@@ -131,6 +131,16 @@
       "hours_required": null
     },
     {
+      "title": "First Officer - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time750CPL, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-first-officer-pal_aerospace-CA-6j1it4z4rm",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time2000CPL, IRTCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-captain-wasaya_airways-CA-300d23825e",
@@ -54053,6 +54063,16 @@
         "hours_required": null
       },
       {
+        "title": "First Officer - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time750CPL, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-first-officer-pal_aerospace-CA-6j1it4z4rm",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain - PC-12Wasaya Airways | Airline - DomesticPilatusPC-12Canada | Thunder BayFlight time2000CPL, IRTCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-captain-wasaya_airways-CA-300d23825e",
@@ -54091,7 +54111,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 8
     },
     "SkyWest": {
       "status": "fail",
