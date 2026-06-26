@@ -1,106 +1,6 @@
 {
   "today": [
     {
-      "title": "Caravan",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/CARAVAN",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC12",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC12",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC24",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC24",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air C90 / C510 Mustang - PSM",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23834/USA/Captain/King-Air-C90---C510-Mustang---PSM/Air-New-England",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 200 - Durango CO",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22176/USA/Captain/King-Air-200---Durango-CO/Priester-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officers \u2014 Pilatus PC12 - DFW PDX BOS",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/17453/USA/First-Officers/Pilatus-PC12---DFW-PDX-BOS/Boutique-Air",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 200 - Orlando Sanford",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21251/USA/Captain/King-Air-200---Orlando-Sanford/Air-Unlimited",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Caravan",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/CARAVAN",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "Caravan"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC12",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC12",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Pilatus PC24",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/PC24",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time800CPLFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
@@ -54125,106 +54025,6 @@
     ],
     "2026-06-26": [
       {
-        "title": "Caravan",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/CARAVAN",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC12",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC12",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC24",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC24",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air C90 / C510 Mustang - PSM",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23834/USA/Captain/King-Air-C90---C510-Mustang---PSM/Air-New-England",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air 200 - Durango CO",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22176/USA/Captain/King-Air-200---Durango-CO/Priester-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officers \u2014 Pilatus PC12 - DFW PDX BOS",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/17453/USA/First-Officers/Pilatus-PC12---DFW-PDX-BOS/Boutique-Air",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air 200 - Orlando Sanford",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21251/USA/Captain/King-Air-200---Orlando-Sanford/Air-Unlimited",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Caravan",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/CARAVAN",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "Caravan"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC12",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC12",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Pilatus PC24",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/PC24",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "First Officer - PC-12AirSmart | Corporate / Biz AvPilatusPC-12United States | Las Vegas (NV)Flight time800CPLFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-airsmart-US-426286f2a2",
@@ -54308,8 +54108,8 @@
   },
   "results": {
     "PilotCareerCenter": {
-      "status": "success",
-      "count": 10
+      "status": "fail",
+      "count": 0
     },
     "PilotsGlobal": {
       "status": "success",
