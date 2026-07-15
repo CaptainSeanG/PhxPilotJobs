@@ -189,26 +189,6 @@
         "PC-12"
       ],
       "hours_required": null
-    },
-    {
-      "title": "Captain - PC-24Keewatin Air | Corporate / Biz AvPilatusPC-24Canada | WinnipegFlight time2500In type100ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-24-captain-keewatin_air-CA-6C87rzx9v4",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
     }
   ],
   "history": {
@@ -56751,26 +56731,6 @@
           "PC-12"
         ],
         "hours_required": null
-      },
-      {
-        "title": "Captain - PC-24Keewatin Air | Corporate / Biz AvPilatusPC-24Canada | WinnipegFlight time2500In type100ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-24-captain-keewatin_air-CA-6C87rzx9v4",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
       }
     ]
   },
@@ -56781,7 +56741,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 5
     },
     "SkyWest": {
       "status": "fail",
