@@ -181,9 +181,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain - PC-12Airmedic | Corporate / Biz AvPilatusPC-12Canada | MontrealFlight time1200Turbine500IR, SAMRA SARONTCCA",
+      "title": "First Officer - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | Thunder BayFlight time500CPL, IRTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-airmedic-CA-24269e75d2",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-ornge-CA-343cb4480d",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -191,19 +191,9 @@
       "hours_required": null
     },
     {
-      "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
+      "title": "Captain - PC-24Keewatin Air | Corporate / Biz AvPilatusPC-24Canada | WinnipegFlight time2500In type100ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
-      "source": "PilotsGlobal",
-      "tags": [
-        "Navajo"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+      "link": "https://pilotsglobal.com/job/PC-24-captain-keewatin_air-CA-6C87rzx9v4",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -56753,9 +56743,9 @@
         "hours_required": null
       },
       {
-        "title": "Captain - PC-12Airmedic | Corporate / Biz AvPilatusPC-12Canada | MontrealFlight time1200Turbine500IR, SAMRA SARONTCCA",
+        "title": "First Officer - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | Thunder BayFlight time500CPL, IRTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-airmedic-CA-24269e75d2",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-ornge-CA-343cb4480d",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -56763,19 +56753,9 @@
         "hours_required": null
       },
       {
-        "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
+        "title": "Captain - PC-24Keewatin Air | Corporate / Biz AvPilatusPC-24Canada | WinnipegFlight time2500In type100ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
-        "source": "PilotsGlobal",
-        "tags": [
-          "Navajo"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+        "link": "https://pilotsglobal.com/job/PC-24-captain-keewatin_air-CA-6C87rzx9v4",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -56801,7 +56781,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 8
+      "count": 7
     },
     "SkyWest": {
       "status": "fail",
