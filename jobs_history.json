@@ -141,9 +141,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
+      "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -161,9 +161,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+      "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -181,12 +181,22 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | Thunder BayFlight time500CPL, IRTCCA",
+      "title": "Captain - Cessna C208 CaravanMorningstar Air Express | Airline - CargoCessnaCessna C208 CaravanCanada | TorontoFlight time1500CPL, IRTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-ornge-CA-343cb4480d",
+      "link": "https://pilotsglobal.com/job/Cessna-C208-Caravan-captain-morningstar_air_express-CA-4aea5feb6e",
       "source": "PilotsGlobal",
       "tags": [
-        "PC-12"
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Direct Entry Captain - King AirVoyageur Aviation | Corporate / Biz AvBeechcraftKing AirCanada | MonctonFlight time2000In type200ATPLTCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/King-Air-direct-entry-captain-voyageur_aviation-CA-b0b6be6692",
+      "source": "PilotsGlobal",
+      "tags": [
+        "King Air"
       ],
       "hours_required": null
     }
@@ -56875,9 +56885,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
+        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -56895,9 +56905,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+        "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -56915,12 +56925,22 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12Ornge | Government / Defence / AerospacePilatusPC-12Canada | Thunder BayFlight time500CPL, IRTCCA",
+        "title": "Captain - Cessna C208 CaravanMorningstar Air Express | Airline - CargoCessnaCessna C208 CaravanCanada | TorontoFlight time1500CPL, IRTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-ornge-CA-343cb4480d",
+        "link": "https://pilotsglobal.com/job/Cessna-C208-Caravan-captain-morningstar_air_express-CA-4aea5feb6e",
         "source": "PilotsGlobal",
         "tags": [
-          "PC-12"
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Direct Entry Captain - King AirVoyageur Aviation | Corporate / Biz AvBeechcraftKing AirCanada | MonctonFlight time2000In type200ATPLTCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/King-Air-direct-entry-captain-voyageur_aviation-CA-b0b6be6692",
+        "source": "PilotsGlobal",
+        "tags": [
+          "King Air"
         ],
         "hours_required": null
       }
@@ -56933,7 +56953,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 5
+      "count": 6
     },
     "SkyWest": {
       "status": "fail",
