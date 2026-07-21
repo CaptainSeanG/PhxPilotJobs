@@ -231,16 +231,6 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
@@ -57955,16 +57945,6 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
@@ -57983,7 +57963,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 8
+      "count": 7
     },
     "SkyWest": {
       "status": "fail",
