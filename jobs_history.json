@@ -31,6 +31,16 @@
       "hours_required": null
     },
     {
+      "title": "Captain \u2014 Pilatus PC24 - Phoenix AZ",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19105/USA/Captain/Pilatus-PC24---Phoenix-AZ/Cutter-Aviation",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain \u2014 Pilatus PC12 - Bend OR",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/18404/USA/Captain/Pilatus-PC12---Bend-OR/Metro-Aviation",
@@ -59785,6 +59795,16 @@
         "hours_required": null
       },
       {
+        "title": "Captain \u2014 Pilatus PC24 - Phoenix AZ",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19105/USA/Captain/Pilatus-PC24---Phoenix-AZ/Cutter-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain \u2014 Pilatus PC12 - Bend OR",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/18404/USA/Captain/Pilatus-PC12---Bend-OR/Metro-Aviation",
@@ -60029,7 +60049,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 19
+      "count": 20
     },
     "PilotsGlobal": {
       "status": "success",
