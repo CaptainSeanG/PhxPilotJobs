@@ -259,16 +259,6 @@
         "King Air"
       ],
       "hours_required": null
-    },
-    {
-      "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
     }
   ],
   "history": {
@@ -61235,16 +61225,6 @@
           "King Air"
         ],
         "hours_required": null
-      },
-      {
-        "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
       }
     ]
   },
@@ -61255,7 +61235,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 7
+      "count": 6
     },
     "SkyWest": {
       "status": "fail",
