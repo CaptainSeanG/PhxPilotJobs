@@ -241,9 +241,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
+      "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+      "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -251,12 +251,22 @@
       "hours_required": null
     },
     {
-      "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+      "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
       "source": "PilotsGlobal",
       "tags": [
-        "King Air"
+        "Navajo"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Navajo"
       ],
       "hours_required": null
     }
@@ -61469,9 +61479,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time500CPL, IRTCCA",
+        "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-air_bravo-CA-i21Qtbpcl0",
+        "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -61479,12 +61489,22 @@
         "hours_required": null
       },
       {
-        "title": "Captain - Super King AirStarlink Aviation | Corporate / Biz AvBeechcraftSuper King AirCanada | QuebecFlight time1500ATPLTCCA",
+        "title": "Survey Pilot - PA-31 NavajoAries Aviation | Corporate / Biz AvPiperPA-31 NavajoCanada | CalgaryFlight time1000CPL, IR, METCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/Super-King-Air-captain-starlink_aviation-CA-Jiwosc6bwz",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-aries_aviation-CA-y9Fnsa5eju",
         "source": "PilotsGlobal",
         "tags": [
-          "King Air"
+          "Navajo"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Survey Pilot - PA-31 NavajoPeregrine Aerial Surveys | Other (General aviation)PiperPA-31 NavajoCanada | AbbotsfordFlight time1000CPL, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PA-31-Navajo-survey-pilot-peregrine_aerial_surveys-CA-ZDghscs3y4",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Navajo"
         ],
         "hours_required": null
       }
@@ -61497,7 +61517,7 @@
     },
     "PilotsGlobal": {
       "status": "success",
-      "count": 6
+      "count": 7
     },
     "SkyWest": {
       "status": "fail",
