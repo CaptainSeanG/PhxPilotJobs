@@ -111,16 +111,6 @@
       "hours_required": null
     },
     {
-      "title": "First Officers \u2014 Pilatus PC12 - NE USA / CARIB",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/18045/USA/First-Officers/Pilatus-PC12---NE-USA---CARIB/Tradewind-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Medevac Captain \u2014 Pilatus PC12 - Williston ND",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23105/USA/Medevac-Captain/Pilatus-PC12---Williston-ND/GFK-Flight-Support",
@@ -161,6 +151,16 @@
       "hours_required": null
     },
     {
+      "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
+      "source": "PilotsGlobal",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
       "company": "PilotsGlobal",
       "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
@@ -181,9 +181,9 @@
       "hours_required": null
     },
     {
-      "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+      "title": "Captain - PC-24Keewatin Air | Corporate / Biz AvPilatusPC-24Canada | WinnipegFlight time2500In type100ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
+      "link": "https://pilotsglobal.com/job/PC-24-captain-keewatin_air-CA-6C87rzx9v4",
       "source": "PilotsGlobal",
       "tags": [
         "PC-12"
@@ -191,9 +191,19 @@
       "hours_required": null
     },
     {
-      "title": "Direct Entry Captain - King AirVoyageur Aviation | Corporate / Biz AvBeechcraftKing AirCanada | MonctonFlight time2000In type200ATPLTCCA",
+      "title": "Captain - 208B Grand Caravan AmphibianSeair Seaplanes | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | VancouverPIC time2000CPL, Float RatingTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-direct-entry-captain-voyageur_aviation-CA-b0b6be6692",
+      "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-seair_seaplanes-CA-cff8f4ccf8",
+      "source": "PilotsGlobal",
+      "tags": [
+        "Caravan"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "First Officer - Super King AirThe North West Company | Corporate / Biz AvBeechcraftSuper King AirCanada | WinnipegFlight time1000IATRA, IR, METCCA",
+      "company": "PilotsGlobal",
+      "link": "https://pilotsglobal.com/job/Super-King-Air-first-officer-the_north_west_company-CA-fHbQs7bgp9",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
@@ -201,32 +211,12 @@
       "hours_required": null
     },
     {
-      "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2500Multi-engine500ATPLTCCA",
+      "title": "Training Manager - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2500PIC time1000ATPLTCCA",
       "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7",
+      "link": "https://pilotsglobal.com/job/King-Air-training-manager-pal_aerospace-CA-pgtUt1q5hf",
       "source": "PilotsGlobal",
       "tags": [
         "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000Multi-engine PIC500ATPLTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c",
-      "source": "PilotsGlobal",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
-      "company": "PilotsGlobal",
-      "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
-      "source": "PilotsGlobal",
-      "tags": [
-        "PC-12"
       ],
       "hours_required": null
     }
@@ -62259,16 +62249,6 @@
         "hours_required": null
       },
       {
-        "title": "First Officers \u2014 Pilatus PC12 - NE USA / CARIB",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/18045/USA/First-Officers/Pilatus-PC12---NE-USA---CARIB/Tradewind-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Medevac Captain \u2014 Pilatus PC12 - Williston ND",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23105/USA/Medevac-Captain/Pilatus-PC12---Williston-ND/GFK-Flight-Support",
@@ -62309,6 +62289,16 @@
         "hours_required": null
       },
       {
+        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
+        "source": "PilotsGlobal",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "First Officer - PC-12Boutique Air | Corporate / Biz AvPilatusPC-12United States | BostonFlight time700CPL, IRFAA",
         "company": "PilotsGlobal",
         "link": "https://pilotsglobal.com/job/PC-12-first-officer-boutique_air-US-2e821374c5",
@@ -62329,9 +62319,9 @@
         "hours_required": null
       },
       {
-        "title": "First Officer - PC-12PlaneSense | Corporate / Biz AvPilatusPC-12United States | CincinnatiFlight time750CPL, IRFAA",
+        "title": "Captain - PC-24Keewatin Air | Corporate / Biz AvPilatusPC-24Canada | WinnipegFlight time2500In type100ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-first-officer-planesense-US-67a5078fb5",
+        "link": "https://pilotsglobal.com/job/PC-24-captain-keewatin_air-CA-6C87rzx9v4",
         "source": "PilotsGlobal",
         "tags": [
           "PC-12"
@@ -62339,9 +62329,19 @@
         "hours_required": null
       },
       {
-        "title": "Direct Entry Captain - King AirVoyageur Aviation | Corporate / Biz AvBeechcraftKing AirCanada | MonctonFlight time2000In type200ATPLTCCA",
+        "title": "Captain - 208B Grand Caravan AmphibianSeair Seaplanes | Other (General aviation)Cessna208B Grand Caravan AmphibianCanada | VancouverPIC time2000CPL, Float RatingTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-direct-entry-captain-voyageur_aviation-CA-b0b6be6692",
+        "link": "https://pilotsglobal.com/job/208B-Grand-Caravan-Amphibian-captain-seair_seaplanes-CA-cff8f4ccf8",
+        "source": "PilotsGlobal",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "First Officer - Super King AirThe North West Company | Corporate / Biz AvBeechcraftSuper King AirCanada | WinnipegFlight time1000IATRA, IR, METCCA",
+        "company": "PilotsGlobal",
+        "link": "https://pilotsglobal.com/job/Super-King-Air-first-officer-the_north_west_company-CA-fHbQs7bgp9",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
@@ -62349,32 +62349,12 @@
         "hours_required": null
       },
       {
-        "title": "Captain - King AirCanWest Air | Corporate / Biz AvBeechcraftKing AirCanada | EdmontonFlight time2500Multi-engine500ATPLTCCA",
+        "title": "Training Manager - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2500PIC time1000ATPLTCCA",
         "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-canwest_air-CA-a4dad9d3f7",
+        "link": "https://pilotsglobal.com/job/King-Air-training-manager-pal_aerospace-CA-pgtUt1q5hf",
         "source": "PilotsGlobal",
         "tags": [
           "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - King AirPAL Aerospace | Government / Defence / AerospaceBeechcraftKing AirCanada | Goose BayFlight time2000Multi-engine PIC500ATPLTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/King-Air-captain-pal_aerospace-CA-4a1153ea3c",
-        "source": "PilotsGlobal",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain - PC-12Air Bravo | Corporate / Biz AvPilatusPC-12Canada | Barrie-OrilliaFlight time2000CPL, IRTCCA",
-        "company": "PilotsGlobal",
-        "link": "https://pilotsglobal.com/job/PC-12-captain-air_bravo-CA-m0ijtbpckx",
-        "source": "PilotsGlobal",
-        "tags": [
-          "PC-12"
         ],
         "hours_required": null
       }
@@ -62383,7 +62363,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 16
+      "count": 15
     },
     "PilotsGlobal": {
       "status": "success",
