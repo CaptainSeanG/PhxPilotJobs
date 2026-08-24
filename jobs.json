@@ -81,16 +81,6 @@
       "hours_required": null
     },
     {
-      "title": "First Officers \u2014 Pilatus PC12 - NE USA / CARIB",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/18045/USA/First-Officers/Pilatus-PC12---NE-USA---CARIB/Tradewind-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Caravan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/CARAVAN",
@@ -64673,16 +64663,6 @@
         "hours_required": null
       },
       {
-        "title": "First Officers \u2014 Pilatus PC12 - NE USA / CARIB",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/18045/USA/First-Officers/Pilatus-PC12---NE-USA---CARIB/Tradewind-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Caravan",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/CARAVAN",
@@ -64797,7 +64777,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 12
+      "count": 11
     },
     "PilotsGlobal": {
       "status": "success",
