@@ -31,6 +31,26 @@
       "hours_required": null
     },
     {
+      "title": "Captain \u2014 King Air 200 - Fairbanks AK",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23174/USA/Captain/King-Air-200---Fairbanks-AK/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
+      "title": "Captain \u2014 King Air 200/350 - Deadhorse AK",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24071/USA/Captain/King-Air-200-350---Deadhorse-AK/Guardian-Flight",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "King Air"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain \u2014 Pilatus PC12 - Oakland",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19623/USA/Captain/Pilatus-PC12---Oakland/Pacific-Coast-Jet",
@@ -66073,6 +66093,26 @@
         "hours_required": null
       },
       {
+        "title": "Captain \u2014 King Air 200 - Fairbanks AK",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23174/USA/Captain/King-Air-200---Fairbanks-AK/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air 200/350 - Deadhorse AK",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24071/USA/Captain/King-Air-200-350---Deadhorse-AK/Guardian-Flight",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain \u2014 Pilatus PC12 - Oakland",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19623/USA/Captain/Pilatus-PC12---Oakland/Pacific-Coast-Jet",
@@ -66127,7 +66167,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 8
+      "count": 10
     },
     "PilotsGlobal": {
       "status": "fail",
