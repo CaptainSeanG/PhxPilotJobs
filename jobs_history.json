@@ -101,56 +101,6 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 King Air 200/350 - Juneau",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23260/USA/Captain/King-Air-200-350---Juneau-/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 200 - Fairbanks AK",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23174/USA/Captain/King-Air-200---Fairbanks-AK/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "SIC \u2014 King Air C90 - Honolulu",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22713/USA/SIC/King-Air-C90---Honolulu/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 King Air 350 - Ketchikan AK",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22598/USA/Captain/King-Air-350---Ketchikan-AK/Guardian-Flight",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Captain \u2014 Pilatus PC24 - Miami",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24091/USA/Captain/Pilatus-PC24---Miami/Solairus-Aviation",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Caravan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/CARAVAN",
@@ -67452,56 +67402,6 @@
         "hours_required": null
       },
       {
-        "title": "Captain \u2014 King Air 200/350 - Juneau",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23260/USA/Captain/King-Air-200-350---Juneau-/Guardian-Flight",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air 200 - Fairbanks AK",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23174/USA/Captain/King-Air-200---Fairbanks-AK/Guardian-Flight",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "SIC \u2014 King Air C90 - Honolulu",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22713/USA/SIC/King-Air-C90---Honolulu/Guardian-Flight",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 King Air 350 - Ketchikan AK",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22598/USA/Captain/King-Air-350---Ketchikan-AK/Guardian-Flight",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
-        "title": "Captain \u2014 Pilatus PC24 - Miami",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24091/USA/Captain/Pilatus-PC24---Miami/Solairus-Aviation",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Caravan",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/CARAVAN",
@@ -67536,7 +67436,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 18
+      "count": 13
     },
     "PilotsGlobal": {
       "status": "fail",
