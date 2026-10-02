@@ -61,16 +61,6 @@
       "hours_required": null
     },
     {
-      "title": "EMS Pilots \u2014 Pilatus PC12 - Glasgow MT",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24113/USA/EMS-Pilots/Pilatus-PC12---Glasgow-MT/NorthEast-Montana-Stat-Air-",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Caravan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/CARAVAN",
@@ -68516,16 +68506,6 @@
         "hours_required": null
       },
       {
-        "title": "EMS Pilots \u2014 Pilatus PC12 - Glasgow MT",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24113/USA/EMS-Pilots/Pilatus-PC12---Glasgow-MT/NorthEast-Montana-Stat-Air-",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "PC-12"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Caravan",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/CARAVAN",
@@ -68560,7 +68540,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 10
+      "count": 9
     },
     "PilotsGlobal": {
       "status": "fail",
