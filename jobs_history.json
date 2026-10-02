@@ -31,39 +31,9 @@
       "hours_required": null
     },
     {
-      "title": "EMS Captains \u2014 PC12 - Sioux Lookout, Sudbury",
+      "title": "Chief Pilot \u2014 King Air 350 - Pensacola FL",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21310/CANADA/EMS-Captains/PC12---Sioux-Lookout,-Sudbury/ORNGE",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "EMS First Officers \u2014 PC12 - YQT YXL YTS YSB",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/21388/CANADA/EMS-First-Officers/PC12---YQT-YXL-YTS-YSB/ORNGE",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer \u2014 PC12 - Chatham ON",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24132/CANADA/First-Officer/PC12---Chatham-ON/Private-Air",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "First Officer \u2014 King Air 200 - Grand Manan",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/23309/CANADA/First-Officer/King-Air-200---Grand-Manan-/Voyageur-Aviation",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24142/USA/Chief-Pilot/King-Air-350---Pensacola-FL/Adams-Homes",
       "source": "PilotCareerCenter",
       "tags": [
         "King Air"
@@ -71,9 +41,9 @@
       "hours_required": null
     },
     {
-      "title": "Direct Entry Captain \u2014 King Air 200 - Moncton",
+      "title": "Captain \u2014 King Air C90 - Texas",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/20809/CANADA/Direct-Entry-Captain/King-Air-200---Moncton/Voyageur-Aviation",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22168/USA/Captain/King-Air-C90---Texas/Dynamic-Aviation",
       "source": "PilotCareerCenter",
       "tags": [
         "King Air"
@@ -81,9 +51,9 @@
       "hours_required": null
     },
     {
-      "title": "Captain \u2014 King Air 300/200 - Saskatoon",
+      "title": "Instructor Pilot \u2014 King Air 90/200 - Bridgewater VA",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24075/CANADA/Captain/King-Air-300-200---Saskatoon-/Good-Spirit-Air-Service",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/16585/USA/Instructor-Pilot/King-Air-90-200---Bridgewater-VA/Dynamic-Aviation",
       "source": "PilotCareerCenter",
       "tags": [
         "King Air"
@@ -91,29 +61,9 @@
       "hours_required": null
     },
     {
-      "title": "Assistant Chief Pilot \u2014 PC12 - Thunder Bay",
+      "title": "EMS Pilots \u2014 Pilatus PC12 - Glasgow MT",
       "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24073/CANADA/Assistant-Chief-Pilot/PC12---Thunder-Bay/Wasaya-Airways-LP",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "PC-12"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Maritime Surveillance Captains \u2014 Dash 8, King Air",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/18398/CANADA/Maritime-Surveillance-Captains/Dash-8,-King-Air/PAL-Aerospace",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
-      "title": "Commandants \u2014 Pilatus PC12 - St. Hubert",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19696/CANADA/Commandants/Pilatus-PC12---St.-Hubert/Airmedic",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24113/USA/EMS-Pilots/Pilatus-PC12---Glasgow-MT/NorthEast-Montana-Stat-Air-",
       "source": "PilotCareerCenter",
       "tags": [
         "PC-12"
@@ -68503,12 +68453,114 @@
         ],
         "hours_required": null
       }
+    ],
+    "2026-10-02": [
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/CARAVAN",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Chief Pilot \u2014 King Air 350 - Pensacola FL",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24142/USA/Chief-Pilot/King-Air-350---Pensacola-FL/Adams-Homes",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Captain \u2014 King Air C90 - Texas",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22168/USA/Captain/King-Air-C90---Texas/Dynamic-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Instructor Pilot \u2014 King Air 90/200 - Bridgewater VA",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/16585/USA/Instructor-Pilot/King-Air-90-200---Bridgewater-VA/Dynamic-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "King Air"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "EMS Pilots \u2014 Pilatus PC12 - Glasgow MT",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24113/USA/EMS-Pilots/Pilatus-PC12---Glasgow-MT/NorthEast-Montana-Stat-Air-",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Caravan",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/CARAVAN",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "Caravan"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC12",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC12",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
+        "title": "Pilatus PC24",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/PC24",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      }
     ]
   },
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 15
+      "count": 10
     },
     "PilotsGlobal": {
       "status": "fail",
