@@ -31,6 +31,16 @@
       "hours_required": null
     },
     {
+      "title": "Captain \u2014 Pilatus PC24 - Denver",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19788/USA/Captain/Pilatus-PC24---Denver/Priester-Aviation",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain \u2014 Pilatus PC12-NGX - Sacramento CA",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/20380/USA/Captain/Pilatus-PC12-NGX---Sacramento-CA/Axis-Jet",
@@ -68661,6 +68671,16 @@
         "hours_required": null
       },
       {
+        "title": "Captain \u2014 Pilatus PC24 - Denver",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/19788/USA/Captain/Pilatus-PC24---Denver/Priester-Aviation",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain \u2014 Pilatus PC12-NGX - Sacramento CA",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/20380/USA/Captain/Pilatus-PC12-NGX---Sacramento-CA/Axis-Jet",
@@ -68725,7 +68745,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 9
+      "count": 10
     },
     "PilotsGlobal": {
       "status": "fail",
