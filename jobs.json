@@ -61,16 +61,6 @@
       "hours_required": null
     },
     {
-      "title": "Chief Pilot \u2014 King Air 350 - Pensacola FL",
-      "company": "PilotCareerCenter",
-      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24142/USA/Chief-Pilot/King-Air-350---Pensacola-FL/Adams-Homes",
-      "source": "PilotCareerCenter",
-      "tags": [
-        "King Air"
-      ],
-      "hours_required": null
-    },
-    {
       "title": "Caravan",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/CARAVAN",
@@ -68907,16 +68897,6 @@
         "hours_required": null
       },
       {
-        "title": "Chief Pilot \u2014 King Air 350 - Pensacola FL",
-        "company": "PilotCareerCenter",
-        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/24142/USA/Chief-Pilot/King-Air-350---Pensacola-FL/Adams-Homes",
-        "source": "PilotCareerCenter",
-        "tags": [
-          "King Air"
-        ],
-        "hours_required": null
-      },
-      {
         "title": "Caravan",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/CARAVAN",
@@ -68951,7 +68931,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 10
+      "count": 9
     },
     "PilotsGlobal": {
       "status": "fail",
