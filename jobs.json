@@ -31,6 +31,16 @@
       "hours_required": null
     },
     {
+      "title": "Captain \u2014 Pilatus PC12-NGX - Sacramento CA",
+      "company": "PilotCareerCenter",
+      "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/20380/USA/Captain/Pilatus-PC12-NGX---Sacramento-CA/Axis-Jet",
+      "source": "PilotCareerCenter",
+      "tags": [
+        "PC-12"
+      ],
+      "hours_required": null
+    },
+    {
       "title": "Captain \u2014 King Air 200 - San Antonio TX",
       "company": "PilotCareerCenter",
       "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22742/USA/Captain/King-Air-200---San-Antonio-TX/Guardian-Flight",
@@ -69683,6 +69693,16 @@
         "hours_required": null
       },
       {
+        "title": "Captain \u2014 Pilatus PC12-NGX - Sacramento CA",
+        "company": "PilotCareerCenter",
+        "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/20380/USA/Captain/Pilatus-PC12-NGX---Sacramento-CA/Axis-Jet",
+        "source": "PilotCareerCenter",
+        "tags": [
+          "PC-12"
+        ],
+        "hours_required": null
+      },
+      {
         "title": "Captain \u2014 King Air 200 - San Antonio TX",
         "company": "PilotCareerCenter",
         "link": "https://pilotcareercenter.com/Pilot-Job-Posting-Pilot-Opening-Pilot-Job/22742/USA/Captain/King-Air-200---San-Antonio-TX/Guardian-Flight",
@@ -69767,7 +69787,7 @@
   "results": {
     "PilotCareerCenter": {
       "status": "success",
-      "count": 11
+      "count": 12
     },
     "PilotsGlobal": {
       "status": "fail",
